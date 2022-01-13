@@ -5,6 +5,7 @@ lint:
 	# NvK isort & black
 	poetry run isort .
 	poetry run black .
+	poetry run git status
 	# NvK continue
 	poetry run mypy cli_calc tests/**/*.py
 	poetry run flake8 .
@@ -18,10 +19,15 @@ unit:
 package:
 	poetry check
 	poetry run pip check
-	#	poetry run safety check --full-report
 	# NvK
+	#	poetry run safety check --full-report
 	poetry run safety check --bare
 
 .PHONY: test
 test: lint package unit
+
+# NvK
+.PHONY: all
+all: lint package unit
+
 
