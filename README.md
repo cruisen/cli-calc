@@ -1,7 +1,7 @@
 # cli-calc
 
-[![Build Status](https://github.com/nikolai.krusenstiern.de/cli-calc/workflows/test/badge.svg?branch=master&event=push)](https://github.com/nikolai.krusenstiern.de/cli-calc/actions?query=workflow%3Atest)
-[![codecov](https://codecov.io/gh/nikolai.krusenstiern.de/cli-calc/branch/master/graph/badge.svg)](https://codecov.io/gh/nikolai.krusenstiern.de/cli-calc)
+[![Build Status](https://github.com/cruisen/cli-calc/workflows/test/badge.svg?branch=master&event=push)](https://github.com/cruisen/cli-calc/actions?query=workflow%3Atest)
+[![codecov](https://codecov.io/gh/cruisen/cli-calc/branch/master/graph/badge.svg)](https://codecov.io/gh/cruisen/cli-calc)
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
@@ -67,7 +67,7 @@ factorial(42)
 
 ## License
 
-[MIT](https://github.com/nikolai.krusenstiern.de/cli-calc/blob/master/LICENSE)
+[MIT](https://github.com/cruisen/cli-calc/blob/master/LICENSE)
 
 
 ## Credits
