@@ -32,12 +32,37 @@ Then use it anywhere. :-)
 calc
 ```
 
+## Help
+
+```bash
+Input:
+    "q" for quit, "h" for help
+
+    "_float_" and/or "_int_" for last value
+    "pi", "tau" and "e" for pi, tau and Euler
+
+    "+f" to add display for fraction, "-f" to suppress display for fraction
+        Other letters are:
+        he(x), (o)ctal, (b)inary, (i)nteger,
+        (f)raction, (t)ruth, i(e)ee, ieee_bi(n), f(r)om_ieee
+        "float" is always visible
+
+    See https://docs.python.org/3/library/math.html, use without "math."
+        https://www.w3schools.com/python/python_operators.asp
+
+    Try "cos(_pi_/2)", XOR: "0xFF ^ 0b10", "2**8-1", "factorial(42)",
+        "help(math)"
+```
+
 ## Example
 
 Try:
 
 ```
-sin(pi/2)
+cos(_pi_/2)
+0xFF ^ 0b10
+2**8-1
+factorial(42)
 ```
 
 ## License
