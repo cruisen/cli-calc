@@ -19,6 +19,8 @@ Powerful yet easy command line calculator.
 pip install cli-calc
 ```
 
+See [cli-calc](https://pypi.org/project/cli-calc/).
+
 In order to run it from anywhere: Add a symbolic link in ~/bin
 
 ```bash
