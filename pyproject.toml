@@ -13,13 +13,20 @@ description = "Powerful yet easy command line calculator."
 version = "0.1.1"
 license = "MIT"
 
-authors = []
+authors = [
+  "Nikolai von Krusenstiern",
+]
 
 readme = "README.md"
 
 repository = "https://github.com/cruisen/cli-calc"
 
-keywords = []
+keywords = [
+  "calculator",
+  "cli",
+  "command line",
+  "python",
+]
 
 classifiers = [
   "Development Status :: 3 - Alpha",
