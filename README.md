@@ -1,5 +1,6 @@
 # cli-calc
 
+[![test](https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg)](https://github.com/cruisen/cli-calc/actions/workflows/test.yml)
 [![Build Status](https://github.com/cruisen/cli-calc/workflows/test/badge.svg?branch=master&event=push)](https://github.com/cruisen/cli-calc/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/cruisen/cli-calc/branch/master/graph/badge.svg)](https://codecov.io/gh/cruisen/cli-calc)
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
