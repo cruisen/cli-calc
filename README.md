@@ -52,7 +52,7 @@ Input:
     See https://docs.python.org/3/library/math.html, use without "math."
         https://www.w3schools.com/python/python_operators.asp
 
-    Try "cos(_pi_/2)", XOR: "0xFF ^ 0b10", "2**8-1", "factorial(42)",
+    Try "cos(pi/2)", XOR: "0xFF ^ 0b10", "2**8-1", "factorial(42)",
         "help(math)"
 ```
 
@@ -61,7 +61,7 @@ Input:
 Try:
 
 ```
-cos(_pi_/2)
+cos(pi/2)
 0xFF ^ 0b10
 2**8-1
 factorial(42)
