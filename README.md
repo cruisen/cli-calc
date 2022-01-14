@@ -7,19 +7,24 @@
 
 Powerful yet easy command line calculator.
 
+## Example Usage
 
-## Features
+```
+cos(pi/2)
+0xFF ^ 0b10
+2**8-1
+factorial(42)
+```
 
-- Fully typed with annotations and checked with mypy, [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
-
-
-## Installation
+# Installation
 
 ```bash
 pip install cli-calc
 ```
 
-See [cli-calc](https://pypi.org/project/cli-calc/).
+See  [pypi cli-calc](https://pypi.org/project/cli-calc/).
+
+## Configuration
 
 In order to run it from anywhere: Add a symbolic link in ~/bin
 
@@ -37,6 +42,8 @@ calc
 ## Help
 
 ```bash
+calc
+h
 Input:
     "q" for quit, "h" for help
 
@@ -55,17 +62,37 @@ Input:
     Try "cos(pi/2)", XOR: "0xFF ^ 0b10", "2**8-1", "factorial(42)",
         "help(math)"
 ```
+# Features
 
-## Example
+- Fully typed with annotations and checked with mypy [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
 
-Try:
+## Tools
 
-```
-cos(pi/2)
-0xFF ^ 0b10
-2**8-1
-factorial(42)
-```
+### Style and type annotations
+- [isort](https://pycqa.github.io/isort/)
+- [black](https://black.readthedocs.io/en/stable/)
+-- [wemake](https://wemake-python-stylegui.de/en/latest/)
+- [flake8](https://flake8.pycqa.org/en/latest/)
+- [nitpick](https://nitpick.readthedocs.io/en/latest/)
+
+### Testing and CT
+- [pytest](https://docs.pytest.org/)
+
+### Build and publish to pypi
+- [poetry build](https://python-poetry.org/docs/cli/#build)
+- [poetry publish](https://python-poetry.org/docs/cli/#publish)
+
+### Development enviroment
+- [poetry](https://python-poetry.org/)
+- [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html)
+- [git](https://git-scm.com/)
+- [github](https://github.com/)
+-- [gh](https://github.com/cli/cli)
+
+### Documentaion
+- [sphinx](https://www.sphinx-doc.org/en/master/)
+- [doc8](https://github.com/pycqa/doc8)
+
 
 ## License
 
