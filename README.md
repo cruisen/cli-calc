@@ -77,6 +77,7 @@ However some precautions are taken.
 ## Tools
 
 ### Style and type annotations
+* [pylint](https://pylint.org/)
 * [isort](https://pycqa.github.io/isort/)
 * [black](https://black.readthedocs.io/en/stable/)
   * [wemake](https://wemake-python-stylegui.de/en/latest/)
@@ -104,7 +105,7 @@ However some precautions are taken.
 * [doc8](https://github.com/pycqa/doc8)
 
 
-## License
+# License
 
 [MIT](https://github.com/cruisen/cli-calc/blob/master/LICENSE)
 
