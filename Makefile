@@ -2,11 +2,6 @@ SHELL:=/usr/bin/env bash
 
 .PHONY: lint
 lint:
-	# NvK isort & black
-	poetry run isort .
-	poetry run black .
-	poetry run git status
-	# NvK continue
 	poetry run mypy cli_calc tests/**/*.py
 	poetry run flake8 .
 	poetry run nitpick check
@@ -28,7 +23,13 @@ package:
 test: lint package unit
 
 # NvK
+.PHONY: lint2
+lint2:
+	poetry run isort .
+	poetry run black .
+	poetry run git status
+
 .PHONY: all
-all: lint package unit
+all: lint2 lint package unit
 
 
