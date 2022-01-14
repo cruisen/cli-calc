@@ -81,7 +81,7 @@ However some precautions are taken.
 * [black](https://black.readthedocs.io/en/stable/)
   * [wemake](https://wemake-python-stylegui.de/en/latest/)
 * [flake8](https://flake8.pycqa.org/en/latest/)
-* [nitpick](https://nitpick.readthedocs.io/en/latest/)
+  * [nitpick](https://nitpick.readthedocs.io/en/latest/)
 
 ### Testing and CT
 * [pytest](https://docs.pytest.org/)
