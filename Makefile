@@ -29,6 +29,13 @@ lint2:
 	poetry run black .
 	poetry run git status
 
+.PHONY: build
+build:
+	git status
+	git status --porcelain
+	git pull
+	poetry build
+
 .PHONY: all
 all: lint2 lint package unit
 
