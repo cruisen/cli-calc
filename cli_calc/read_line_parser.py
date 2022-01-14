@@ -21,11 +21,6 @@ class ReadLineParser:
     """
 
     @staticmethod
-    def input_cli() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
-        """Get user input."""
-        ReadLineParser.save_result(input(": "))  # noqa: WPS421
-
-    @staticmethod
     def save_result(in_string: str) -> None:  # noqa: WPS602
         """Get and cast user input."""
         out_obj: Optional[
