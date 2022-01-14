@@ -48,9 +48,8 @@ class Eval:  # pylint: disable=R0903
             Output.print_help()
             return None
 
-        if (
-            out_obj == 0 and in_string == "-0"
-        ):  # int: +0 == -0, but float +0 != -0  # noqa: E501
+        # int: +0 == -0, but float +0 != -0
+        if out_obj == 0 and in_string == "-0":
             out_obj = -0.0  # noqa: WPS358
 
         return out_obj
