@@ -1,4 +1,4 @@
-![cli-calc](https://github.com/cruisen/cli-calc/blob/main/assets/images/Cli-Calc.png)
+![](https://github.com/cruisen/cli-calc/blob/main/assets/images/Cli-Calc.png)
 
 # cli-calc
 
