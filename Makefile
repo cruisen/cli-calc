@@ -29,10 +29,6 @@ lint2:
 	poetry run black .
 	poetry run git status
 
-
-.PHONY: build
-build: git-status build2
-
 .PHONY: git-status
 git-status:
 	git status
@@ -43,10 +39,19 @@ git-status:
 		exit 1; \
 	fi
 
-.PHONY: build2
-build2:
+.PHONY: build
+build: git-status
 	git pull
 	poetry build
+
+.PHONY: bump
+bump: git-status
+	poetry version patch
+	gh release create "v$(poetry version --short)" --generate-notes
+	git add .
+	git commit -m "Update to $(poetry version --short)."
+	git push --tags
+	git push
 
 .PHONY: all
 all: lint2 lint package unit
