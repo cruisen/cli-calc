@@ -10,7 +10,7 @@ style = "https://raw.githubusercontent.com/wemake-services/wemake-python-stylegu
 [tool.poetry]
 name = "cli-calc"
 description = "Powerful yet easy command line calculator."
-version = "0.1.2"
+version = "0.1.3"
 license = "MIT"
 
 authors = [
