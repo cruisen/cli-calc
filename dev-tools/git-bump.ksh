@@ -1,13 +1,16 @@
 #! /bin/ksh
 
+cd $(git rev-parse --show-toplevel)
+
 git status
 echo ""
-if [[ $? -ne 0 ]] ; then
+
+if (( $? -ne 0 )) ; then
+  cd -
   echo "Exiting..."
   exit
 fi
 
-cd $(git rev-parse --show-toplevel)
 
 if [[ $(git status --porcelain) ]] ; then
   cd -
@@ -24,7 +27,7 @@ echo ""
 poetry build
 echo ""
 
-if [[ $? -eq 0 ]] ; then
+if (( $? -eq 0 )) ; then
   poetry version patch
 
   gh release create "v$(poetry version --short)" --generate-notes
