@@ -1,6 +1,6 @@
 #! /bin/ksh
 
-git status 
+git status
 echo ""
 if [[ $? -ne 0 ]] ; then
   echo "Exiting..."
@@ -25,7 +25,9 @@ echo ""
 
 if [[ $? -eq 0 ]] ; then
   poetry version patch
+
   gh release create "v$(poetry version --short)" --generate-notes
+
   git add .
   git commit -m "Update to $(poetry version --short)."
   git push --tags
