@@ -29,10 +29,22 @@ lint2:
 	poetry run black .
 	poetry run git status
 
+
 .PHONY: build
-build:
+build: git-status build2
+
+.PHONY: git-status
+git-status:
 	git status
-	git status --porcelain
+	@status=$$(git status --porcelain); \
+	if [ ! -z "$${status}" ]; \
+	then \
+		echo "Error - working directory is dirty. Commit those changes!"; \
+		exit 1; \
+	fi
+
+.PHONY: build2
+build2:
 	git pull
 	poetry build
 
