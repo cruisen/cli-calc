@@ -79,7 +79,7 @@ However some precautions are taken.
 ### Style and type annotations
 * [isort](https://pycqa.github.io/isort/)
 * [black](https://black.readthedocs.io/en/stable/)
-** [wemake](https://wemake-python-stylegui.de/en/latest/)
+  * [wemake](https://wemake-python-stylegui.de/en/latest/)
 * [flake8](https://flake8.pycqa.org/en/latest/)
 * [nitpick](https://nitpick.readthedocs.io/en/latest/)
 
@@ -95,7 +95,7 @@ However some precautions are taken.
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html)
 * [git](https://git-scm.com/)
 * [github](https://github.com/)
-** [gh](https://github.com/cli/cli)
+  * [gh](https://github.com/cli/cli)
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/)
