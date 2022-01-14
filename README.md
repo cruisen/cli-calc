@@ -1,3 +1,5 @@
+![cli-calc](https://github.com/cruisen/cli-calc/blob/main/assets/images/Cli-C%E2%8B%80lc.png)
+
 # cli-calc
 
 [![test](https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg)](https://github.com/cruisen/cli-calc/actions/workflows/test.yml)
