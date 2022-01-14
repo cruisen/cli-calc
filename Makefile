@@ -46,12 +46,17 @@ build: git-status
 
 .PHONY: bump
 bump: git-status
+	git pull
 	poetry version patch
 	gh release create "v$(poetry version --short)" --generate-notes
 	git add .
 	git commit -m "Update to $(poetry version --short)."
 	git push --tags
 	git push
+
+.PHONY: publish
+bump: bump
+	poetry publish --build
 
 .PHONY: all
 all: lint2 lint package unit
