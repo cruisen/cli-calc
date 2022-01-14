@@ -1,8 +1,7 @@
 # cli-calc
 
 [![test](https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg)](https://github.com/cruisen/cli-calc/actions/workflows/test.yml)
-[![Build Status](https://github.com/cruisen/cli-calc/workflows/test/badge.svg?branch=master&event=push)](https://github.com/cruisen/cli-calc/actions?query=workflow%3Atest)
-[![codecov](https://codecov.io/gh/cruisen/cli-calc/branch/master/graph/badge.svg)](https://codecov.io/gh/cruisen/cli-calc)
+[![codecov](https://codecov.io/gh/cruisen/cli-calc/branch/main/graph/badge.svg?token=i9nYZL3MM3)](https://codecov.io/gh/cruisen/cli-calc)
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
