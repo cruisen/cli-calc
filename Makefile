@@ -55,8 +55,13 @@ bump: git-status
 	git push
 
 .PHONY: publish
-bump: bump
+publish: bump
 	poetry publish --build
+
+.PHONY: requirements
+requirements: bump
+	poetry export -f requirements.txt --output requirements.txt
+
 
 .PHONY: all
 all: lint2 lint package unit
