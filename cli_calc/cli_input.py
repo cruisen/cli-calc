@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""CLI Input."""
+"""CLI ReadLineParser."""
 
 
 import sys
@@ -11,9 +11,9 @@ from cli_calc.config import Config
 from cli_calc.memory import Memory
 
 
-class Input:
+class ReadLineParser:
     """
-    CLI Input.
+    CLI ReadLineParser.
 
     * Sanitize the input string
     * Apply parsing
@@ -23,12 +23,17 @@ class Input:
     @staticmethod
     def input_cli() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """Get user input."""
-        Input.save_result(input(": "))  # noqa: WPS421
+        ReadLineParser.save_result(input(": "))  # noqa: WPS421
 
     @staticmethod
     def save_result(in_string: str) -> None:  # noqa: WPS602
         """Get and cast user input."""
-        out_obj: Optional[Union[int, float]] = Input.handle_input(in_string)
+        out_obj: Optional[
+            Union[
+                int,
+                float,
+            ]
+        ] = ReadLineParser.handle_input(in_string)
 
         if isinstance(out_obj, (int, float)):  # pragma: no cover
             Memory.value_dict[Config.ValueNS.float] = float(out_obj)  # type: ignore  # pylint: disable=E1101  # noqa: E501
@@ -51,10 +56,10 @@ class Input:
 
         (out_obj,) = (  # noqa: WPS460
             Eval.eval_string(
-                Input.parse_expression(
-                    Input.parse_display(
-                        Input.parse_argumnents(
-                            Input.strip(in_string),
+                ReadLineParser.parse_expression(
+                    ReadLineParser.parse_display(
+                        ReadLineParser.parse_argumnents(
+                            ReadLineParser.strip(in_string),
                         ),
                     ),
                 ),

@@ -15,7 +15,9 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))  # noqa: WPS221
 
 
-from cli_calc.cli_input import Input  # pylint: disable=C0413  # noqa: E402
+from cli_calc.cli_input import (  # pylint: disable=C0413  # noqa: E402
+    ReadLineParser,
+)
 from cli_calc.cli_output import Output  # pylint: disable=C0413  # noqa: E402
 from cli_calc.config import Config  # pylint: disable=C0413  # noqa: E402
 from cli_calc.memory import Memory  # pylint: disable=C0413  # noqa: E402
@@ -35,7 +37,7 @@ def io_loop() -> None:  # pragma: no cover
     """
     try:
         while True:  # noqa: WPS457
-            Input.input_cli()
+            ReadLineParser.input_cli()
             Output.print_line()
     except KeyboardInterrupt:
         sys.exit(0)

@@ -3,7 +3,7 @@
 
 import pytest  # pylint: disable=E0401
 
-from cli_calc.cli_input import Input  # pylint: disable=E0401
+from cli_calc.cli_input import ReadLineParser  # pylint: disable=E0401
 from cli_calc.config import Config  # pylint: disable=E0401
 from cli_calc.memory import Memory  # pylint: disable=E0401
 
@@ -38,8 +38,8 @@ def test_handle_input(  # noqa: WPS602
     name: str,
     expected: float,
 ):
-    """Input to Output test."""
-    Input.handle_input(in_string)
+    """A ReadLineParser to Output test."""
+    ReadLineParser.handle_input(in_string)
 
     status: bool = Config.get_item(
         name,
@@ -60,8 +60,8 @@ def test_parse_argumnents(  # noqa: WPS602
     in_string: str,
     expected: str,
 ):
-    """Input to Output test."""
-    assert Input.parse_argumnents(in_string) == expected  # noqa: S101
+    """A ReadLineParser to Output test."""
+    assert ReadLineParser.parse_argumnents(in_string) == expected  # noqa: S101
 
 
 @pytest.mark.parametrize(  # noqa: WPS317
@@ -73,9 +73,9 @@ def test_parse_argumnents(  # noqa: WPS602
 def test_parse_argumnents_for_quit(  # noqa: WPS602
     in_string: str,
 ):
-    """Input to sys.exit() test."""
+    """A ReadLineParser to sys.exit() test."""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
-        Input.parse_argumnents(in_string)
+        ReadLineParser.parse_argumnents(in_string)
     assert pytest_wrapped_e.type == SystemExit  # noqa: S101, WPS441
     assert pytest_wrapped_e.value.code == 1  # noqa: S101, WPS441
 
@@ -102,5 +102,5 @@ def test_parse_display(  # noqa: WPS602
     in_string: str,
     expected: str,
 ):
-    """Input to Output test."""
-    assert Input.parse_display(in_string) == expected  # noqa: S101
+    """A ReadLineParser to Output test."""
+    assert ReadLineParser.parse_display(in_string) == expected  # noqa: S101

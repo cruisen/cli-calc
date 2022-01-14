@@ -8,7 +8,7 @@ from typing import Optional, Union
 import pytest  # pylint: disable=E0401
 
 from cli_calc.cli_eval import Eval  # pylint: disable=E0401
-from cli_calc.cli_input import Input  # pylint: disable=E0401
+from cli_calc.cli_input import ReadLineParser  # pylint: disable=E0401
 from cli_calc.config import Config  # pylint: disable=E0401
 from cli_calc.memory import Memory  # pylint: disable=E0401
 
@@ -28,16 +28,18 @@ Config.init(Memory.value_dict)
         ("1/3", 0.3333333333333333),
     ],
 )
-class TestInput:
-    """Test Input Queries."""
+class TestReadLineParser:
+    """Test ReadLineParser Queries."""
 
     @staticmethod
     def test_handle_input(  # noqa: WPS602
         in_string: str,
         expected: Union[int, float],
     ):
-        """Input to Output test."""
-        assert Input.handle_input(in_string) == pytest.approx(  # noqa: S101, E501
+        """A ReadLineParser to Output test."""
+        assert ReadLineParser.handle_input(
+            in_string,
+        ) == pytest.approx(  # noqa: S101, E501
             expected,
             nan_ok=True,
         )
@@ -47,8 +49,8 @@ class TestInput:
         in_string: str,
         expected: float,
     ):
-        """Input to value_dict test."""
-        Input.save_result(in_string)
+        """A ReadLineParser to value_dict test."""
+        ReadLineParser.save_result(in_string)
 
         val_int: int = Memory.value_dict[Config.ValueNS.int]  # type: ignore  # pylint: disable=E1101  # noqa: E501
         val_float: float = Memory.value_dict[Config.ValueNS.float]  # type: ignore  # pylint: disable=E1101  # noqa: E501
@@ -68,6 +70,6 @@ class TestInput:
 def test_eval_string_sys_exit(  # noqa: WPS602
     in_string: Optional[str],
 ):
-    """Input to sys.exit() test."""
+    """A ReadLineParser to sys.exit() test."""
     with does_not_raise(SystemExit):
         Eval.eval_string(in_string)
