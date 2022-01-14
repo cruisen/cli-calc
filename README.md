@@ -62,6 +62,13 @@ Input:
     Try "cos(pi/2)", XOR: "0xFF ^ 0b10", "2**8-1", "factorial(42)",
         "help(math)"
 ```
+
+## Warning
+
+Use of [eval](https://docs.python.org/3/library/functions.html#eval) is *****evil**************.
+However some precautions are taken.
+
+
 # Features
 
 - Fully typed with annotations and checked with mypy [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
@@ -82,14 +89,14 @@ Input:
 - [poetry build](https://python-poetry.org/docs/cli/#build)
 - [poetry publish](https://python-poetry.org/docs/cli/#publish)
 
-### Development enviroment
+### Development Environment
 - [poetry](https://python-poetry.org/)
 - [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html)
 - [git](https://git-scm.com/)
 - [github](https://github.com/)
 -- [gh](https://github.com/cli/cli)
 
-### Documentaion
+### Documentation
 - [sphinx](https://www.sphinx-doc.org/en/master/)
 - [doc8](https://github.com/pycqa/doc8)
 
