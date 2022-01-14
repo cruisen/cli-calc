@@ -10,6 +10,7 @@ fi
 cd $(git rev-parse --show-toplevel)
 
 if [[ $(git status --porcelain) ]] ; then
+  cd -
   echo ""
   echo "Exiting..."
   echo "Clean up before trying again."
@@ -34,6 +35,7 @@ if [[ $? -eq 0 ]] ; then
   git push
   echo ""
 else
+  cd -
   echo"poetry build error. Exiting..."
   exit
 fi
@@ -41,4 +43,6 @@ fi
 if [[ $1 == "publish" ]] ; then
   poetry publish --build
 fi
+
+cd -
 
