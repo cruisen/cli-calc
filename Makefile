@@ -9,6 +9,7 @@ lint:
 	# NvK continue
 	poetry run mypy cli_calc tests/**/*.py
 	poetry run flake8 .
+	poetry run nitpick check
 	poetry run doc8 -q docs
 
 .PHONY: unit
