@@ -65,40 +65,41 @@ Input:
 
 ## Warning
 
-Use of [eval](https://docs.python.org/3/library/functions.html#eval) is *****evil**************.
+Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil.
+
 However some precautions are taken.
 
 
 # Features
 
-- Fully typed with annotations and checked with mypy [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
+* Fully typed with annotations and checked with mypy [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
 
 ## Tools
 
 ### Style and type annotations
-- [isort](https://pycqa.github.io/isort/)
-- [black](https://black.readthedocs.io/en/stable/)
--- [wemake](https://wemake-python-stylegui.de/en/latest/)
-- [flake8](https://flake8.pycqa.org/en/latest/)
-- [nitpick](https://nitpick.readthedocs.io/en/latest/)
+* [isort](https://pycqa.github.io/isort/)
+* [black](https://black.readthedocs.io/en/stable/)
+** [wemake](https://wemake-python-stylegui.de/en/latest/)
+* [flake8](https://flake8.pycqa.org/en/latest/)
+* [nitpick](https://nitpick.readthedocs.io/en/latest/)
 
 ### Testing and CT
-- [pytest](https://docs.pytest.org/)
+* [pytest](https://docs.pytest.org/)
 
 ### Build and publish to pypi
-- [poetry build](https://python-poetry.org/docs/cli/#build)
-- [poetry publish](https://python-poetry.org/docs/cli/#publish)
+* [poetry build](https://python-poetry.org/docs/cli/#build)
+* [poetry publish](https://python-poetry.org/docs/cli/#publish)
 
 ### Development Environment
-- [poetry](https://python-poetry.org/)
-- [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html)
-- [git](https://git-scm.com/)
-- [github](https://github.com/)
--- [gh](https://github.com/cli/cli)
+* [poetry](https://python-poetry.org/)
+* [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html)
+* [git](https://git-scm.com/)
+* [github](https://github.com/)
+** [gh](https://github.com/cli/cli)
 
 ### Documentation
-- [sphinx](https://www.sphinx-doc.org/en/master/)
-- [doc8](https://github.com/pycqa/doc8)
+* [sphinx](https://www.sphinx-doc.org/en/master/)
+* [doc8](https://github.com/pycqa/doc8)
 
 
 ## License
