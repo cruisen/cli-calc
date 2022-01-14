@@ -87,8 +87,9 @@ However some precautions are taken.
 * [pytest](https://docs.pytest.org/)
 
 ### Build and publish to pypi
-* [poetry build](https://python-poetry.org/docs/cli/#build)
-* [poetry publish](https://python-poetry.org/docs/cli/#publish)
+* [git-bump.ksh](https://github.com/cruisen/cli-calc/blob/69430ce5e71bc2544390f36122a8d05756518199/dev-tools/git-bump.ksh)
+  * [poetry build](https://python-poetry.org/docs/cli/#build)
+  * [poetry publish](https://python-poetry.org/docs/cli/#publish)
 
 ### Development Environment
 * [poetry](https://python-poetry.org/)
@@ -96,6 +97,7 @@ However some precautions are taken.
 * [git](https://git-scm.com/)
 * [github](https://github.com/)
   * [gh](https://github.com/cli/cli)
+* [Markdown](https://www.markdownguide.org/basic-syntax/)
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/)
