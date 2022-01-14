@@ -48,9 +48,9 @@ build: git-status
 bump: git-status
 	git pull
 	poetry version patch
-	gh release create "v$(poetry version --short)" --generate-notes
+	gh release create "v$$(poetry version --short)" --generate-notes
 	git add .
-	git commit -m "Update to $(poetry version --short)."
+	git commit -m "Update to $$(poetry version --short)."
 	git push --tags
 	git push
 
