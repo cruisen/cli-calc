@@ -24,7 +24,7 @@ factorial(42)
 pip install cli-calc
 ```
 
-See  [pypi cli-calc](https://pypi.org/project/cli-calc/).
+[pypi cli-calc](https://pypi.org/project/cli-calc/).
 
 ## Configuration
 
@@ -74,7 +74,8 @@ However some precautions are taken.
 
 # Features
 
-* Fully typed with annotations and checked with mypy [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
+* Fully typed with annotations and checked with mypy.
+* [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
 
 ## Tools
 
