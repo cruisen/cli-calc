@@ -8,9 +8,9 @@ from typing import Optional, Union
 import pytest  # pylint: disable=E0401
 
 from cli_calc.cli_eval import Eval  # pylint: disable=E0401
-from cli_calc.cli_input import ReadLineParser  # pylint: disable=E0401
 from cli_calc.config import Config  # pylint: disable=E0401
 from cli_calc.memory import Memory  # pylint: disable=E0401
+from cli_calc.read_line_parser import ReadLineParser  # pylint: disable=E0401
 
 Config.init(Memory.value_dict)
 
