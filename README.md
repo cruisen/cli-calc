@@ -104,6 +104,7 @@ However some precautions are taken.
   * [wemake](https://wemake-python-stylegui.de/en/latest/)
 * [flake8](https://flake8.pycqa.org/en/latest/)
   * [nitpick](https://nitpick.readthedocs.io/en/latest/)
+* [doc8](https://github.com/pycqa/doc8)
 
 ### Testing and CT
 * [pytest](https://docs.pytest.org/)
@@ -123,7 +124,6 @@ However some precautions are taken.
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/)
-* [doc8](https://github.com/pycqa/doc8)
 
 
 # License
