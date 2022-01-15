@@ -151,6 +151,7 @@ However some precautions are taken.
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/)
+* [shields](https://shields.io/) for Badges
 
 
 # License
