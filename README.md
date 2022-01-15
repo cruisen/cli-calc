@@ -8,8 +8,8 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-[![pypi](https://img.shields.io/pypi/dm/cli-calc)](https://pypi.org/project/cli-calc/)
-[![github](https://img.shields.io/github/downloads/cruisen/cli-calc/total)](https://github.com/cruisen/cli-calc)
+[![pypi](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
+[![github](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=downloads%20github)](https://github.com/cruisen/cli-calc)
 
 
 Powerful yet easy command line calculator.
