@@ -23,13 +23,13 @@ cmath.phase(complex(-1.0, 0.0))
 ```
 
 ## Libaries
-[standard operators](https://www.w3schools.com/python/python_operators.asp)
-[standard math libary](https://docs.python.org/3/library/math.html)
+- [standard operators](https://www.w3schools.com/python/python_operators.asp)
+- [standard math libary](https://docs.python.org/3/library/math.html)
 
-[cmath](https://docs.python.org/3/library/cmath.html)
-[random](https://docs.python.org/3/library/random.html#examples) 
+- [cmath](https://docs.python.org/3/library/cmath.html)
+- [random](https://docs.python.org/3/library/random.html#examples) 
 
-[built in functions](https://docs.python.org/3/library/functions.html) 
+- [built in functions](https://docs.python.org/3/library/functions.html) 
 
 
 # Installation
@@ -38,7 +38,7 @@ cmath.phase(complex(-1.0, 0.0))
 pip install cli-calc
 ```
 
-[pypi cli-calc](https://pypi.org/project/cli-calc/).
+- [pypi cli-calc](https://pypi.org/project/cli-calc/).
 
 ## Configuration
 
