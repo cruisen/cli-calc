@@ -3,7 +3,10 @@
 
 
 import math  # pylint: disable=W0611  # noqa: F401
+import cmath   # pylint: disable=W0611  # noqa: F401
+import random   # pylint: disable=W0611  # noqa: F401
 from math import *  # pylint: disable=W0622, W0401, W0614 # noqa: F403, F401, WPS347, WPS458, E501
+from random import *  # pylint: disable=W0622, W0401, W0614 # noqa: F403, F401, WPS347, WPS458, E501
 from typing import Optional, Union
 
 from cli_calc.cli_output import Output
