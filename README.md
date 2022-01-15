@@ -22,9 +22,9 @@ random()
 cmath.phase(complex(-1.0, 0.0))
 ```
 
-## Libaries
+## Libraries
 - [standard operators](https://www.w3schools.com/python/python_operators.asp)
-- [standard math libary](https://docs.python.org/3/library/math.html)
+- [standard math library](https://docs.python.org/3/library/math.html)
 
 - [cmath](https://docs.python.org/3/library/cmath.html)
 - [random](https://docs.python.org/3/library/random.html#examples) 
@@ -54,6 +54,7 @@ Then use it anywhere. :-)
 ```bash
 calc
 echo "7+8" | calc
+cat foo.bar | calc
 ```
 
 ## Help
