@@ -14,11 +14,11 @@
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
 [![github commits](https://img.shields.io/github/commit-activity/m/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
-[![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/need_Help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneed_Help)
-[![github bugs open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/is_Bug?label=Bugs)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Ais_Bug)
-[![github bugs closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc/is_Bug?label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed+label%3Ais_Bug)
-[![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/issues)
-[![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
+[![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/need_Help?color=red&label=Need%20Help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneed_Help)
+[![github bugs open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/is_Bug?color=red&label=Bugs)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Ais_Bug)
+[![github bugs closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc/is_Bug?color=red&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed+label%3Ais_Bug)
+[![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc?color=red)](https://github.com/cruisen/cli-calc/issues)
+[![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
 
 
 Powerful yet easy command line calculator.
