@@ -8,8 +8,12 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-[![pypi](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
-[![github](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
+[![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
+[![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
+[![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
+[![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/issues)
+[![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
+[![github commits](https://img.shields.io/github/commit-activity/m/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
 
 
 Powerful yet easy command line calculator.
