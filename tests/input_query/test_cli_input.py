@@ -37,9 +37,7 @@ class TestReadLineParser:
         expected: Union[int, float],
     ):
         """A ReadLineParser to Output test."""
-        assert ReadLineParser.handle_input(
-            in_string,
-        ) == pytest.approx(  # noqa: S101, E501
+        assert ReadLineParser.handle_input(in_string) == pytest.approx(  # noqa: S101, E501
             expected,
             nan_ok=True,
         )

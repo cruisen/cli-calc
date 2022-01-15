@@ -116,6 +116,7 @@ class ReadLineParser:
             Config.Column.print_it.name,  # pylint: disable=E1101
             new,
         )
+        Config.option[Config.Option.was_noop] = True  # type: ignore  # pylint: disable=E1101
         Output.print_header()
 
         return None

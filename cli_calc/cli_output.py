@@ -18,8 +18,11 @@ class Output:
     """
 
     @staticmethod
-    def print_help() -> None:  # noqa: WPS213, WPS602, WPS605
+    def print_help() -> None:  # pragma: no cover  # noqa: WPS213, WPS602, WPS605
         """Print Help lines."""
+        if not Config.option[Config.Option.print_help]:  # type: ignore  # pylint: disable=E1101
+            return
+
         out: str = """Input:
     "q" for quit, "h" for help
 
@@ -46,6 +49,11 @@ class Output:
     @staticmethod
     def print_header() -> None:  # noqa: WPS602, WPS605
         """Print header of configured types."""
+        if not Config.option[  # noqa: WPS337
+            Config.Option.print_header  # type: ignore  # pylint: disable=E1101
+        ]:
+            return  # pragma: no cover
+
         for function in Config.row_list:
             if not Config.get_item(  # noqa: WPS337
                 function,
@@ -61,6 +69,19 @@ class Output:
         print()  # noqa: WPS421
 
     @staticmethod
+    def echo_input(in_string: str) -> None:  # pragma: no cover  # noqa: WPS602, WPS605
+        """Print value in configured types."""
+        pre: str = ""
+        end: str = "\n"
+
+        if Config.option[Config.Option.is_pipe]:  # type: ignore  # pylint: disable=E1101
+            pre = "\n"
+            end = " = "
+
+        if Config.option[Config.Option.echo_in]:  # type: ignore  # pylint: disable=E1101
+            print(f"{pre}{in_string}", end=end)  # noqa: WPS421
+
+    @staticmethod
     def print_line() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """Print value in configured types."""
         in_val: Union[int, float]
@@ -69,6 +90,11 @@ class Output:
 
         if not isinstance(val_int, int):
             return  # type: ignore
+
+        if Config.option[Config.Option.was_noop]:  # type: ignore  # pylint: disable=E1101
+            Config.option[Config.Option.was_noop] = False  # type: ignore  # pylint: disable=E1101
+            if Config.option[Config.Option.is_pipe]:  # type: ignore  # pylint: disable=E1101
+                return
 
         for function in Config.row_list:
             if not Config.get_item(  # noqa: WPS337

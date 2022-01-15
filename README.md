@@ -15,6 +15,7 @@ Powerful yet easy command line calculator.
 cos(pi/2)
 0xFF ^ 0b10
 2**8-1
+log(2)
 factorial(42)
 ```
 
@@ -39,6 +40,7 @@ Then use it anywhere. :-)
 
 ```bash
 calc
+echo "7+8" | calc
 ```
 
 ## Help

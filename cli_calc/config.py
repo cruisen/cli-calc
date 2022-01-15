@@ -62,12 +62,29 @@ class Config:  # noqa: WPS214
         ["from_ieee", float, "r", False, False],
     ]
 
+    option: Dict[str, bool] = {  # noqa: WPS234, E501
+        "print_help": True,
+        "print_header": True,
+        "echo_in": True,
+        "is_pipe": False,
+        "was_noop": False,
+    }
+
     row_list: List[str] = []
+    option_list: List[str] = []
     arg_dict: Dict[str, str] = {}
 
     class Row:  # pylint: disable=R0903  # noqa: WPS431
         """
         Namespace for Row Headers.
+
+        To avoid typos.
+        Auto generate on Config.init().
+        """
+
+    class Option:  # pylint: disable=R0903  # noqa: WPS431
+        """
+        Namespace for Option Headers.
 
         To avoid typos.
         Auto generate on Config.init().
@@ -88,6 +105,12 @@ class Config:  # noqa: WPS214
         """Create a List for Value Name mapping."""
         for val_row in value_dict:
             setattr(Config.ValueNS, val_row, val_row)
+
+    @staticmethod
+    def create_option_namespace() -> None:  # noqa: WPS602, WPS605
+        """Create a Simple Namespace for Option Name mapping."""
+        for option in Config.option:
+            setattr(Config.Option, option, option)
 
     @staticmethod
     def create_row_list() -> None:  # noqa: WPS602, WPS605, WPS602
@@ -134,9 +157,7 @@ class Config:  # noqa: WPS214
         col: str,
     ) -> Union[Callable, str, bool]:  # type: ignore
         """Get List Item for given row and column names."""
-        return Config.table[Config.get_row_number(row)][
-            Config.get_col_number(col)
-        ]  # noqa: E501
+        return Config.table[Config.get_row_number(row)][Config.get_col_number(col)]  # noqa: E501
 
     @staticmethod
     def set_item(  # noqa: WPS602, WPS605, WPS615
@@ -150,7 +171,7 @@ class Config:  # noqa: WPS214
         ] = set_value  # noqa: E501
 
     @staticmethod
-    def init(  # noqa: WPS602
+    def init(  # noqa: WPS602, WPS213
         value_dict: Dict[str, Union[int, float]],
     ) -> None:  # noqa: WPS213, WPS602, WPS605
         """Init globals."""
@@ -158,6 +179,7 @@ class Config:  # noqa: WPS214
 
         Config.create_value_namespace(value_dict)
         Config.create_row_namespace()
+        Config.create_option_namespace()
 
         Config.create_arg_dict()
 

@@ -36,7 +36,8 @@ class Eval:  # pylint: disable=R0903
 
         if in_string is None or len(in_string) == 0:  # noqa: WPS507
             return None
-        print(in_string)  # noqa: WPS421
+
+        Output.echo_input(in_string)
 
         try:
             out_obj = eval(  # pylint: disable=W0123  # noqa: S307, WPS421

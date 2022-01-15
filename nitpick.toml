@@ -1,0 +1,12 @@
+# from: https://pypi.org/project/nitpick/
+
+["pyproject.toml".tool.black]
+line-length = 99
+
+["setup.cfg".flake8]
+max-line-length = 99
+inline-quotes = "double"
+
+["setup.cfg".isort]
+line_length = 99
+
