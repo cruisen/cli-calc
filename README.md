@@ -151,6 +151,8 @@ However some precautions are taken.
 * [github](https://github.com/)
   * [gh](https://github.com/cli/cli)
 * [Markdown](https://www.markdownguide.org/basic-syntax/)
+* [vi](https://www.vim.org/about.php)
+* [VS Code](https://code.visualstudio.com/)
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/)
