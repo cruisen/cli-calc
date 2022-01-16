@@ -47,6 +47,7 @@ build: git-status
 .PHONY: bump
 bump: git-status
 	git pull
+	cloc --include-lang Python --quiet --json --report-file=./dev_tools/meters/cloc.json .
 	poetry version patch
 	gh release create "v$$(poetry version --short)" --generate-notes
 	git add .
