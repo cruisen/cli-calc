@@ -23,7 +23,7 @@ do
 
 done
 
-echo "DONE"
+echo "LOC updated"
 
 
 
