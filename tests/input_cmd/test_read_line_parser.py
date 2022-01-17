@@ -54,6 +54,7 @@ def test_handle_input(  # noqa: WPS602
         ("h", None),
         ("x", "x"),
         ("xx", "xx"),
+        ("xxx", "xxx"),
     ],
 )
 def test_parse_argumnents(  # noqa: WPS602

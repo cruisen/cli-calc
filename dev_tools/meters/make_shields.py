@@ -54,3 +54,5 @@ for sub_dir in dirs:
     if shield:
         with open(shield_out, "w") as write_shield:
             json.dump(shield, write_shield)
+
+print("LOC updated.")  # noqa: WPS421

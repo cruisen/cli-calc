@@ -11,7 +11,7 @@ from cli_calc.config import Config
 from cli_calc.memory import Memory
 
 
-class ReadLineParser:
+class ReadLineParser:  # noqa: WPS214
     """
     CLI ReadLineParser.
 
@@ -84,41 +84,70 @@ class ReadLineParser:
         return in_string
 
     @staticmethod
-    def parse_display(  # noqa: WPS602, C901
+    def find_plus_minus(  # noqa: WPS602
         in_string: Optional[str],
-    ) -> Optional[str]:
-        """Parse display arguments, if any."""
-        show_output: bool = False
-
+    ) -> bool:
+        """Parse display arguments for plus and minus, if any."""
         if in_string is None or len(in_string) != 2:
-            return in_string
+            return False
 
-        if "+" not in in_string and "-" not in in_string:
-            return in_string
+        return "+" in in_string or "-" in in_string
 
-        if "+" in in_string:
-            show_output = True
+    @staticmethod
+    def set_output(  # noqa: WPS602
+        in_string: str,
+    ) -> bool:
+        """Parse display arguments for plus or minus."""
+        return "+" in in_string
 
-        if "-" in in_string:
-            show_output = False
+    @staticmethod
+    def check_display_char(  # noqa: WPS602
+        display_char: Optional[str],
+    ) -> bool:
+        """Check display char for valid value."""
+        if not display_char:
+            return False
 
-        display_char: str = in_string.translate(
-            {ord(char): None for char in "+-"},
-        )
+        return display_char in Config.arg_dict
 
-        if len(display_char) != 1:
-            return in_string
+    @staticmethod
+    def set_display_configuration(  # noqa: WPS602
+        display_char: str,
+        show_output: bool,
+    ) -> None:
+        """Set Configuration."""
+        name: str = str(Config.arg_dict[display_char])
 
-        if display_char not in Config.arg_dict:
-            return in_string
-
-        name = Config.arg_dict[display_char]
         Config.set_item(
             name,
             Config.Column.print_it.name,  # pylint: disable=E1101
             show_output,
         )
+
         Config.option[Config.Option.was_noop] = True  # type: ignore  # pylint: disable=E1101
+
+    @staticmethod
+    def parse_display(  # noqa: WPS602, C901
+        in_string: Optional[str],
+    ) -> Optional[str]:
+        """Parse display arguments, if any."""
+        show_output: bool
+
+        if not ReadLineParser.find_plus_minus(in_string):
+            return in_string
+
+        plus_minus: str = str(in_string)
+        show_output = ReadLineParser.set_output(plus_minus)
+
+        display_char: str = plus_minus.translate(
+            {ord(char): None for char in "+-"},
+        )
+
+        if not ReadLineParser.check_display_char(display_char):
+            return in_string
+
+        ReadLineParser.set_display_configuration(display_char, show_output)
+
         Output.print_header()
 
         return None
