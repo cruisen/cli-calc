@@ -140,9 +140,10 @@ However some precautions are taken.
 * [pytest](https://docs.pytest.org/)
 
 ### Build and publish to pypi
-* [git-bump.ksh](https://github.com/cruisen/cli-calc/blob/69430ce5e71bc2544390f36122a8d05756518199/dev-tools/git-bump.ksh)
-  * [poetry build](https://python-poetry.org/docs/cli/#build)
-  * [poetry publish](https://python-poetry.org/docs/cli/#publish)
+* [poetry version bump](https://python-poetry.org/docs/cli/#version)
+* [poetry build](https://python-poetry.org/docs/cli/#build)
+* [poetry publish](https://python-poetry.org/docs/cli/#publish)
+* [make](https://github.com/cruisen/cli-calc/blob/main/Makefile)
 
 ### Development Environment
 * [poetry](https://python-poetry.org/)
@@ -156,7 +157,11 @@ However some precautions are taken.
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/)
+
+### Metric
 * [shields](https://shields.io/) for Badges
+* [cloc](https://github.com/AlDanial/cloc) for SLOC
+* [make](https://github.com/cruisen/cli-calc/blob/main/Makefile)
 
 
 # License
