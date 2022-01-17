@@ -63,8 +63,14 @@ publish: bump
 requirements: bump
 	poetry export -f requirements.txt --output requirements.txt
 
-
 .PHONY: all
 all: lint2 lint package unit
 
+.PHONY: allWithErrorHandling
+allWithErrorHandling:
+	$(MAKE) all || $(MAKE) withError
+
+.PHONY: withError
+withError:
+	cd -
 
