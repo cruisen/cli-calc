@@ -48,7 +48,7 @@ build: git-status
 
 .PHONY: bump
 bump: git-status
-	dev_tools/meters/make_shields.ksh
+	dev_tools/meters/make_shields.py
 	git pull
 	poetry version patch
 	gh release create "v$$(poetry version --short)" --generate-notes
