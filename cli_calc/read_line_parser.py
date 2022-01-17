@@ -88,6 +88,8 @@ class ReadLineParser:
         in_string: Optional[str],
     ) -> Optional[str]:
         """Parse display arguments, if any."""
+        new = False
+
         if in_string is None or len(in_string) != 2:
             return in_string
 
