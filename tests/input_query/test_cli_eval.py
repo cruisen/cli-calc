@@ -23,6 +23,7 @@ Config.init(Memory.value_dict)
         ("-0", -0.0),  # noqa: WPS358
         ("-0.", -0.0),  # noqa: WPS358
         ("cos(3.141592653589793/2)", 6.123233995736766e-17),
+        ("sin(radians(45))-(sqrt(2)/2)", -1.1102230246251565e-16),
         ("sin(1/2)", 0.479425538604203),
         ("sic(1/2)", None),  # raises NameError ("sic" function is not in math)
         ("2*(3+1", None),  # raises SyntaxError (Missing ")")
