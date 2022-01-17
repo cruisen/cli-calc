@@ -19,7 +19,7 @@ do
   old=$(jq .message $shield_out | tr -d '"')
   new=$(jq .Python.code $cloc_out)
 
-  sed -i .bak "s/$old/$new/g" $shield_out
+  sed -i "" "s/$old/$new/g" $shield_out
 
 done
 
