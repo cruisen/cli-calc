@@ -88,7 +88,7 @@ class ReadLineParser:
         in_string: Optional[str],
     ) -> Optional[str]:
         """Parse display arguments, if any."""
-        new = False
+        show_output: bool = False
 
         if in_string is None or len(in_string) != 2:
             return in_string
@@ -97,10 +97,10 @@ class ReadLineParser:
             return in_string
 
         if "+" in in_string:
-            new = True
+            show_output = True
 
         if "-" in in_string:
-            new = False
+            show_output = False
 
         display_char: str = in_string.translate(
             {ord(char): None for char in "+-"},
@@ -116,7 +116,7 @@ class ReadLineParser:
         Config.set_item(
             name,
             Config.Column.print_it.name,  # pylint: disable=E1101
-            new,
+            show_output,
         )
         Config.option[Config.Option.was_noop] = True  # type: ignore  # pylint: disable=E1101
         Output.print_header()
