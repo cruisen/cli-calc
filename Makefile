@@ -1,4 +1,6 @@
-SHELL:=/usr/bin/env bash
+export SHELL:=/usr/bin/env bash
+export SHELLOPTS:=$(if $(SHELLOPTS),$(SHELLOPTS):)pipefail:errexit
+# from: https://stackoverflow.com/questions/28597794/how-can-i-clean-up-after-an-error-in-a-makefile
 
 .PHONY: lint
 lint:
@@ -68,6 +70,7 @@ all: lint2 lint package unit
 
 .PHONY: allWithErrorHandling
 allWithErrorHandling:
+	# From: https://stackoverflow.com/questions/21118020/can-gnu-make-execute-a-rule-whenever-an-error-occurs
 	$(MAKE) all || $(MAKE) withError
 
 .PHONY: withError
