@@ -215,3 +215,7 @@ fabric.properties
 
 # pyenv
 .python-version
+
+# NvK
+cli_calc/wrapper.sh
+
