@@ -173,13 +173,16 @@ However some precautions are taken.
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
-### OOO
+# For people to learn more
+## OOO, Refacoring and Code Smells
 * [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE) Refactoring
   * [Succession by Katrina Owen (Talk)](https://www.youtube.com/watch?v=59YClXmkCVM) Refactoring
   * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession) Refactoring
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU) Code Smells
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) Quick Reference Guide
    
+## Learn Python
+* [exercism.org](https://exercism.org/tracks/python) learn and master Python
 
 
 # License
