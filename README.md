@@ -187,7 +187,7 @@ All this will move into a sister project to actually teach this approach. See [A
 ## Learn Python
 * [exercism.org](https://exercism.org/tracks/python) learn and master Python
 
-## Python Paxkages
+## Python Packages
 * [pypi.org](https://pypi.org/) Python Package Index
   * [pythonrepo.com](https://pythonrepo.com/catalog/popular/) Popular Python Libraries
 
