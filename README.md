@@ -10,7 +10,7 @@
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
 
-Powerful yet easy command line calculator
+Powerful yet easy command line calculator.
 
 ## Example Usage
 
@@ -124,7 +124,7 @@ However some precautions are taken.
 
 # For (future) python apprentices
 
-All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17)
+All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
 
 ## Features
 
