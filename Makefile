@@ -77,3 +77,6 @@ allWithErrorHandling:
 withError:
 	cd -
 
+.DEFAULT:
+	@cd docs && $(MAKE) $@
+

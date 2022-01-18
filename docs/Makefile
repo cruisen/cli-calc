@@ -18,3 +18,11 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@if [ $@ = "html" ] ;\
+  then ( make open ) ;\
+  fi
+
+.PHONY: open
+open:
+	find . -name index.html | head -1 | xargs open
+
