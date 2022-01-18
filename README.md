@@ -146,7 +146,7 @@ However some precautions are taken.
 
 ### Testing and CT
 * [pytest](https://docs.pytest.org/) test framework
-  * [The Magic Tricks of Testing by Sandi Metz (video)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not.
+  * [The Magic Tricks of Testing by Sandi Metz (Talk)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not.
 
 ### Build and publish to pypi
 * [poetry version bump](https://python-poetry.org/docs/cli/#version) bump version
@@ -172,6 +172,11 @@ However some precautions are taken.
 * [shields](https://shields.io/) for Shields and Badges
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
+
+### OOO
+* [All the Little Things by Sandi Metz(Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE) Refactoring
+* [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU) Code Smells
+
 
 # License
 
