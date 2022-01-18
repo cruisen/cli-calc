@@ -10,7 +10,7 @@
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
 
-Powerful yet easy command line calculator.
+Powerful yet easy command line calculator
 
 ## Example Usage
 
@@ -41,7 +41,7 @@ cmath.phase(complex(-1.0, 0.0))
 pip install cli-calc
 ```
 
-- [pypi cli-calc](https://pypi.org/project/cli-calc/).
+- [pypi cli-calc](https://pypi.org/project/cli-calc/)
 
 ## Configuration
 
@@ -147,7 +147,7 @@ All this will move into a sister project to actually teach this approach. See [A
 
 ### Testing and CT
 * [pytest](https://docs.pytest.org/) test framework
-  * [The Magic Tricks of Testing by Sandi Metz (Talk)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not.
+  * [The Magic Tricks of Testing by Sandi Metz (Talk)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not
 
 ### Build and publish to pypi
 * [poetry version bump](https://python-poetry.org/docs/cli/#version) bump version
@@ -186,6 +186,10 @@ All this will move into a sister project to actually teach this approach. See [A
    
 ## Learn Python
 * [exercism.org](https://exercism.org/tracks/python) learn and master Python
+
+## Python Paxkages
+* [pypi.org](https://pypi.org/) Python Package Index
+  * [pythonrepo.com](https://pythonrepo.com/catalog/popular/) Popular Python Libraries
 
 
 # License
