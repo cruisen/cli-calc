@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/cruisen/cli-calc/4986df3abb3f1871d6669dec27d5e37aba0d11a3/assets/images/Cli-Calc.png)
+![Logo](https://raw.githubusercontent.com/cruisen/cli-calc/4986df3abb3f1871d6669dec27d5e37aba0d11a3/assets/images/Cli-Calc.png)
 
 # cli-calc
 
@@ -25,7 +25,7 @@ random()
 cmath.phase(complex(-1.0, 0.0))
 ```
 
-## Libraries
+## Math Libraries ready to use out of the box
 - [standard operators](https://www.w3schools.com/python/python_operators.asp)
 - [standard math library](https://docs.python.org/3/library/math.html)
 
@@ -91,9 +91,9 @@ Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil.
 However some precautions are taken.
 
 
-# Development and tools used
+# For developers only :-)
 
-## Metric
+## Metric Dashboard
 
 [![test](https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg)](https://github.com/cruisen/cli-calc/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/cruisen/cli-calc/branch/main/graph/badge.svg?token=i9nYZL3MM3)](https://codecov.io/gh/cruisen/cli-calc)
@@ -128,47 +128,50 @@ However some precautions are taken.
 
 ## Features
 
-* Fully typed with annotations and checked with mypy
-* [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
+* Fully [typed with annotations](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html) 
+* and checked with [mypy](https://mypy.readthedocs.io/en/stable/)
+* [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/) Packaging
+* [PEP020](https://www.python.org/dev/peps/pep-0020/) Zen of Python
 
 ## Tools
 
 ### Style and type annotations
-* [pylint](https://pylint.org/)
-* [isort](https://pycqa.github.io/isort/)
-* [black](https://black.readthedocs.io/en/stable/)
-  * [wemake](https://wemake-python-stylegui.de/en/latest/)
-* [flake8](https://flake8.pycqa.org/en/latest/)
-  * [nitpick](https://nitpick.readthedocs.io/en/latest/)
-* [doc8](https://github.com/pycqa/doc8)
+* [pylint](https://pylint.pycqa.org/en/latest/) vim linter
+* [isort](https://pycqa.github.io/isort/) sort imports
+* [black](https://black.readthedocs.io/en/stable/) opinionated code formatter
+  * [wemake](https://wemake-python-stylegui.de/en/latest/) strictest and most opinionated Python linter
+* [mypy](https://mypy.readthedocs.io/en/stable/) static type checker
+* [flake8](https://flake8.pycqa.org/en/latest/) Style Guide Enforcement
+  * [nitpick](https://nitpick.readthedocs.io/en/latest/) enforce the same settings across configuration files
 
 ### Testing and CT
-* [pytest](https://docs.pytest.org/)
+* [pytest](https://docs.pytest.org/) test framework
+  * [The Magic Tricks of Testing by Sandi Metz (video)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not.
 
 ### Build and publish to pypi
-* [poetry version bump](https://python-poetry.org/docs/cli/#version)
-* [poetry build](https://python-poetry.org/docs/cli/#build)
-* [poetry publish](https://python-poetry.org/docs/cli/#publish)
-* [make](https://github.com/cruisen/cli-calc/blob/main/Makefile)
+* [poetry version bump](https://python-poetry.org/docs/cli/#version) bump version
+* [poetry build](https://python-poetry.org/docs/cli/#build) wheel
+* [poetry publish](https://python-poetry.org/docs/cli/#publish) to pypi
+* [make](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
 
 ### Development Environment
-* [poetry](https://python-poetry.org/)
-* [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html)
-* [git](https://git-scm.com/)
-* [github](https://github.com/)
-  * [gh](https://github.com/cli/cli)
-* [Markdown](https://www.markdownguide.org/basic-syntax/)
-* [vi](https://www.vim.org/about.php)
-* [VS Code](https://code.visualstudio.com/)
+* [poetry](https://python-poetry.org/) python packaging and dependency management
+* [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) creates projects from project templates
+* [git](https://git-scm.com/) distributed version control system
+* [github](https://github.com/) online collaborative version control
+  * [gh](https://github.com/cli/cli) GitHub on the command line
+* [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
+* [vi](https://www.vim.org/about.php) advanced text editor
+* [VS Code](https://code.visualstudio.com/) source-code editor 
 
 ### Documentation
-* [sphinx](https://www.sphinx-doc.org/en/master/)
+* [sphinx](https://www.sphinx-doc.org/en/master/) Python documentation Generator
+* [doc8](https://github.com/pycqa/doc8) opinionated style checker for rst
 
 ### Metric
-* [shields](https://shields.io/) for Badges
+* [shields](https://shields.io/) for Shields and Badges
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
-* [make](https://github.com/cruisen/cli-calc/blob/main/Makefile)
-
+  * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
 # License
 
