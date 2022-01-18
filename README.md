@@ -176,6 +176,7 @@ However some precautions are taken.
 ### OOO
 * [All the Little Things by Sandi Metz(Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE) Refactoring
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU) Code Smells
+  * [Smells to Refactorings(pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) Quick Reference Guide
 
 
 # License
