@@ -90,9 +90,6 @@ Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil.
 
 However some precautions are taken.
 
-
-# For developers only :-)
-
 ## Metric Dashboard
 
 [![test](https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg)](https://github.com/cruisen/cli-calc/actions/workflows/test.yml)
@@ -125,6 +122,9 @@ However some precautions are taken.
 [![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
 
 
+# For (future) python apprentices
+
+All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17)
 
 ## Features
 
@@ -132,6 +132,7 @@ However some precautions are taken.
 * and checked with [mypy](https://mypy.readthedocs.io/en/stable/)
 * [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/) Packaging
 * [PEP020](https://www.python.org/dev/peps/pep-0020/) Zen of Python
+
 
 ## Tools
 
@@ -173,8 +174,9 @@ However some precautions are taken.
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
-# For people to learn more
-## OOO, Refacoring and Code Smells
+## Talks, Books and Courses
+
+## OOO, Refactoring and Code Smells
 * [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE) Refactoring
   * [Succession by Katrina Owen (Talk)](https://www.youtube.com/watch?v=59YClXmkCVM) Refactoring
   * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession) Refactoring
