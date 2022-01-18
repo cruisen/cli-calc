@@ -180,6 +180,7 @@ However some precautions are taken.
   * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession) Refactoring
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU) Code Smells
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) Quick Reference Guide
+* [SOLID Object-Oriented Design by Sandi Metz (Talk)](https://www.youtube.com/watch?v=v-2yFMzxqwU)
    
 ## Learn Python
 * [exercism.org](https://exercism.org/tracks/python) learn and master Python
