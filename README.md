@@ -33,9 +33,9 @@ cmath.phase(complex(-1.0, 0.0))
   like ```cd, log, sin, sinh, gamma, pi, e, tau, inf, nan...```
 
 - [cmath](https://docs.python.org/3/library/cmath.html) 
-  like ```hase(complex(-1.0, 0.0)), and then most of the above with complex numbers.```
+  like ```phase(complex(-1.0, 0.0)), and then most of the above with complex numbers.```
 - [random](https://docs.python.org/3/library/random.html#examples) 
-  like ```andom, choice(['win', 'lose', 'draw']), mean, ...```
+  like ```random, choice(['win', 'lose', 'draw']), mean, ...```
 
 - [built in functions](https://docs.python.org/3/library/functions.html) 
   like ```max, help, sum, ...```
@@ -92,7 +92,7 @@ Input:
 
 ## Warning
 
-- Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil. 
+- Use of ```[eval](https://docs.python.org/3/library/functions.html#eval)`` is evil. 
   However some precautions are taken.
 - [flake8-commas](https://github.com/PyCQA/flake8-commas),
   one of the development plugins
