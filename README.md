@@ -126,12 +126,12 @@ All this will move into a sister project to actually teach this approach. See [A
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 [![github stars](https://img.shields.io/github/stars/cruisen/cli-calc?style=social)](https://github.com/cruisen/cli-calc/stargazers)
 
+[![github issues next milestone](https://img.shields.io/github/milestones/progress-percent/cruisen/cli-calc/6)](https://github.com/cruisen/cli-calc/milestone/6)
 [![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/need_Help?color=yellow&label=need%20help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneed_Help)
 [![github bugs open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/is_Bug?color=red&label=bugs)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Ais_Bug)
 [![github bugs closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc/is_Bug?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed+label%3Ais_Bug)
 [![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc?color=blue)](https://github.com/cruisen/cli-calc/issues)
 [![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
-[![github issues next milestone](https://img.shields.io/github/milestones/progress-percent/cruisen/cli-calc/6)](https://github.com/cruisen/cli-calc/milestone/6)
 
 
 ## Features
