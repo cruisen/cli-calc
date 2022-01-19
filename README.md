@@ -122,6 +122,7 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cruisen/cli-calc/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/cruisen/cli-calc/?branch=main)
+[![CodeQL](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml)
 [![Requirements Status](https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main)](https://requires.io/github/cruisen/cli-calc/requirements/?branch=main)
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
 
@@ -195,6 +196,7 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 
 ### Metric
 * [shields](https://shields.io/) for Shields and Badges
+* [issuehub.pro](http://issuehub.pro/label-guide) Label Guide
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
