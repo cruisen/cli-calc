@@ -177,6 +177,7 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 * [poetry build](https://python-poetry.org/docs/cli/#build) wheel
 * [poetry publish](https://python-poetry.org/docs/cli/#publish) to pypi
 * [make](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
+  * [Managing Projects with GNU Make, 3rd Edition](https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html) 
 
 ### Development Environment
 * [poetry](https://python-poetry.org/) python packaging and dependency management
