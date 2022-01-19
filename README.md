@@ -86,9 +86,18 @@ Input:
 
 ## Warning
 
-Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil.
+- Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil. 
+  However some precautions are taken.
+- [flake8-commas](https://github.com/PyCQA/flake8-commas) 
+  is marked as **No Maintenance Intended** 
+  However [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) 
+  is dependant. [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276)
+  is raised.
 
-However some precautions are taken.
+
+# For (future) python apprentices
+
+All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
 
 ## Metric Dashboard
 
@@ -122,10 +131,6 @@ However some precautions are taken.
 [![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc?color=blue)](https://github.com/cruisen/cli-calc/issues)
 [![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
 
-
-# For (future) python apprentices
-
-All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
 
 ## Features
 
