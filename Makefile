@@ -55,6 +55,7 @@ bump: git-status
 	git add .
 	git commit -m "Update to $$(poetry version --short)."
 	git push --tags
+	git pull
 	git push
 
 .PHONY: publish
@@ -70,6 +71,7 @@ bump_major: git-status
 	git add .
 	git commit -m "Update to $$(poetry version --short)."
 	git push --tags
+	git pull
 	git push
 	echo "Consider to link Milestone to tag."
 
