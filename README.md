@@ -25,14 +25,20 @@ random()
 cmath.phase(complex(-1.0, 0.0))
 ```
 
-## Math Libraries ready to use out of the box
-- [standard operators](https://www.w3schools.com/python/python_operators.asp)
-- [standard math library](https://docs.python.org/3/library/math.html)
+## All function of the following Math Libraries are ready to use out of the box
 
-- [cmath](https://docs.python.org/3/library/cmath.html)
+- [standard operators](https://www.w3schools.com/python/python_operators.asp) 
+  like '+, -, >>, ...'
+- [standard math library](https://docs.python.org/3/library/math.html) 
+  like 'gcd, log, sin, sinh, gamma, pi, e, tau, inf, nan...'
+
+- [cmath](https://docs.python.org/3/library/cmath.html) 
+  like 'phase(complex(-1.0, 0.0)), and then most of the above with complex numbers.'
 - [random](https://docs.python.org/3/library/random.html#examples) 
+  like 'random, choice(['win', 'lose', 'draw']), mean, ...'
 
 - [built in functions](https://docs.python.org/3/library/functions.html) 
+  like 'max, help, sum, ...'
 
 
 # Installation
@@ -96,9 +102,12 @@ Input:
   raised.
 
 
-# For (future) python apprentices
+# Development
 
-All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
+## Pull Request
+
+Are Welcome!
+However howto is still missing here. See [Issue #13](https://github.com/cruisen/cli-calc/issues/13)
 
 ## Metric Dashboard
 
@@ -147,6 +156,10 @@ All this will move into a sister project to actually teach this approach. See [A
 
 ## Tools
 
+### Python Packages
+* [pypi.org](https://pypi.org/) Python Package Index
+  * [pythonrepo.com](https://pythonrepo.com/catalog/popular/) Popular Python Libraries
+
 ### Style and type annotations
 * [pylint](https://pylint.pycqa.org/en/latest/) vim linter
 * [isort](https://pycqa.github.io/isort/) sort imports
@@ -185,11 +198,20 @@ All this will move into a sister project to actually teach this approach. See [A
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
+
+# Python development course, based around this code
+
+All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
+
+## Learn Python
+* [exercism.org](https://exercism.org/tracks/python) learn and master Python
+
 ## OOO
 
 ### Code Smells
-* [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU) Code Smells
-  * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) Quick Reference Guide
+* [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
+  * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) 
+    Quick Reference Guide
 
 ### Refactoring
 * [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE)
@@ -205,16 +227,13 @@ All this will move into a sister project to actually teach this approach. See [A
   * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 
 ## Manifests
+Following these rules, which basically reduce our possibilities, 
+we enable ourselves to write maintainable software. They build upon each other.
+* [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+* [Manifesto for Agile Software Development](https://agilemanifesto.org/)
 * [Manifesto for Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/)
   * [Software Craftsmanship (Wikipedia)](https://en.wikipedia.org/wiki/Software_craftsmanship)
    
-
-## Learn Python
-* [exercism.org](https://exercism.org/tracks/python) learn and master Python
-
-## Python Packages
-* [pypi.org](https://pypi.org/) Python Package Index
-  * [pythonrepo.com](https://pythonrepo.com/catalog/popular/) Popular Python Libraries
 
 
 # License
