@@ -92,7 +92,7 @@ Input:
 
 ## Warning
 
-- Use of ```[eval](https://docs.python.org/3/library/functions.html#eval)``` is evil. 
+- Use of [```eval```](https://docs.python.org/3/library/functions.html#eval) is evil. 
   However some precautions are taken.
 - [flake8-commas](https://github.com/PyCQA/flake8-commas),
   one of the development plugins
