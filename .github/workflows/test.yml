@@ -1,9 +1,12 @@
 name: test
 
 on:
+  label:
+    types:
+      - created
   push:
     branches:
-      - master
+      - main
   pull_request:
   workflow_dispatch:
 
