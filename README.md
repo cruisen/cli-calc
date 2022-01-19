@@ -222,10 +222,15 @@ All this will move into a sister project to actually teach this approach. See [A
 ### SOLID
 * [SOLID Object-Oriented Design by Sandi Metz (Talk)](https://www.youtube.com/watch?v=v-2yFMzxqwU)
 * [SOLID (Wikipedia)](https://en.wikipedia.org/wiki/SOLID)
+* [SOLID Design Principles simplified with UML](https://medium.com/@RikamPalkar/solid-design-principles-simplified-with-uml-8432a3406248)
 
 ### Design Patterns
 * [Design Patterns for Python](https://refactoring.guru/design-patterns/python)
   * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+
+### Class
+* [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
+
 
 ## Manifests
 Following these rules, which basically reduce our possibilities, 
