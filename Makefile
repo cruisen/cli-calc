@@ -61,6 +61,19 @@ bump: git-status
 publish: bump
 	poetry publish --build
 
+.PHONY: bump_minor
+bump_major: git-status
+	dev_tools/meters/make_shields.py
+	git pull
+	poetry version minor
+	gh release create "v$$(poetry version --short)" --generate-notes
+	git add .
+	git commit -m "Update to $$(poetry version --short)."
+	git push --tags
+	git push
+	echo "Consider to link Milestone to tag."
+
+
 .PHONY: requirements
 requirements: bump
 	poetry export -f requirements.txt --output requirements.txt
