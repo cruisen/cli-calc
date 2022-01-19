@@ -203,8 +203,8 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
 
 ## Learn Python
-* [PEP020](https://www.python.org/dev/peps/pep-0020/) Zen of Python
-* [exercism.org](https://exercism.org/tracks/python) learn and master Python
+* Zen of Python [PEP020](https://www.python.org/dev/peps/pep-0020/)
+* Learn and master Python [exercism.org](https://exercism.org/tracks/python)
 
 ## OOO
 
