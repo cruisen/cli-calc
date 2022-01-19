@@ -149,9 +149,8 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 ## Features
 
 * Fully [typed with annotations](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html) 
-* and checked with [mypy](https://mypy.readthedocs.io/en/stable/)
-* [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/) Packaging
-* [PEP020](https://www.python.org/dev/peps/pep-0020/) Zen of Python
+* Checked with [mypy](https://mypy.readthedocs.io/en/stable/)
+* Packaging [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
 
 
 ## Tools
@@ -204,6 +203,7 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 All this will move into a sister project to actually teach this approach. See [Add Teaching repository](https://github.com/cruisen/cli-calc/issues/17).
 
 ## Learn Python
+* [PEP020](https://www.python.org/dev/peps/pep-0020/) Zen of Python
 * [exercism.org](https://exercism.org/tracks/python) learn and master Python
 
 ## OOO
