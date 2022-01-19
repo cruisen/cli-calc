@@ -115,7 +115,9 @@ All this will move into a sister project to actually teach this approach. See [A
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cruisen/cli-calc/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/cruisen/cli-calc/?branch=main)
 [![Requirements Status](https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main)](https://requires.io/github/cruisen/cli-calc/requirements/?branch=main)
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
-[![Pull Requests](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=open%20PR)](https://github.com/cruisen/cli-calc/pulls)
+
+[![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
+[![Pull Requests closed](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=open%20PR)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
 
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
