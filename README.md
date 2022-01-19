@@ -185,16 +185,30 @@ All this will move into a sister project to actually teach this approach. See [A
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
-## Talks, Books and Courses
+## OOO
 
-## OOO, Refactoring and Code Smells
-* [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE) Refactoring
-  * [Succession by Katrina Owen (Talk)](https://www.youtube.com/watch?v=59YClXmkCVM) Refactoring
-  * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession) Refactoring
+### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU) Code Smells
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) Quick Reference Guide
+
+### Refactoring
+* [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE)
+  * [Succession by Katrina Owen (Talk)](https://www.youtube.com/watch?v=59YClXmkCVM)
+  * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession)
+
+### SOLID
 * [SOLID Object-Oriented Design by Sandi Metz (Talk)](https://www.youtube.com/watch?v=v-2yFMzxqwU)
+* [SOLID (Wikipedia)](https://en.wikipedia.org/wiki/SOLID)
+
+### Design Patterns
+* [Design Patterns for Python](https://refactoring.guru/design-patterns/python)
+  * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+
+## Manifests
+* [Manifesto for Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/)
+  * [Software Craftsmanship (Wikipedia)](https://en.wikipedia.org/wiki/Software_craftsmanship)
    
+
 ## Learn Python
 * [exercism.org](https://exercism.org/tracks/python) learn and master Python
 
