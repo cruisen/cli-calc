@@ -88,11 +88,12 @@ Input:
 
 - Use of [eval](https://docs.python.org/3/library/functions.html#eval) is evil. 
   However some precautions are taken.
-- [flake8-commas](https://github.com/PyCQA/flake8-commas) 
-  is marked as **No Maintenance Intended** 
+- [flake8-commas](https://github.com/PyCQA/flake8-commas),
+  one of the development plugins
+  is marked as **No Maintenance Intended**.
   However [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) 
   is dependant. [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276)
-  is raised.
+  raised.
 
 
 # For (future) python apprentices
