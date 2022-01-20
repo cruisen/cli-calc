@@ -177,10 +177,10 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 Integration as in: Deployment and Integration testing.
 
 * [github actions](https://github.com/cruisen/cli-calc/actions)
-  * [pytest & coverage](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml) 
+  * [pytest & coverage (yml)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml) 
     pytest @ python-version: ['3.7', '3.8', '3.9', '3.10']
-  * [misspell](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
-  * [codeql-analysis](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
+  * [misspell (yml)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
+  * [codeql-analysis (yml)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
 * Alternative to hithub actions
   * [tox](https://tox.wiki/en/latest/) test and deploy
   * [travis](https://www.travis-ci.com/) test and deploy
@@ -190,12 +190,13 @@ Integration as in: Deployment and Integration testing.
 * [poetry version bump](https://python-poetry.org/docs/cli/#version) bump version
 * [poetry build](https://python-poetry.org/docs/cli/#build) wheel
 * [poetry publish](https://python-poetry.org/docs/cli/#publish) to pypi
-* [make](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
+* [make Makefile](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
   * [Managing Projects with GNU Make, 3rd Edition](https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html) 
 
 ### Following Semantic Versioning
 * [Semantic Versioning](https://semver.org/) 
   * [semver](https://pypi.org/project/semver/) Python Package
+  * [get_ver_for_rule (dev_tool)](https://github.com/cruisen/cli-calc/blob/main/dev_tools/sem_ver/get_ver_for_rule.py)
 
 ### Development Environment
 * [poetry](https://python-poetry.org/) python packaging and dependency management
@@ -216,7 +217,7 @@ Integration as in: Deployment and Integration testing.
 * [shields](https://shields.io/) for Shields and Badges
 * [issuehub.pro](http://issuehub.pro/label-guide) Label Guide
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
-  * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
+  * [make_shields.py (dev_tool)](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
 ### Jason Query for Makefile and Shields
 * [jq](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-keyhttps://stedolan.github.io/jq/) 
