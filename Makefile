@@ -2,6 +2,12 @@ export SHELL:=/usr/bin/env bash
 export SHELLOPTS:=$(if $(SHELLOPTS),$(SHELLOPTS):)pipefail:errexit
 # from: https://stackoverflow.com/questions/28597794/how-can-i-clean-up-after-an-error-in-a-makefile
 
+#export PATCH=$(shell dev_tools/sem_ver/get_ver_for_rule.py patch)
+#export MINOR=$(shell dev_tools/sem_ver/get_ver_for_rule.py minor)
+#export MAJOR=$(shell dev_tools/sem_ver/get_ver_for_rule.py major)
+#export MINOR_NUM=$(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number')
+#export MINOR_ISSUES=$(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort)
+
 .PHONY: lint
 lint:
 	poetry run mypy cli_calc tests/**/*.py

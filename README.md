@@ -193,6 +193,10 @@ Integration as in: Deployment and Integration testing.
 * [make](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
   * [Managing Projects with GNU Make, 3rd Edition](https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html) 
 
+### Following Semantic Versioning
+* [Semantic Versioning](https://semver.org/) 
+  * [semver](https://pypi.org/project/semver/) Python Package
+
 ### Development Environment
 * [poetry](https://python-poetry.org/) python packaging and dependency management
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) creates projects from project templates
