@@ -1,12 +1,7 @@
 export SHELL:=/usr/bin/env bash
 export SHELLOPTS:=$(if $(SHELLOPTS),$(SHELLOPTS):)pipefail:errexit
 # from: https://stackoverflow.com/questions/28597794/how-can-i-clean-up-after-an-error-in-a-makefile
-
-#export PATCH=$(shell dev_tools/sem_ver/get_ver_for_rule.py patch)
-#export MINOR=$(shell dev_tools/sem_ver/get_ver_for_rule.py minor)
-#export MAJOR=$(shell dev_tools/sem_ver/get_ver_for_rule.py major)
-#export MINOR_NUM=$(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number')
-#export MINOR_ISSUES=$(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort)
+$(eval CURRENT = $(shell poetry version --short))
 
 .PHONY: lint
 lint:
@@ -33,6 +28,7 @@ test: lint package unit
 # NvK
 .PHONY: lint2
 lint2:
+	echo "Current version: $(CURRENT)"
 	poetry run isort .
 	poetry run black .
 	poetry run git status
@@ -70,10 +66,13 @@ publish: bump
 
 .PHONY: bump_minor
 bump_major: git-status
+	$(eval MINOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py minor))
+	$(eval MINOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number'))
+	$(eval MINOR_ISSUES = $(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
 	dev_tools/meters/make_shields.py
 	git pull
 	poetry version minor
-	gh release create "v$$(poetry version --short)" --generate-notes
+	gh release create "v$$(poetry version --short)" --notes "$(MINOR): $(MINOR_ISSUES)"
 	git add .
 	git commit -m "Update to $$(poetry version --short)."
 	git push --tags
@@ -97,6 +96,14 @@ allWithErrorHandling:
 .PHONY: withError
 withError:
 	cd -
+
+.PHONY: MAJOR
+MAJOR:
+	$(eval MAJOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py major))
+	$(eval MAJOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MAJOR)"))' | jq -c '.number'))
+	$(eval MAJOR_ISSUES = $(shell gh viewMilestone $(MAJOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
+	@echo $(MAJOR)
+	@echo $(MAJOR_ISSUES)
 
 .DEFAULT:
 	@cd docs && $(MAKE) $@
