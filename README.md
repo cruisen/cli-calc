@@ -169,9 +169,22 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 * [flake8](https://flake8.pycqa.org/en/latest/) Style Guide Enforcement
   * [nitpick](https://nitpick.readthedocs.io/en/latest/) enforce the same settings across configuration files
 
-### Testing and CT
+### Testing
 * [pytest](https://docs.pytest.org/) test framework
   * [The Magic Tricks of Testing by Sandi Metz (Talk)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not
+
+### Continuous Testing & Integration (CT & CI)
+Integration as in deployment
+
+* [github actions](https://github.com/cruisen/cli-calc/actions)
+  * [pytest & coverage](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml) 
+    pytest @ python-version: ['3.7', '3.8', '3.9', '3.10']
+  * [misspell](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
+  * [codeql-analysis](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
+* Alternative to hithub actions
+  * [tox](https://tox.wiki/en/latest/) test and deploy
+  * [travis](https://www.travis-ci.com/) test and deploy
+  * [coveralls.io](https://coveralls.io/) coverage
 
 ### Build and publish to pypi
 * [poetry version bump](https://python-poetry.org/docs/cli/#version) bump version
@@ -221,6 +234,7 @@ All this will move into a sister project to actually teach this approach. See [A
 * [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE)
   * [Succession by Katrina Owen (Talk)](https://www.youtube.com/watch?v=59YClXmkCVM)
   * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession)
+* [Polly Want a Message by Sandi Metz (Talk)](https://www.youtube.com/watch?v=YtROlyWWhV0)
 
 ### SOLID
 * [SOLID Object-Oriented Design by Sandi Metz (Talk)](https://www.youtube.com/watch?v=v-2yFMzxqwU)
