@@ -186,6 +186,7 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 * [git](https://git-scm.com/) distributed version control system
 * [github](https://github.com/) online collaborative version control
   * [gh](https://github.com/cli/cli) GitHub on the command line
+    * [gh Milestones](https://gist.github.com/doi-t/5735f9f0f7f8b7664aa6739bc810a2cc) 
 * [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
 * [vi](https://www.vim.org/about.php) advanced text editor
 * [VS Code](https://code.visualstudio.com/) source-code editor 
