@@ -174,7 +174,7 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
   * [The Magic Tricks of Testing by Sandi Metz (Talk)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not
 
 ### Continuous Testing & Integration (CT & CI)
-Integration as in deployment
+Integration as in: Deployment and Integration testing.
 
 * [github actions](https://github.com/cruisen/cli-calc/actions)
   * [pytest & coverage](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml) 
