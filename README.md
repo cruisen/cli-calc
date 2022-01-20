@@ -231,7 +231,7 @@ All this will move into a sister project to actually teach this approach. See [A
 
 ## Learn Python
 * Zen of Python [PEP020](https://www.python.org/dev/peps/pep-0020/)
-* Learn and master Python [exercism.org](https://exercism.org/tracks/python)
+* Learn and master Python with [exercism.org](https://exercism.org/tracks/python)
 
 ## OOO
 
