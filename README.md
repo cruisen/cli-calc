@@ -28,17 +28,17 @@ cmath.phase(complex(-1.0, 0.0))
 ## All function of the following Math Libraries are ready to use out of the box
 
 - [standard operators](https://www.w3schools.com/python/python_operators.asp) 
-  like ``` -, >>, ...```
+  ``` -, >>, ...```
 - [standard math library](https://docs.python.org/3/library/math.html) 
-  like ```cd, log, sin, sinh, gamma, pi, e, tau, inf, nan...```
+  ```cd, log, sin, sinh, gamma, pi, e, tau, inf, nan...```
 
 - [cmath](https://docs.python.org/3/library/cmath.html) 
-  like ```phase(complex(-1.0, 0.0)), and then most of the above with complex numbers.```
+  ```phase(complex(-1.0, 0.0)), and then most of the above with complex numbers.```
 - [random](https://docs.python.org/3/library/random.html#examples) 
-  like ```random, choice(['win', 'lose', 'draw']), mean, ...```
+  ```random, choice(['win', 'lose', 'draw']), mean, ...```
 
 - [built in functions](https://docs.python.org/3/library/functions.html) 
-  like ```max, help, sum, ...```
+  ```max, help, sum, ...```
 
 
 # Installation
