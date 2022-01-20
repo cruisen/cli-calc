@@ -53,10 +53,10 @@ bump: git-status
 	dev_tools/meters/make_shields.py
 	git pull
 	poetry version patch
-	gh release create "v$$(poetry version --short)" --generate-notes
 	git add .
 	git commit -m "Update to $$(poetry version --short)."
 	git push --tags
+	gh release create "v$$(poetry version --short)" --generate-notes
 	git pull
 	git push
 
@@ -72,10 +72,10 @@ bump_major: git-status
 	dev_tools/meters/make_shields.py
 	git pull
 	poetry version minor
-	gh release create "v$$(poetry version --short)" --notes "$(MINOR): $(MINOR_ISSUES)"
 	git add .
 	git commit -m "Update to $$(poetry version --short)."
 	git push --tags
+	gh release create "v$$(poetry version --short)" --generate-notes --notes "$(MINOR): $(MINOR_ISSUES)"
 	git pull
 	git push
 	echo "Consider to link Milestone to tag."
