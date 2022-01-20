@@ -6,6 +6,12 @@ import json
 import os
 from typing import List
 
+dirs: List[str] = [
+    "cli_calc",
+    "tests",
+    "dev_tools",
+]
+
 cloc_sink: str = "dev_tools/meters"
 
 pre_cmd: str = "cd $(git rev-parse --show-toplevel)"
@@ -16,11 +22,6 @@ work_dir: str = stream.read().strip()
 
 cloc_cmd: str = "cloc"
 cloc_arg: str = "--include-lang Python --quiet --json --report-file"
-
-dirs: List[str] = [
-    "cli_calc",
-    "tests",
-]
 
 ext: str = "json"
 shield_str: str = "shields"
@@ -47,9 +48,14 @@ for sub_dir in dirs:
         cloc = json.load(read_cloc)
         new_loc = cloc["Python"]["code"]
 
-    with open(shield_out, "r") as read_shield:
-        shield = json.load(read_shield)
-        shield["message"] = str(new_loc)
+    try:
+        with open(shield_out, "r") as read_shield:
+            shield = json.load(read_shield)
+            shield["message"] = str(new_loc)
+    except FileNotFoundError as fnf_error:
+        print(f"{shield_out}")
+        print("Error: File not found. Create one ...")
+        shield = None
 
     if shield:
         with open(shield_out, "w") as write_shield:
