@@ -5,7 +5,7 @@ $(eval CURRENT = $(shell poetry version --short))
 
 .PHONY: lint
 lint:
-	poetry run mypy cli_calc tests/**/*.py
+	poetry run mypy cli_calc dev_tools/*/*.py tests/**/*.py
 	poetry run flake8 .
 	poetry run nitpick check
 	poetry run doc8 -q docs

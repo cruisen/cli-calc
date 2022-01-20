@@ -4,7 +4,7 @@
 
 import json
 import os
-from typing import List
+from typing import List, Optional
 
 dirs: List[str] = [
     "cli_calc",
@@ -17,7 +17,7 @@ cloc_sink: str = "dev_tools/meters"
 pre_cmd: str = "cd $(git rev-parse --show-toplevel)"
 work_dir_cmd: str = f"{pre_cmd} ; pwd"
 
-stream: str = os.popen(work_dir_cmd)  # noqa: S605
+stream: os._wrap_close = os.popen(work_dir_cmd)  # pylint: disable=W0212  # noqa: S605, WPS437
 work_dir: str = stream.read().strip()
 
 cloc_cmd: str = "cloc"
@@ -31,7 +31,7 @@ cloc_in: str
 cloc_out: str
 shield_out: str
 cloc: str
-shield: str
+shield_data: Optional[str]
 new_loc: str
 
 for sub_dir in dirs:
@@ -46,19 +46,19 @@ for sub_dir in dirs:
 
     with open(cloc_out, "r") as read_cloc:
         cloc = json.load(read_cloc)
-        new_loc = cloc["Python"]["code"]
+        new_loc = str(cloc["Python"]["code"])  # type: ignore  # pylint: disable=C0103
 
     try:
         with open(shield_out, "r") as read_shield:
-            shield = json.load(read_shield)
-            shield["message"] = str(new_loc)
-    except FileNotFoundError as fnf_error:
-        print(f"{shield_out}")
-        print("Error: File not found. Create one ...")
-        shield = None
+            shield_data = json.load(read_shield)
+            shield_data["message"] = str(new_loc)  # type: ignore
+    except FileNotFoundError:
+        print(f"{shield_out}")  # noqa: WPS421
+        print("Error: File not found. Create one ...")  # noqa: WPS421
+        shield_data = None  # pylint: disable=C0103
 
-    if shield:
+    if shield_data:
         with open(shield_out, "w") as write_shield:
-            json.dump(shield, write_shield)
+            json.dump(shield_data, write_shield)
 
 print("LOC updated.")  # noqa: WPS421
