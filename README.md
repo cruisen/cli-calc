@@ -214,6 +214,10 @@ Integration as in: Deployment and Integration testing.
 * [cloc](https://github.com/AlDanial/cloc) for SLOC
   * [make_shields.py](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 
+### Jason Query for Makefile and Shields
+* [jq](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-keyhttps://stedolan.github.io/jq/) 
+  * [Syntax](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key) 
+
 
 # Python development course, based around this code
 
