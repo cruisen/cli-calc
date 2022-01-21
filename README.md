@@ -254,6 +254,7 @@ All this will move into a sister project to actually teach this approach. See [A
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) 
     Quick Reference Guide
+* [99 Bottles of OOP by Sandi Metz (book)](https://sandimetz.com/99bottles)
 
 ### Refactoring
 * [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE)
@@ -270,7 +271,7 @@ All this will move into a sister project to actually teach this approach. See [A
 * [Design Patterns for Python](https://refactoring.guru/design-patterns/python)
   * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 
-### OO & Class & Message
+### OO, Class & Message
 * [OO](https://en.wikipedia.org/wiki/Object-oriented_programming)
   * [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
 * [Messaging](https://www.quora.com/Why-is-object-oriented-programming-more-about-messaging-than-objects)
