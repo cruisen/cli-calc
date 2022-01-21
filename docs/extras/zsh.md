@@ -4,14 +4,16 @@
 [zsh man](https://zsh.sourceforge.io/Doc/zsh_a4.pdf)
 
 ## fast cd
-To fast cd into often used directories with zsh
+To fast cd into often used directories with zsh.
+
+In this case cofigured as the function ```cf```.
 
 ### Usage
 
 ```
 $ pwd
 ~
-$ cd foo
+$ cf foo
 $ pwd
 ~/path/to/working/dir/foo
 ```
