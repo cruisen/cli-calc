@@ -19,9 +19,9 @@ $ pwd
 
 ### Explanation
 
-1. Dirs in the file ```~/.zshrc_dirs``` will be placed on the stack when the shell starts.
-1. All directories which are visited by ```cd``` are pushed on the dir stack as well.
-1. In this example ```cf``` is configured as a zsh function.
+1. Dirs in the file ```~/.zshrc_dirs``` will be placed on the stack when the shell starts
+1. All directories which are visited by ```cd``` are pushed on the dir stack as well
+1. In this example ```cf``` is configured as a zsh function
 1. ```cf foo``` will cd into the latest vistited dir which it finds with ```grep -i foo``` (case independent)
 
 ### Configuration
