@@ -248,7 +248,9 @@ All this will move into a sister project to actually teach this approach. See [A
 > “I’m sorry that I long ago coined the term “objects” for this topic because it gets many people to focus on the lesser idea. The big idea is messaging.”
 ~ Alan Kay
 
-[From: The forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
+From:
+* [The forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
+* [Does It Mean You Are Doing Object-Oriented Programming If You Write Classes?](https://igorfil.com/posts/oop-meaning/)
 
 ### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
