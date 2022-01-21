@@ -1,4 +1,4 @@
-# zsh shell Tipps and Trix
+# zsh shell Tips and Tricks
 
 ## zsh
 [zsh man](https://zsh.sourceforge.io/Doc/zsh_a4.pdf)
@@ -6,7 +6,7 @@
 ## fast cd
 To fast cd into often used directories with zsh.
 
-In this case cofigured as the function ```cf```.
+In this case configured as the function ```cf```.
 
 ### Usage
 
