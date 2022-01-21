@@ -7,7 +7,8 @@ To cd seaming less into directories with ```zsh```:
 
 - In this example configured as the zsh function ```cf```.
 - ```cf``` will cd into the last dir which it finds with ```grep -i``` (case independent)
-- However all dirs in the file ```~/.zshrc_dirs``` will be placed on the stack.
+- However all dirs in the file ```~/.zshrc_dirs``` will be placed on the stack first.
+- And all directories which are visited by ```cd``` as well.
 
 ~/.zshrc:
 ```
