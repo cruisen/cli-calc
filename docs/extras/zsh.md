@@ -1,6 +1,7 @@
 # zsh shell Tips and Tricks
 
-[zsh man](https://zsh.sourceforge.io/Doc/zsh_a4.pdf)
+- zsh [man](https://zsh.sourceforge.io/Doc/zsh_a4.pdf)
+  - [guide](https://scriptingosx.com/2019/06/moving-to-zsh/)
 
 ## Fast cd
 
@@ -34,10 +35,13 @@ $
 
 - ~/.zshrc:
 ```
+setopt autopushd pushdignoredups pushdminus
+
 dirs $(< ~/.zshrc_dirs)
 
 cf () {
 	cd -$(dirs -v | grep -i $1 | head -1 | cut -f1)
 }
 ```
+
 
