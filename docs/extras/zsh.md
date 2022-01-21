@@ -27,13 +27,13 @@ $
 
 ### Configuration
 
-- ~/.zshrc_dirs:
+- Create ~/.zshrc_dirs:
 ```
 ~/path/to/working/dir/foo
 ~/path/to/other/dir/bar
 ``` 
 
-- ~/.zshrc:
+- Add to ~/.zshrc:
 ```
 setopt autopushd pushdignoredups pushdminus
 
