@@ -215,6 +215,11 @@ Integration as in: Deployment and Integration testing.
 * [vi](https://www.vim.org/about.php) advanced text editor
 * [VS Code](https://code.visualstudio.com/) source-code editor 
 
+### Shell
+* [oh-my-zsh](https://ohmyz.sh/)
+  * [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
+  * [MAC config](https://chiamakaikeanyi.dev/how-to-configure-your-macos-terminal-with-zsh-like-a-pro/)
+
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/) Python documentation Generator
 * [doc8](https://github.com/pycqa/doc8) opinionated style checker for rst
