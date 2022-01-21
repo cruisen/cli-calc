@@ -26,13 +26,13 @@ $ pwd
 
 ### Configuration
 
-~/.zshrc_dirs:
+- ~/.zshrc_dirs:
 ```
 ~/path/to/working/dir/foo
 ~/path/to/other/dir/bar
 ``` 
 
-~/.zshrc:
+- ~/.zshrc:
 ```
 dirs $(< ~/.zshrc_dirs)
 
