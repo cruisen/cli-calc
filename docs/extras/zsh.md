@@ -11,10 +11,10 @@ To ```cd``` seaming less into directories in a ```zsh```:
 ```
 $ pwd
 ~
-
 $ cf foo
 $ pwd
 ~/path/to/working/dir/foo
+$
 ```
 
 ### Explanation
