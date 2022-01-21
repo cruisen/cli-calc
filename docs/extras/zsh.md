@@ -34,6 +34,8 @@ $ pwd
 
 ~/.zshrc:
 ```
+dirs $(< ~/.zshrc_dirs)
+
 cf () {
 	cd -$(dirs -v | grep -i $1 | head -1 | cut -f1)
 }
