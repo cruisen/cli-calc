@@ -254,7 +254,7 @@ All this will move into a sister project to actually teach this approach. See [A
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) 
     Quick Reference Guide
-* [99 Bottles of OOP by Sandi Metz (book)](https://sandimetz.com/99bottles)
+* [99 Bottles of OOP by Sandi Metz (Book)](https://sandimetz.com/99bottles)
 
 ### Refactoring
 * [All the Little Things by Sandi Metz (Talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE)
