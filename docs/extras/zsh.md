@@ -4,7 +4,7 @@
 
 ## Fast cd
 
-To cd seaming less into directories in a ```zsh```:
+To ```cd``` seaming less into directories in a ```zsh```:
 
 ### Example
 
