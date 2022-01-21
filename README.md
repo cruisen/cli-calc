@@ -94,20 +94,13 @@ Input:
 
 - Use of [```eval```](https://docs.python.org/3/library/functions.html#eval) is evil. 
   However some precautions are taken.
-- [flake8-commas](https://github.com/PyCQA/flake8-commas),
-  one of the development plugins
-  is marked as **No Maintenance Intended**.
-  However [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) 
-  is dependant. [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276)
-  raised.
 
 
 # Development
 
 ## Pull Request
 
-Are Welcome!
-However howto is still missing here. See [Issue #13](https://github.com/cruisen/cli-calc/issues/13)
+PR are Welcome! However the **PR Howto** is still missing here. See [Issue #13](https://github.com/cruisen/cli-calc/issues/13)
 
 ## Metric Dashboard
 
@@ -150,6 +143,15 @@ However howto is still missing here. See [Issue #13](https://github.com/cruisen/
 [![MIT](https://img.shields.io/pypi/l/cli-calc)](https://github.com/cruisen/cli-calc/blob/main/LICENSE)
 [![pypi status](https://img.shields.io/pypi/status/cli-calc)](https://www.python.org/dev/peps/pep-0301/#distutils-trove-classification)
 [![github stars](https://img.shields.io/github/stars/cruisen/cli-calc?style=social)](https://github.com/cruisen/cli-calc/stargazers)
+
+### Note
+- [flake8-commas](https://github.com/PyCQA/flake8-commas),
+  one of the development plugins
+  is marked as **No Maintenance Intended**.
+  However [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) 
+  is dependant. [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276)
+  raised.
+
 
 ## Features
 
