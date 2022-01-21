@@ -219,6 +219,7 @@ Integration as in: Deployment and Integration testing.
 * [oh-my-zsh](https://ohmyz.sh/)
   * [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
   * [MAC config](https://chiamakaikeanyi.dev/how-to-configure-your-macos-terminal-with-zsh-like-a-pro/)
+  * [Tips](https://github.com/cruisen/cli-calc/blob/main/docs/extras/zsh.md)
 
 ### Documentation
 * [sphinx](https://www.sphinx-doc.org/en/master/) Python documentation Generator
