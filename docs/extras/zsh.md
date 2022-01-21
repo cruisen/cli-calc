@@ -10,6 +10,7 @@ To cd seaming less into directories with ```zsh```:
 - However all dirs in the file ```~/.zshrc_dirs``` will be placed on the stack first.
 - And all directories which are visited by ```cd``` as well.
 
+## Configuration
 ~/.zshrc:
 ```
 cf () {
