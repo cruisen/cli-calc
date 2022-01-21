@@ -245,6 +245,10 @@ All this will move into a sister project to actually teach this approach. See [A
 
 ## OOO
 
+> “I’m sorry that I long ago coined the term “objects” for this topic because it gets many people to focus on the lesser idea. The big idea is messaging.”
+~ Alan Kay
+[From](ihttps://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
+
 ### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) 
@@ -265,8 +269,10 @@ All this will move into a sister project to actually teach this approach. See [A
 * [Design Patterns for Python](https://refactoring.guru/design-patterns/python)
   * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 
-### Class
-* [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
+### OO & Class & Message
+* [OO](https://en.wikipedia.org/wiki/Object-oriented_programming)
+  * [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
+* [Messaging](https://www.quora.com/Why-is-object-oriented-programming-more-about-messaging-than-objects)
 
 
 ## Manifests
