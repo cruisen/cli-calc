@@ -147,10 +147,10 @@ PR are Welcome! However the **PR Howto** is still missing here. See [Issue #13](
 ### Note
 - [flake8-commas](https://github.com/PyCQA/flake8-commas),
   one of the development plugins
-  is marked as **No Maintenance Intended**.
-  However [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) 
-  is dependant. [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276)
-  raised.
+  [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide).
+  is marked as **No Maintenance Intended**. 
+  Hence the 1 **deprecated** dependecy.
+  [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276) raised.
 
 
 ## Features
