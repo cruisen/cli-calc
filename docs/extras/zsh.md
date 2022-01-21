@@ -1,6 +1,5 @@
 # zsh shell Tips and Tricks
 
-## zsh
 [zsh man](https://zsh.sourceforge.io/Doc/zsh_a4.pdf)
 
 ## fast cd
