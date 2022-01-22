@@ -207,11 +207,15 @@ Integration as in: Deployment and Integration testing.
 ### Development Environment
 * [poetry](https://python-poetry.org/) python packaging and dependency management
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) creates projects from project templates
+
+### Version and Issue Management
 * [git](https://git-scm.com/) distributed version control system
 * [github](https://github.com/) online collaborative version control
   * [gh](https://github.com/cli/cli) GitHub on the command line
     * [gh Milestones](https://gist.github.com/doi-t/5735f9f0f7f8b7664aa6739bc810a2cc) 
-* [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
+* [tickgit](https://github.com/augmentable-dev/tickgit) Not used, but collects TODO from source code
+
+### IDE
 * [vi](https://www.vim.org/about.php) advanced text editor
 * [VS Code](https://code.visualstudio.com/) source-code editor 
 
@@ -222,6 +226,7 @@ Integration as in: Deployment and Integration testing.
   * [Tips](https://github.com/cruisen/cli-calc/blob/main/docs/extras/zsh.md)
 
 ### Documentation
+* [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
 * [sphinx](https://www.sphinx-doc.org/en/master/) Python documentation Generator
 * [doc8](https://github.com/pycqa/doc8) opinionated style checker for rst
 
