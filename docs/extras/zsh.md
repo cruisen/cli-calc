@@ -51,8 +51,7 @@ cd() {
 }
 
 cf() {
-  new=$(dirs -v | grep -i $1 | head -1 | cut -f1)
-
+ new=$(dirs -v | grep -i $1 | head -1 | cut -f1)
  if [[ -n $new ]] ; then
    cd -$new
  else
@@ -65,4 +64,3 @@ cf() {
 
 - ```setops``` to list all set options
 - ```emulate -lLR zsh``` to list all avaiable options
-
