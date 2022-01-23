@@ -65,7 +65,7 @@ publish: bump
 	poetry publish --build
 
 .PHONY: bump_minor
-bump_major: git-status
+bump_minor: git-status
 	$(eval MINOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py minor))
 	$(eval MINOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number'))
 	$(eval MINOR_ISSUES = $(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
