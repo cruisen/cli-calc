@@ -69,6 +69,9 @@ bump_major: git-status
 	$(eval MINOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py minor))
 	$(eval MINOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number'))
 	$(eval MINOR_ISSUES = $(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
+	@echo $(MINOR)
+	@echo $(MINOR_ISSUES)
+	# TODO add user OK
 	dev_tools/meters/make_shields.py
 	git pull
 	poetry version minor
@@ -82,8 +85,9 @@ bump_major: git-status
 
 
 .PHONY: requirements
-requirements: bump
+requirements:
 	poetry export -f requirements.txt --output requirements.txt
+	bump
 
 .PHONY: all
 all: lint2 lint package unit
@@ -97,13 +101,14 @@ allWithErrorHandling:
 withError:
 	cd -
 
-.PHONY: MAJOR
-MAJOR:
+.PHONY: bump_major
+bump_major:
 	$(eval MAJOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py major))
 	$(eval MAJOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MAJOR)"))' | jq -c '.number'))
 	$(eval MAJOR_ISSUES = $(shell gh viewMilestone $(MAJOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
 	@echo $(MAJOR)
 	@echo $(MAJOR_ISSUES)
+	# TODO add user OK
 
 .DEFAULT:
 	@cd docs && $(MAKE) $@
