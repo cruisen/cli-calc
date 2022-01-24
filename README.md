@@ -109,6 +109,7 @@ PR are Welcome! However the **PR Howto** is still missing here. See [Issue #13](
 [![SLOC](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/cli_calc_shields.json)](https://github.com/cruisen/cli-calc/tree/main/cli_calc)
 [![SLOC Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/tests_shields.json)](https://github.com/cruisen/cli-calc/tree/main/tests)
 [![SLOC Dev](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/dev_tools_shields.json)](https://github.com/cruisen/cli-calc/tree/main/dev_tools)
+[![Documentation Status](https://readthedocs.org/projects/cli-calc/badge/?version=latest)](https://cli-calc.readthedocs.io/en/latest/?badge=latest)
 
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
 [![Python Lang](https://img.shields.io/github/languages/top/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/search?l=python)
@@ -229,6 +230,8 @@ Integration as in: Deployment and Integration testing.
 * [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
 * [sphinx](https://www.sphinx-doc.org/en/master/) Python documentation Generator
 * [doc8](https://github.com/pycqa/doc8) opinionated style checker for rst
+* [readthedocs](https://readthedocs.org/) document style and service
+  * [cli-calc](https://cli-calc.readthedocs.io/en/latest/?badge=latest#)
 
 ### Metric
 * [shields](https://shields.io/) for Shields and Badges
