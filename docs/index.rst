@@ -9,6 +9,9 @@ Contents
 
   pages/changelog.rst
 
+  extras/pypi.md
+  extras/teaching.md
+  extras/zsh.md
 
 Indices and tables
 ------------------
