@@ -10,6 +10,7 @@ Contents
   pages/changelog.rst
 
 .. toctree::
+  extras/develop.md
   extras/teaching.md
   extras/zsh.md
   extras/packages.md
