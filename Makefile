@@ -61,6 +61,7 @@ bump: git-status
 	gh release create "v$$(poetry version --short)" --generate-notes
 	git pull
 	git push
+	git pull
 
 .PHONY: publish
 publish: bump
