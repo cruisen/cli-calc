@@ -52,9 +52,11 @@ build: git-status
 bump: git-status
 	dev_tools/meters/make_shields.py
 	git pull
+	git add .
 	poetry version patch
 	git add .
 	git commit -m "Update to $$(poetry version --short)."
+	git push
 	git push --tags
 	gh release create "v$$(poetry version --short)" --generate-notes
 	git pull
