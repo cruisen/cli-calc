@@ -232,6 +232,7 @@ Integration as in: Deployment and Integration testing.
 
 ### Documentation
 * [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
+  * [Markdown to PDF (online)](https://dillinger.io/)
 * [sphinx](https://www.sphinx-doc.org/en/master/) Python documentation Generator
 * [doc8](https://github.com/pycqa/doc8) opinionated style checker for rst
 * [readthedocs](https://readthedocs.org/) document style and service

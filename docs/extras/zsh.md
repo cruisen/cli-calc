@@ -1,13 +1,15 @@
-# zsh shell Tips and Tricks
+# Tips and Tricks
+
+## zsh shell
 
 - zsh [man](https://zsh.sourceforge.io/Doc/zsh_a4.pdf)
   - [guide](https://scriptingosx.com/2019/06/moving-to-zsh/)
 
-## Fast cd
+### Fast cd
 
 To ```cd``` seaming less into directories in a ```zsh```:
 
-### Example
+#### Example
 
 ```
 $ pwd
@@ -18,7 +20,7 @@ $ pwd
 $
 ```
 
-### Explanation
+#### Explanation
 
 1. Dirs in the file ```~/.zshrc_dirs``` will be placed on the stack when the shell starts
 1. All directories which are visited by ```cd``` are pushed on the dir stack as well
@@ -30,7 +32,7 @@ $
   - If it finds one, it will ```cd``` into it.
   - If not it will print a final error message and exit.
 
-### Configuration
+#### Configuration
 
 - Create ~/.zshrc_dirs:
 
@@ -62,7 +64,7 @@ cf() {
 }
 ```
 
-## zsh options
+### zsh options
 
 - ```setops``` to list all set options
 - ```emulate -lLR zsh``` to list all avaiable options

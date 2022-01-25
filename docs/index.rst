@@ -4,14 +4,16 @@ Contents
 --------
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Changelog
 
   pages/changelog.rst
 
-  extras/pypi.md
+.. toctree::
   extras/teaching.md
   extras/zsh.md
+  extras/packages.md
+
 
 Indices and tables
 ------------------
@@ -19,3 +21,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
