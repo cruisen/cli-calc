@@ -87,11 +87,6 @@ bump_minor: git-status
 	echo "Consider to link Milestone to tag."
 
 
-.PHONY: requirements
-requirements:
-	poetry export -f requirements.txt --output requirements.txt
-	bump
-
 .PHONY: all
 all: lint2 lint package unit
 
