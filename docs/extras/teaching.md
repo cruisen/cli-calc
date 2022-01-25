@@ -15,6 +15,10 @@ From:
 * [The forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
 * [Does It Mean You Are Doing Object-Oriented Programming If You Write Classes?](https://igorfil.com/posts/oop-meaning/)
 
+## Dealing with change [requests]
+>"For each desired change, make the change easy (warning: this may be hard), then make the easy change"
+from [Kent Beck on Twitter](https://twitter.com/KentBeck/status/250733358307500032?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E250733358307500032%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fmokacoding.com%2Fblog%2Fhow-to-choose-what-to-refactor%2F)
+
 ## Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
   * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) 
