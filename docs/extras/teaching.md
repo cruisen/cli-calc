@@ -6,6 +6,8 @@ All this will move into a sister project to actually teach this approach. See [A
 * Zen of Python [PEP020](https://www.python.org/dev/peps/pep-0020/)
 * Learn and master Python with [exercism.org](https://exercism.org/tracks/python)
 
+* [Transforming Code into Beautiful, Idiomatic Python by Raymond Hettinger (Talk)](https://www.youtube.com/watch?v=OSGv2VnC0go)
+
 ## OOO
 
 > “I’m sorry that I long ago coined the term “objects” for this topic because it gets many people to focus on the lesser idea. The big idea is messaging.”
