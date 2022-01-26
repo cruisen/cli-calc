@@ -3,6 +3,7 @@ Curated List by Nikolai von Krusenstiern
 
 ## ARES Project
 ### Text File Parsing
+- [Parsing (wiki)](https://en.wikipedia.org/wiki/Parsing)
 - [parsimonious](https://pypi.org/project/parsimonious/)
   - [parsimonious (video)](https://www.youtube.com/watch?v=tCUdeLIj4hE)
   - [parsing-text-with-python](https://www.vipinahow-to-parse-complex-text-files-using-pythonjayakumar.com/parsing-text-with-python/)
