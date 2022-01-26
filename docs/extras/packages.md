@@ -14,8 +14,20 @@ Curated List by Nikolai von Krusenstiern
 - [protobuf](https://pypi.org/project/protobuf/)
 
 # Standard Lib
+It is a good idea to at least quick read through the [The Python Standard Library](https://docs.python.org/3/library/)
+
 ## Typing
 - [typing](https://docs.python.org/3/library/typing.html)
+  - [type-annotation-types](https://docs.python.org/3/library/stdtypes.html#type-annotation-types-generic-alias-union)
+
+## Standard Types
+- [Standard Types](https://docs.python.org/3/library/stdtypes.html)
+  - [string](https://docs.python.org/3/library/stdtypes.html#string-methods)
+    - [text-sequence-type](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+  - [sequence-types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
+  - [set-types](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+  - [mapping-types](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
+  - [context-manager-types](https://docs.python.org/3/library/stdtypes.html#context-manager-types)
 
 ## Logging
 - [logging](https://docs.python.org/3/howto/logging.html)
