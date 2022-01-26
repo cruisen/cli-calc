@@ -13,6 +13,10 @@ Curated List by Nikolai von Krusenstiern
 ### Output Format
 - [protobuf](https://pypi.org/project/protobuf/)
 
+### Hadoop Cluster (just read)
+- [hadoop-with-python](https://www.oreilly.com/content/hadoop-with-python/)
+
+
 # Standard Lib
 It is a good idea to at least quick read through the [The Python Standard Library](https://docs.python.org/3/library/)
 
@@ -45,6 +49,9 @@ It is a good idea to at least quick read through the [The Python Standard Librar
 ## Context Manager
 - [contextlib](https://docs.python.org/3/library/contextlib.html)
 - [json](https://docs.python.org/3/library/json.html)
+
+## DB
+- [sqlite3](https://docs.python.org/3/library/sqlite3.html)
 
 ## Caching
 - [lru_cache](https://docs.python.org/3/library/functools.html#functools.lru_cache)
@@ -140,6 +147,8 @@ It is a good idea to at least quick read through the [The Python Standard Librar
 - [imap-tools](https://pypi.org/project/imap-tools/)
 
 ## SQL & DB
+- [edgedb](https://pypi.org/project/edgedb/)
+- [pymongo](https://pypi.org/project/pymongo/)
 - [PyMySQL](https://pypi.org/project/PyMySQL/)
 
 ## Astro & Science
