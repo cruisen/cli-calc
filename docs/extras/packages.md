@@ -46,6 +46,10 @@ It is a good idea to at least quick read through the [The Python Standard Librar
 - [contextlib](https://docs.python.org/3/library/contextlib.html)
 - [json](https://docs.python.org/3/library/json.html)
 
+## Caching
+- [lru_cache](https://docs.python.org/3/library/functools.html#functools.lru_cache)
+- [cache](https://docs.python.org/3/library/functools.html#functools.cache)
+
 ## Web
 - [requests](https://docs.python-requests.org/en/latest/)
 - [urllib](https://docs.python.org/3/library/urllib.html)
