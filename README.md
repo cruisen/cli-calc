@@ -216,6 +216,7 @@ Integration as in: Deployment and Integration testing.
 ### Development Environment
 * [poetry](https://python-poetry.org/) python packaging and dependency management
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) creates projects from project templates
+* [venv](https://docs.python.org/3/library/venv.html) creates projects from project templates
 
 ### Version and Issue Management
 * [git](https://git-scm.com/) distributed version control system
