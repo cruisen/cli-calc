@@ -254,11 +254,11 @@ Integration as in: Deployment and Integration testing.
 * [Teaching](https://github.com/cruisen/cli-calc/blob/main/docs/extras/teaching.md) 
 
 ### cli-calc Examples
-* [github actions](https://github.com/cruisen/cli-calc/actions)
-  * [pytest & coverage (yml)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml) 
-  * [codeql-analysis (yml)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
-  * [misspell (yml)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
-* [make Makefile](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
+* [github actions (cli-calc)](https://github.com/cruisen/cli-calc/actions)
+  * [pytest & coverage (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml) 
+  * [codeql-analysis (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
+  * [misspell (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
+* [make Makefile (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
 * [cli-calc](https://cli-calc.readthedocs.io/en/latest/?badge=latest#)
 
 ### NvK Tools
