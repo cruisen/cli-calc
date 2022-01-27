@@ -70,6 +70,9 @@ Integration as in: Deployment and Integration testing.
 * [vi](https://www.vim.org/about.php) advanced text editor
 * [VS Code](https://code.visualstudio.com/) source-code editor 
 
+#### If needed
+* [jupyter](https://jupyter.org/) for rapid prototyping only
+
 ### Shell
 * [oh-my-zsh](https://ohmyz.sh/)
   * [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
