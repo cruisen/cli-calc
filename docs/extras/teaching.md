@@ -4,6 +4,8 @@ All this will move into a sister project to actually teach this approach. See [A
 
 ## About Python
 * Zen of Python [PEP020](https://www.python.org/dev/peps/pep-0020/)
+  * The [this module](https://stackoverflow.com/questions/37301273/attributes-of-python-module-this)
+  * Try ```import this```
 * Learn and master Python with [exercism.org](https://exercism.org/tracks/python)
 
 * [Transforming Code into Beautiful, Idiomatic Python by Raymond Hettinger (Talk)](https://www.youtube.com/watch?v=OSGv2VnC0go)
@@ -16,6 +18,9 @@ All this will move into a sister project to actually teach this approach. See [A
 From:
 * [The forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
 * [Does It Mean You Are Doing Object-Oriented Programming If You Write Classes?](https://igorfil.com/posts/oop-meaning/)
+
+### Introduction
+* [Design Patterns in Python by Peter Ullrich (Talk)](https://www.youtube.com/watch?v=bsyjSW46TDg)
 
 ### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
@@ -33,8 +38,10 @@ From:
 * [SOLID Object-Oriented Design by Sandi Metz (Talk)](https://www.youtube.com/watch?v=v-2yFMzxqwU)
 * [SOLID (Wikipedia)](https://en.wikipedia.org/wiki/SOLID)
 * [SOLID Design Principles simplified with UML](https://medium.com/@RikamPalkar/solid-design-principles-simplified-with-uml-8432a3406248)
+* [How to write actually object-oriented python by Per Fagrell (Talk)](https://www.youtube.com/watch?v=VUvEDg30FyY)
 
 ### Design Patterns
+* [Python Design Patterns: For Sleek And Fashionable Code](https://www.toptal.com/python/python-design-patterns)
 * [Design Patterns for Python](https://refactoring.guru/design-patterns/python)
   * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 
@@ -57,6 +64,7 @@ we enable ourselves to write maintainable software. They build upon each other.
   * [Software Craftsmanship (Wikipedia)](https://en.wikipedia.org/wiki/Software_craftsmanship)
    
 ## Time to burn
+* [Modern Python patterns and idioms by Alex Martelli (Talk)](https://www.youtube.com/watch?v=LeuChRCByZc)
 * [Six Impossible Things by Kevlin Henney (Talk)](https://www.youtube.com/watch?v=YoaZzIZFErI)
 * [How to succeed in language design without really trying by Brian Kernighan (Talk)](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
 
