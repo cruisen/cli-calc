@@ -219,4 +219,5 @@ fabric.properties
 # NvK
 cli_calc/wrapper.sh
 docs/extras/pap.md
+*.swp
 
