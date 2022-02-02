@@ -10,9 +10,9 @@ import semver  # pylint disable=E0401
 
 def usage() -> None:
     """Usage."""
-    print('Prints next Version for given Bump Rule')  # noqa: WPS421
+    print("Prints next Version for given Bump Rule")  # noqa: WPS421
     print('Usage: get_ver_for_rule.py: "defaults to patch"')  # noqa: WPS421
-    print('   Or: get_ver_for_rule.py patch')  # noqa: WPS421
+    print("   Or: get_ver_for_rule.py patch")  # noqa: WPS421
     print("   Or: get_ver_for_rule.py minor")  # noqa: WPS421
     print("   Or: get_ver_for_rule.py major")  # noqa: WPS421
     sys.exit()
