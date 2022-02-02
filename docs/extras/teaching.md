@@ -21,6 +21,10 @@ From:
 
 ### Introduction
 * [Design Patterns in Python by Peter Ullrich (Talk)](https://www.youtube.com/watch?v=bsyjSW46TDg)
+* [Design Patterns in Python for the Untrained Eye by Ariel Ortiz (Talk)](https://www.youtube.com/watch?v=o1FZ_Bd4DSM)
+  * [(Web)](https://arielortiz.info/s201911/pycon2019/docs/design_patterns.html)
+  * [(Slides)](https://docs.google.com/presentation/d/e/2PACX-1vQquDxG5_99RvxxKY8i8-DmpVM_3Ca76mU58Nf4sab25-bTY3kKjmMy3JihDtG0jVopZ-Or-BnIjNdX/pub?start=false&loop=false&delayms=3000&slide=id.g567ca5727c_0_67)
+* [Why you don't need design patterns in Python? by Sebastian Buczyński(Talk)](https://www.youtube.com/watch?v=G5OeYHCJuv0)
 
 ### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
