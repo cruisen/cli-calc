@@ -8,7 +8,7 @@
 
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
-[![pypi downloads](https://img.shields.io/pypi/dw/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
+[![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=pypi%20downloads/month)](https://pepy.tech/project/cli-calc)
 
 Powerful yet easy command line calculator.
 
@@ -126,11 +126,11 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi wheel](https://img.shields.io/pypi/wheel/cli-calc)](https://pypi.org/project/cli-calc/#files)
-[![pypi downloads](https://img.shields.io/pypi/dw/cli-calc?label=pypi%20downloads)](https://pypi.org/project/cli-calc/)
+[![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=pypi%20downloads/month)](https://pepy.tech/project/cli-calc)
 
 [![last commit](https://img.shields.io/github/last-commit/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
 [![github commits since](https://img.shields.io/github/commits-since/cruisen/cli-calc/v0.1.1)](https://github.com/cruisen/cli-calc/commits/main)
-[![github commits rate](https://img.shields.io/github/commit-activity/w/cruisen/cli-calc?label=commits)](https://github.com/cruisen/cli-calc/commits/main)
+[![github commits rate](https://img.shields.io/github/commit-activity/m/cruisen/cli-calc?label=commits)](https://github.com/cruisen/cli-calc/commits/main)
 [![code size](https://img.shields.io/github/languages/code-size/cruisen/cli-calc)](https://github.com/cruisen/cli-calc.git)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
