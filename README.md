@@ -150,10 +150,10 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![github stars](https://img.shields.io/github/stars/cruisen/cli-calc?style=social)](https://github.com/cruisen/cli-calc/stargazers)
 
 ### Note
-- [shields.io](https://shields.io/) has an [issue](https://github.com/badges/shields/issues/7022).
+- [shields.io](https://shields.io/) has an [issue 7022](https://github.com/badges/shields/issues/7022).
   Reason: It uses [pypistats.org](https://pypistats.org), 
   which hits regularly a "429 RATE LIMIT EXCEEDED" error 
-  when accessing [pypi.org](https://pypi.org/pypi/cli-calc/json).
+  when accessing [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
   Therefore switched to [pepy.tech](https://pepy.tech/project/cli-calc)
 
 - [flake8-commas](https://github.com/PyCQA/flake8-commas),
@@ -174,7 +174,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 ## Tools
 
 ### Python Packages
-* [pypi.org](https://pypi.org/) Python Package Index
+* [pypi.org ](https://pypi.org/) Python Package Index
   * [pythonrepo.com](https://pythonrepo.com/catalog/popular/) Popular Python Libraries
 * [poetry add](https://python-poetry.org/docs/cli/#add)
 * [poetry update](https://python-poetry.org/docs/cli/#update)
