@@ -120,7 +120,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![Requirements Status](https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main)](https://requires.io/github/cruisen/cli-calc/requirements/?branch=main)
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
 
-[![Documentation Status](https://readthedocs.org/projects/cli-calc/badge/?version=latest)](https://cli-calc.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/cli-calc/badge/?version=latest)](https://readthedocs.org/projects/cli-calc/builds/)
 [![made-with-sphinx-doc](https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg)](https://www.sphinx-doc.org/)
 
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
