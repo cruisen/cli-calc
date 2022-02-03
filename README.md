@@ -150,7 +150,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![github stars](https://img.shields.io/github/stars/cruisen/cli-calc?style=social)](https://github.com/cruisen/cli-calc/stargazers)
 
 ### Note
-- [flake8-commas](https://github.com/PyCQA/flake8-commas),
+1. [flake8-commas](https://github.com/PyCQA/flake8-commas),
   one of the development plugins of the
   [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
   is marked as *No Maintenance Intended*. 
@@ -158,7 +158,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
   See [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
 
 
-- [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
+1. [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
 
   This 
   [shields.io](https://shields.io/)
