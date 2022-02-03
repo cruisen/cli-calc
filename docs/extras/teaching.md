@@ -7,6 +7,7 @@ All this will move into a sister project to actually teach this approach. See [A
   * The [this module](https://stackoverflow.com/questions/37301273/attributes-of-python-module-this)
   * Try ```import this```
 * Learn and master Python with [exercism.org](https://exercism.org/tracks/python)
+* [Python 3 Patterns, Recipes and Idioms [web-book](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/)
 
 * [Transforming Code into Beautiful, Idiomatic Python by Raymond Hettinger (Talk)](https://www.youtube.com/watch?v=OSGv2VnC0go)
 
@@ -53,7 +54,6 @@ From:
 * [OO](https://en.wikipedia.org/wiki/Object-oriented_programming)
   * [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
 * [Messaging](https://www.quora.com/Why-is-object-oriented-programming-more-about-messaging-than-objects)
-
 
 ## Dealing with change [requests]
 >"For each desired change, make the change easy (warning: this may be hard), then make the easy change"
