@@ -21,11 +21,12 @@ From:
 * [Does It Mean You Are Doing Object-Oriented Programming If You Write Classes?](https://igorfil.com/posts/oop-meaning/)
 
 ### Introduction
-* [Design Patterns in Python by Peter Ullrich (Talk)](https://www.youtube.com/watch?v=bsyjSW46TDg)
-* [Design Patterns in Python for the Untrained Eye by Ariel Ortiz (Talk)](https://www.youtube.com/watch?v=o1FZ_Bd4DSM)
-  * [(Web)](https://arielortiz.info/s201911/pycon2019/docs/design_patterns.html)
-  * [(Slides)](https://docs.google.com/presentation/d/e/2PACX-1vQquDxG5_99RvxxKY8i8-DmpVM_3Ca76mU58Nf4sab25-bTY3kKjmMy3JihDtG0jVopZ-Or-BnIjNdX/pub?start=false&loop=false&delayms=3000&slide=id.g567ca5727c_0_67)
-* [Why you don't need design patterns in Python? by Sebastian Buczyński(Talk)](https://www.youtube.com/watch?v=G5OeYHCJuv0)
+* [Pythonic Objects: idiomatic OOP in Python by Luciano Ramalho (talk)](https://www.youtube.com/watch?v=mUu_4k6a5-I) 3h talk, and Luciano voice is not very easy to understand, but its worth it.
+  * [Slides (github)](https://github.com/ramalho/pyob)
+
+### Principles
+* [The Composition Over Inheritance Principle (web)](https://python-patterns.guide/gang-of-four/composition-over-inheritance/)
+  * [Abstract Base Classes (web)](https://docs.python.org/3/library/abc.html)
 
 ### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
@@ -46,6 +47,12 @@ From:
 * [How to write actually object-oriented python by Per Fagrell (Talk)](https://www.youtube.com/watch?v=VUvEDg30FyY)
 
 ### Design Patterns
+* [Python Design Patterns (Web)](https://python-patterns.guide/)
+* [Design Patterns in Python by Peter Ullrich (Talk)](https://www.youtube.com/watch?v=bsyjSW46TDg)
+* [Design Patterns in Python for the Untrained Eye by Ariel Ortiz (Talk)](https://www.youtube.com/watch?v=o1FZ_Bd4DSM)
+  * [(Web)](https://arielortiz.info/s201911/pycon2019/docs/design_patterns.html)
+  * [(Slides)](https://docs.google.com/presentation/d/e/2PACX-1vQquDxG5_99RvxxKY8i8-DmpVM_3Ca76mU58Nf4sab25-bTY3kKjmMy3JihDtG0jVopZ-Or-BnIjNdX/pub?start=false&loop=false&delayms=3000&slide=id.g567ca5727c_0_67)
+* [Why you don't need design patterns in Python? by Sebastian Buczyński(Talk)](https://www.youtube.com/watch?v=G5OeYHCJuv0)
 * [Python Design Patterns: For Sleek And Fashionable Code](https://www.toptal.com/python/python-design-patterns)
 * [Design Patterns for Python](https://refactoring.guru/design-patterns/python)
   * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
@@ -69,6 +76,8 @@ we enable ourselves to write maintainable software. They build upon each other.
    
 ## Time to burn
 * [Modern Python patterns and idioms by Alex Martelli (Talk)](https://www.youtube.com/watch?v=LeuChRCByZc)
+* [An Introduction to Object-Oriented Programming by Timothy A Budd (Book)](https://web.engr.oregonstate.edu/~budd/Books/oopintro3e/info/ReadMe.html)
+
 * [Six Impossible Things by Kevlin Henney (Talk)](https://www.youtube.com/watch?v=YoaZzIZFErI)
 * [How to succeed in language design without really trying by Brian Kernighan (Talk)](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
 
