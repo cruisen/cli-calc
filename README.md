@@ -174,6 +174,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
    However 
    [pypistats.org](https://pypistats.org/packages/cli-calc)
    is better in filtering of automated downloads.
+   Will switch back, when stable again.
 
 
 ## Features
