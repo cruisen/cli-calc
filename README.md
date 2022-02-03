@@ -151,7 +151,8 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 
 ### Note
 
-1. [flake8-commas](https://github.com/PyCQA/flake8-commas)
+1. [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
+   [flake8-commas](https://github.com/PyCQA/flake8-commas)
    one of the development plugins of the
    [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
    is marked as *No Maintenance Intended*.
