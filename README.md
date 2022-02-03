@@ -154,6 +154,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
   Reason: It uses [pypistats.org](https://pypistats.org), 
   which hits regularly a "429 RATE LIMIT EXCEEDED" error 
   when accessing [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
+  [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc)](https://pypistats.org/packages/cli-calc)
   Therefore switched to [pepy.tech](https://pepy.tech/project/cli-calc)
 
 - [flake8-commas](https://github.com/PyCQA/flake8-commas),
