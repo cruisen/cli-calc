@@ -81,3 +81,5 @@ we enable ourselves to write maintainable software. They build upon each other.
 * [Six Impossible Things by Kevlin Henney (Talk)](https://www.youtube.com/watch?v=YoaZzIZFErI)
 * [How to succeed in language design without really trying by Brian Kernighan (Talk)](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
 
+* [Lambda Calculus from the Ground Up by David Beazley (Talk)](https://www.youtube.com/watch?v=pkCLMl0e_0k)
+
