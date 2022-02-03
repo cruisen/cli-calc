@@ -78,6 +78,8 @@ we enable ourselves to write maintainable software. They build upon each other.
 * [Modern Python patterns and idioms by Alex Martelli (Talk)](https://www.youtube.com/watch?v=LeuChRCByZc)
 * [An Introduction to Object-Oriented Programming by Timothy A Budd (Book)](https://web.engr.oregonstate.edu/~budd/Books/oopintro3e/info/ReadMe.html)
 
+* [Modern solvers: Problems well-defined are problems solved by Raymond Hettinger(Talk)](https://www.youtube.com/watch?v=_GP9OpZPUYc)
+  * [Presentation / Slides](https://rhettinger.github.io/index.html)
 * [Six Impossible Things by Kevlin Henney (Talk)](https://www.youtube.com/watch?v=YoaZzIZFErI)
 * [How to succeed in language design without really trying by Brian Kernighan (Talk)](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
 
