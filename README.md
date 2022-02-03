@@ -150,13 +150,6 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![github stars](https://img.shields.io/github/stars/cruisen/cli-calc?style=social)](https://github.com/cruisen/cli-calc/stargazers)
 
 ### Note
-- [shields.io](https://shields.io/) has an [issue 7022](https://github.com/badges/shields/issues/7022).
-  Reason: It uses [pypistats.org](https://pypistats.org), 
-  which hits regularly a "429 RATE LIMIT EXCEEDED" error 
-  when accessing [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
-  [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc)](https://pypistats.org/packages/cli-calc)
-  Therefore switched to [pepy.tech](https://pepy.tech/project/cli-calc)
-
 - [flake8-commas](https://github.com/PyCQA/flake8-commas),
   one of the development plugins of the
   [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
@@ -164,6 +157,22 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
   Hence the **1 deprecated dependency**.
   See [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
 
+
+- [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
+
+  This 
+  [shields.io](https://shields.io/)
+  Shield sometimes has an
+  [issue 7022](https://github.com/badges/shields/issues/7022).
+  Reason: It uses 
+  [pypistats.org](https://pypistats.org/packages/cli-calc), 
+  which hits regularly a "429 RATE LIMIT EXCEEDED" error when accessing 
+  [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
+  Therefore switched to 
+  [pepy.tech](https://pepy.tech/project/cli-calc)
+  [![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=pypi%20downloads/month)](https://pepy.tech/project/cli-calc)
+
+  However [pypistats.org](https://pypistats.org/packages/cli-calc) is better in filtering of automated downloads.
 
 ## Features
 
