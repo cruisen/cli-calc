@@ -56,7 +56,7 @@ bump: git-status
 	git add .
 	poetry version patch
 	git add .
-	git commit -m "Update to $$(poetry version --short)."
+	git commit --no-verify -m "Update to $$(poetry version --short)."
 	git push
 	git push --tags
 	gh release create "v$$(poetry version --short)" --generate-notes
@@ -80,7 +80,7 @@ bump_minor: git-status
 	git pull
 	poetry version minor
 	git add .
-	git commit -m "Update to $$(poetry version --short)."
+	git commit --no-verify -m "Update to $$(poetry version --short)."
 	git push --tags
 	gh release create "v$$(poetry version --short)" --generate-notes --notes "$(MINOR): $(MINOR_ISSUES)"
 	git pull
