@@ -106,6 +106,8 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 
 [![test](https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg)](https://github.com/cruisen/cli-calc/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/cruisen/cli-calc/branch/main/graph/badge.svg?token=i9nYZL3MM3)](https://codecov.io/gh/cruisen/cli-calc)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/cruisen/cli-calc/main.svg)](https://results.pre-commit.ci/latest/github/cruisen/cli-calc/main)
+
 [![SLOC](https://img.shields.io/endpoint?color=blue&url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/cli_calc_shields.json)](https://github.com/cruisen/cli-calc/tree/main/cli_calc)
 [![SLOC Tests](https://img.shields.io/endpoint?color=blue&url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/tests_shields.json)](https://github.com/cruisen/cli-calc/tree/main/tests)
 [![SLOC Dev](https://img.shields.io/endpoint?color=blue&url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/dev_tools_shields.json)](https://github.com/cruisen/cli-calc/tree/main/dev_tools)
