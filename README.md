@@ -139,7 +139,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 )
 
 [![last commit](https://img.shields.io/github/last-commit/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
-[![commit since semver](https://img.shields.io/github/commits-since/cruisen/cli-calc/latest)](https://github.com/cruisen/cli-calc/releases/tag/v0.2.15)
+[![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/cruisen/cli-calc/latest?sort=semver)](https://github.com/cruisen/cli-calc/releases/latest)
 [![github commits since](https://img.shields.io/github/commits-since/cruisen/cli-calc/v0.1.1)](https://github.com/cruisen/cli-calc/commits/main)
 [![github commits rate](https://img.shields.io/github/commit-activity/m/cruisen/cli-calc?label=commits)](https://github.com/cruisen/cli-calc/commits/main)
 
