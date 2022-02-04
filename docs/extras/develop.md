@@ -2,7 +2,7 @@
 
 ## Features
 
-* Fully [typed with annotations](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html) 
+* Fully [typed with annotations](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 * Checked with [mypy](https://mypy.readthedocs.io/en/stable/)
 * Packaging [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
 
@@ -34,7 +34,7 @@ Integration as in: Deployment and Integration testing.
 * [crontab](https://linux.die.net/man/5/crontab)
 
 * [github actions](https://github.com/features/actions)
-  * [pytest & coverage (yml)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-basic.yml) 
+  * [pytest & coverage (yml)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-basic.yml)
     pytest @ python-version: ['3.7', '3.8', '3.9', '3.10']
   * [misspell (yml)](https://github.com/reviewdog/action-misspell)
   * [codeql-analysis (yml)](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-the-codeql-workflow-for-compiled-languages)
@@ -46,13 +46,13 @@ Integration as in: Deployment and Integration testing.
 
 ### Build and publish to pypi
 * [make Makefile](https://www.gnu.org/software/make/manual/make.html) automate above
-  * [Managing Projects with GNU Make, 3rd Edition](https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html) 
+  * [Managing Projects with GNU Make, 3rd Edition](https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html)
 * [poetry version bump](https://python-poetry.org/docs/cli/#version) bump version
 * [poetry build](https://python-poetry.org/docs/cli/#build) wheel
 * [poetry publish](https://python-poetry.org/docs/cli/#publish) to pypi
 
 ### Following Semantic Versioning
-* [Semantic Versioning](https://semver.org/) 
+* [Semantic Versioning](https://semver.org/)
   * [semver](https://pypi.org/project/semver/) Python Package
 
 ### Development Environment
@@ -63,12 +63,12 @@ Integration as in: Deployment and Integration testing.
 * [git](https://git-scm.com/) distributed version control system
 * [github](https://github.com/) online collaborative version control
   * [gh](https://github.com/cli/cli) GitHub on the command line
-    * [gh Milestones](https://gist.github.com/doi-t/5735f9f0f7f8b7664aa6739bc810a2cc) 
+    * [gh Milestones](https://gist.github.com/doi-t/5735f9f0f7f8b7664aa6739bc810a2cc)
 * [tickgit](https://github.com/augmentable-dev/tickgit) Not used, but collects TODO from source code
 
 ### IDE
 * [vi](https://www.vim.org/about.php) advanced text editor
-* [VS Code](https://code.visualstudio.com/) source-code editor 
+* [VS Code](https://code.visualstudio.com/) source-code editor
 
 #### If needed
 * [jupyter](https://jupyter.org/) for rapid prototyping only
@@ -92,6 +92,5 @@ Integration as in: Deployment and Integration testing.
   * [cloc](https://github.com/AlDanial/cloc) for SLOC
 
 ### Jason Query for Makefile and Shields
-* [jq](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-keyhttps://stedolan.github.io/jq/) 
-  * [Syntax](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key) 
-
+* [jq](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-keyhttps://stedolan.github.io/jq/)
+  * [Syntax](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key)

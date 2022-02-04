@@ -42,7 +42,7 @@ It is a good idea to at least quick read through the [The Python Standard Librar
 ## Regular expressions
 - [re](https://docs.python.org/3/library/re.html)
 
-## Date / Time 
+## Date / Time
 - [datetime](https://docs.python.org/3/library/datetime.html)
 - [time](https://docs.python.org/3/library/time.html)
 
@@ -156,4 +156,3 @@ It is a good idea to at least quick read through the [The Python Standard Librar
 - [astroquery](https://astroquery.readthedocs.io/en/latest/)
 - [scipy](https://scipy.org/)
 - [geopy](https://pypi.org/project/geopy/)
-

@@ -9,4 +9,3 @@ inline-quotes = "double"
 
 ["setup.cfg".isort]
 line_length = 99
-

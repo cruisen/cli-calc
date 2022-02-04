@@ -25,4 +25,3 @@ help:
 .PHONY: open
 open:
 	find . -name index.html | head -1 | xargs open
-

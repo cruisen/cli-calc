@@ -30,7 +30,7 @@ From:
 
 ### Code Smells
 * [Get a Whiff of This by Sandi Metz (Talk)](https://www.youtube.com/watch?v=PJjHfa5yxlU)
-  * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf) 
+  * [Smells to Refactorings (pdf)](https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf)
     Quick Reference Guide
 * [99 Bottles of OOP by Sandi Metz (Book)](https://sandimetz.com/99bottles)
 
@@ -67,13 +67,13 @@ From:
 from [Kent Beck on Twitter](https://twitter.com/KentBeck/status/250733358307500032?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E250733358307500032%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fmokacoding.com%2Fblog%2Fhow-to-choose-what-to-refactor%2F)
 
 ## Manifests
-Following these rules, which basically reduce our possibilities, 
+Following these rules, which basically reduce our possibilities,
 we enable ourselves to write maintainable software. They build upon each other.
 * [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 * [Manifesto for Agile Software Development](https://agilemanifesto.org/)
 * [Manifesto for Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/)
   * [Software Craftsmanship (Wikipedia)](https://en.wikipedia.org/wiki/Software_craftsmanship)
-   
+
 ## Time to burn
 * [Modern Python patterns and idioms by Alex Martelli (Talk)](https://www.youtube.com/watch?v=LeuChRCByZc)
 * [An Introduction to Object-Oriented Programming by Timothy A Budd (Book)](https://web.engr.oregonstate.edu/~budd/Books/oopintro3e/info/ReadMe.html)
@@ -84,4 +84,3 @@ we enable ourselves to write maintainable software. They build upon each other.
 * [How to succeed in language design without really trying by Brian Kernighan (Talk)](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
 
 * [Lambda Calculus from the Ground Up by David Beazley (Talk)](https://www.youtube.com/watch?v=pkCLMl0e_0k)
-

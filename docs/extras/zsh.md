@@ -26,7 +26,7 @@ $
 1. All directories which are visited by ```cd``` are pushed on the dir stack as well
 1. In this example ```cd``` is re-configured as a zsh function
 1. ```cd foo``` will:
-  - execute ```builtin cd``` cmd. 
+  - execute ```builtin cd``` cmd.
   - When it fails it executes ```cf foo``` instead, and
   - will try to find a matching *foo* dir in ```dirs -v``` with ``grep -i foo`` (case independent).
   - If it finds one, it will ```cd``` into it.
@@ -39,7 +39,7 @@ $
 ```
 ~/path/to/working/dir/foo
 ~/path/to/other/dir/bar
-``` 
+```
 
 - Add to ~/.zshrc:
 
