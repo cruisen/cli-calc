@@ -135,7 +135,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![pypi wheel](https://img.shields.io/pypi/wheel/cli-calc)](https://pypi.org/project/cli-calc/#files)
 [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
 (
-[![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
+[![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
 )
 
 [![last commit](https://img.shields.io/github/last-commit/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
