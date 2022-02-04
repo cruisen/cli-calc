@@ -32,6 +32,7 @@
 Integration as in: Deployment and Integration testing.
 
 * [crontab](https://linux.die.net/man/5/crontab)
+* [git pre-commit](https://pre-commit.com/)
 
 * [github actions](https://github.com/features/actions)
   * [pytest & coverage (yml)](https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-basic.yml)
@@ -40,9 +41,13 @@ Integration as in: Deployment and Integration testing.
   * [codeql-analysis (yml)](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-the-codeql-workflow-for-compiled-languages)
 
 * Alternatives to github actions
-  * [tox](https://tox.wiki/en/latest/) test and deploy
+  * [tox](https://tox.wiki/en/latest/) test and deploy, w/yaml (py version centric)
+  * [nox](https://nox.thea.codes/en/stable/) test and deploy, w/ python (more general)
   * [travis](https://www.travis-ci.com/) test and deploy
   * [coveralls.io](https://coveralls.io/) coverage
+
+* Possible alternatives to make / Makefile?
+  * [invoke](https://www.pyinvoke.org/)
 
 ### Build and publish to pypi
 * [make Makefile](https://www.gnu.org/software/make/manual/make.html) automate above
