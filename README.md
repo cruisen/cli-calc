@@ -128,7 +128,6 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-green)](https://GitHub.com/cruisen/cli-calc/graphs/commit-activity)
 [![MIT](https://img.shields.io/pypi/l/cli-calc)](https://github.com/cruisen/cli-calc/blob/main/LICENSE)
 [![pypi status](https://img.shields.io/pypi/status/cli-calc)](https://www.python.org/dev/peps/pep-0301/#distutils-trove-classification)
-[![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 [![github stars](https://img.shields.io/github/stars/cruisen/cli-calc?style=social)](https://github.com/cruisen/cli-calc/stargazers)
 
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
@@ -153,6 +152,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 
 [![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
 [![Pull Requests closed](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=closed&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
+[![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
 ### Note
 
