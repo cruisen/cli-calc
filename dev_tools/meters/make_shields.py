@@ -7,7 +7,7 @@ import os
 from typing import List, Optional, Tuple
 
 
-class Shield:  # pylint: disable=R0903
+class Shield:  # pylint: disable=R0903  # noqa: WPS214
     """Calculate LOC and update Shield JSON."""
 
     pre_cmd: str = "cd $(git rev-parse --show-toplevel)"
@@ -98,13 +98,16 @@ class Shield:  # pylint: disable=R0903
                 json.dump(shield_data, write_shield)
 
     @staticmethod
-    def run_pre_commit():  # pylint: disable=R0914  # noqa: WPS602, WPS605, WPS210
-        stream = os.popen("poetry run git add . ; poetry run pre-commit ; poetry run git add . ; poetry run pre-commit")  # noqa: S605, S607
-        output: str = stream.read().strip()
+    def run_pre_commit() -> None:  # pylint: disable=R0914  # noqa: WPS602, WPS605, WPS210
+        """Run pre-commit, so bump will not break later."""
+        stream = os.popen(  # noqa: S605, S607
+            "poetry run git add . ; poetry run pre-commit ; poetry run git add . ; poetry run pre-commit"  # noqa: E501, C812
+        )
+        stream.read().strip()
 
     @staticmethod
     def worker() -> None:  # pylint: disable=R0914  # noqa: WPS602, WPS605, WPS210
-        """."""
+        """Loop over dirs and run loc code."""
         sub_dir: str
 
         cmd: str = ""
