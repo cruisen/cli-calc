@@ -7,9 +7,13 @@ All this will move into a sister project to actually teach this approach. See [A
   * The [this module](https://stackoverflow.com/questions/37301273/attributes-of-python-module-this)
   * Try ```import this```
 * Learn and master Python with [exercism.org](https://exercism.org/tracks/python)
-* [Python 3 Patterns, Recipes and Idioms [web-book](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/)
 
+### Python Introduction
+* [Python 3 Patterns, Recipes and Idioms [web-book](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/)
 * [Transforming Code into Beautiful, Idiomatic Python by Raymond Hettinger (Talk)](https://www.youtube.com/watch?v=OSGv2VnC0go)
+
+### Context Managers
+* [Building A Custom Context Manager In Python: A Closer Look by ArjanCodes (Tutorial)](https://www.youtube.com/watch?v=14z_Tf3p2Mw)
 
 ## OOO
 
@@ -75,12 +79,17 @@ we enable ourselves to write maintainable software. They build upon each other.
   * [Software Craftsmanship (Wikipedia)](https://en.wikipedia.org/wiki/Software_craftsmanship)
 
 ## Time to burn
+### OOO
 * [Modern Python patterns and idioms by Alex Martelli (Talk)](https://www.youtube.com/watch?v=LeuChRCByZc)
 * [An Introduction to Object-Oriented Programming by Timothy A Budd (Book)](https://web.engr.oregonstate.edu/~budd/Books/oopintro3e/info/ReadMe.html)
 
+### Solvers
 * [Modern solvers: Problems well-defined are problems solved by Raymond Hettinger(Talk)](https://www.youtube.com/watch?v=_GP9OpZPUYc)
   * [Presentation / Slides](https://rhettinger.github.io/index.html)
+
+### General
 * [Six Impossible Things by Kevlin Henney (Talk)](https://www.youtube.com/watch?v=YoaZzIZFErI)
 * [How to succeed in language design without really trying by Brian Kernighan (Talk)](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
 
+### Lambda Calculus
 * [Lambda Calculus from the Ground Up by David Beazley (Talk)](https://www.youtube.com/watch?v=pkCLMl0e_0k)
