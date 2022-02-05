@@ -166,19 +166,19 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 1. [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
    This
    [shields.io](https://shields.io/)
-   Shield sometimes has an
-   [issue 7022](https://github.com/badges/shields/issues/7022).
+   Shield sometimes has an Issue
+   [7022](https://github.com/badges/shields/issues/7022).
    Reason: It uses
    [pypistats.org](https://pypistats.org/packages/cli-calc),
    which hits regularly a "429 RATE LIMIT EXCEEDED" error when accessing
    [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
-   Therefore switched to the
+   Therefore added also
    [pepy.tech](https://pepy.tech/project/cli-calc).
    [![pypi downloads unfiltered](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
    However
    [pypistats.org](https://pypistats.org/packages/cli-calc)
    is better in filtering of automated downloads.
-   Will switch back, when stable again.
+   Hoping that there will be a fix, then the pepy.tech shield will be removed again.
 
 
 ## Features
