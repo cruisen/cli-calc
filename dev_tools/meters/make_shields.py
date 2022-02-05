@@ -98,6 +98,11 @@ class Shield:  # pylint: disable=R0903
                 json.dump(shield_data, write_shield)
 
     @staticmethod
+    def run_pre_commit():  # pylint: disable=R0914  # noqa: WPS602, WPS605, WPS210
+        stream = os.popen("poetry run git add . ; poetry run pre-commit ; poetry run git add . ; poetry run pre-commit")  # noqa: S605, S607
+        output: str = stream.read().strip()
+
+    @staticmethod
     def worker() -> None:  # pylint: disable=R0914  # noqa: WPS602, WPS605, WPS210
         """."""
         sub_dir: str
@@ -124,6 +129,8 @@ class Shield:  # pylint: disable=R0903
             new_loc = Shield.read_loc_from_json(cloc_out)
             shield_data = Shield.update_loc_data(shield_out, new_loc)
             Shield.write_loc_to_json(shield_out, shield_data)
+
+        Shield.run_pre_commit()
 
 
 def main() -> None:
