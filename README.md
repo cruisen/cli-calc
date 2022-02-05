@@ -8,7 +8,7 @@
 
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
-[![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=pypi%20downloads/month)](https://pepy.tech/project/cli-calc)
+[![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
 
 Powerful yet easy command line calculator.
 
@@ -133,8 +133,8 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi wheel](https://img.shields.io/pypi/wheel/cli-calc)](https://pypi.org/project/cli-calc/#files)
-[![pypi d/l](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
-[![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
+[![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
+[![pypi downloads unfiltered](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
 
 [![last commit](https://img.shields.io/github/last-commit/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
 [![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/cruisen/cli-calc/latest?sort=semver)](https://github.com/cruisen/cli-calc/releases/latest)
@@ -163,7 +163,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
    See [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
 
 
-1. [![pypi d/l](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
+1. [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
    This
    [shields.io](https://shields.io/)
    Shield sometimes has an
@@ -174,7 +174,7 @@ PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13
    [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
    Therefore switched to the
    [pepy.tech](https://pepy.tech/project/cli-calc).
-   [![pypi downloads](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=blue&left_text=pypi%20downloads/month)](https://pepy.tech/project/cli-calc)
+   [![pypi downloads unfiltered](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
    However
    [pypistats.org](https://pypistats.org/packages/cli-calc)
    is better in filtering of automated downloads.
