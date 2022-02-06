@@ -100,7 +100,10 @@ Input:
 
 ## Pull Request
 
-PR's are Welcome! However the **PR Howto** is still missing here. See [Issue #13](https://github.com/cruisen/cli-calc/issues/13)
+PR's are Welcome! See
+[PULL_REQUEST_TEMPLATE](https://github.com/cruisen/cli-calc/blob/main/PULL_REQUEST_TEMPLATE.md)
+and
+[CONTRIBUTING](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
 
 ## Metric Dashboard
 
