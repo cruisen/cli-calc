@@ -137,7 +137,6 @@ and
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi wheel](https://img.shields.io/pypi/wheel/cli-calc)](https://pypi.org/project/cli-calc/#files)
 [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
-[![pypi downloads unfiltered](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
 
 [![last commit](https://img.shields.io/github/last-commit/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
 [![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/cruisen/cli-calc/latest?sort=semver)](https://github.com/cruisen/cli-calc/releases/latest)
@@ -155,7 +154,7 @@ and
 [![Pull Requests closed](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=closed&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
-### Note
+### Note on Shields
 
 1. [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
    [flake8-commas](https://github.com/PyCQA/flake8-commas)
@@ -163,26 +162,7 @@ and
    [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
    is marked as *No Maintenance Intended*.
    Hence the **1 deprecated dependency**.
-   See [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
-
-
-1. [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
-   This
-   [shields.io](https://shields.io/)
-   Shield sometimes has an Issue
-   [7022](https://github.com/badges/shields/issues/7022).
-   Reason: It uses
-   [pypistats.org](https://pypistats.org/packages/cli-calc),
-   which hits regularly a "429 RATE LIMIT EXCEEDED" error when accessing
-   [pypi.org/pypi/cli-calc/json](https://pypi.org/pypi/cli-calc/json).
-   Therefore added also
-   [pepy.tech](https://pepy.tech/project/cli-calc).
-   [![pypi downloads unfiltered](https://static.pepy.tech/personalized-badge/cli-calc?period=month&units=international_system&left_color=grey&right_color=green&left_text=pypi%20unfiltered/month)](https://pepy.tech/project/cli-calc)
-   However
-   [pypistats.org](https://pypistats.org/packages/cli-calc)
-   is better in filtering of automated downloads.
-   Hoping that there will be a fix, then the pepy.tech shield will be removed again.
-
+   See this [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
 
 ## Features
 
