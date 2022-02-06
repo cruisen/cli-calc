@@ -12,6 +12,12 @@
 
 Powerful yet easy command line calculator.
 
+## Introduction
+
+It is easy and common to use
+[Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
+
+
 ## Example Usage
 
 ```
