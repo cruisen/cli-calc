@@ -178,7 +178,11 @@ and
    [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
    is marked as *No Maintenance Intended*.
    Hence the **1 deprecated dependency**.
-   See this [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
+   See this
+   [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
+   Most probable
+   [wemake](https://github.com/wemake-services/wemake-python-styleguide)
+   will replace this dependency with a fork.
 
 ## Features
 
