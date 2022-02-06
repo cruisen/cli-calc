@@ -231,8 +231,9 @@ and
 [![github bugs open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/is_Bug?color=red&label=bugs)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Ais_Bug)
 [![github bugs closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc/is_Bug?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed+label%3Ais_Bug)
 [![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc?color=blue)](https://github.com/cruisen/cli-calc/issues)
+[![github now](https://img.shields.io/github/issues-raw/cruisen/cli-calc/1-Now-Important?color=yellow&label=queued)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3A1-Now-Important)
 [![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
-[![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/needs_Help?color=yellow&label=need%20help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneed_Help)
+[![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/needs_Help?color=yellow&label=need%20help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds_Help)
 
 [![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
 [![Pull Requests closed](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=closed&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
