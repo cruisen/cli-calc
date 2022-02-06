@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Python course &#8212; cli-calc 0.2.20 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tips and Tricks" href="zsh.html" />
+    <link rel="prev" title="Development" href="develop.html" />
+
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+
+
+          <div class="body" role="main">
+
+  <section id="python-course">
+<h1>Python course<a class="headerlink" href="#python-course" title="Permalink to this headline">¶</a></h1>
+<p>All this will move into a sister project to actually teach this approach. See <a class="reference external" href="https://github.com/cruisen/cli-calc/issues/17">Add Teaching repository</a>.</p>
+<section id="about-python">
+<h2>About Python<a class="headerlink" href="#about-python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Zen of Python <a class="reference external" href="https://www.python.org/dev/peps/pep-0020/">PEP020</a></p>
+<ul>
+<li><p>The <a class="reference external" href="https://stackoverflow.com/questions/37301273/attributes-of-python-module-this">this module</a></p></li>
+<li><p>Try <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">this</span></code></p></li>
+</ul>
+</li>
+<li><p>Learn and master Python with <a class="reference external" href="https://exercism.org/tracks/python">exercism.org</a></p></li>
+</ul>
+<section id="python-introduction">
+<h3>Python Introduction<a class="headerlink" href="#python-introduction" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>[Python 3 Patterns, Recipes and Idioms <a class="reference external" href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/">web-book</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=OSGv2VnC0go">Transforming Code into Beautiful, Idiomatic Python by Raymond Hettinger (Talk)</a></p></li>
+</ul>
+</section>
+<section id="context-managers">
+<h3>Context Managers<a class="headerlink" href="#context-managers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=14z_Tf3p2Mw">Building A Custom Context Manager In Python: A Closer Look by ArjanCodes (Tutorial)</a></p></li>
+</ul>
+</section>
+</section>
+<section id="ooo">
+<h2>OOO<a class="headerlink" href="#ooo" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>“I’m sorry that I long ago coined the term “objects” for this topic because it gets many people to focus on the lesser idea. The big idea is messaging.”
+~ Alan Kay</p>
+</div></blockquote>
+<p>From:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f">The forgotten History of OOP</a></p></li>
+<li><p><a class="reference external" href="https://igorfil.com/posts/oop-meaning/">Does It Mean You Are Doing Object-Oriented Programming If You Write Classes?</a></p></li>
+</ul>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=mUu_4k6a5-I">Pythonic Objects: idiomatic OOP in Python by Luciano Ramalho (talk)</a> 3h talk, and Luciano voice is not very easy to understand, but its worth it.</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/ramalho/pyob">Slides (github)</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="principles">
+<h3>Principles<a class="headerlink" href="#principles" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-patterns.guide/gang-of-four/composition-over-inheritance/">The Composition Over Inheritance Principle (web)</a></p>
+<ul>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/abc.html">Abstract Base Classes (web)</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="code-smells">
+<h3>Code Smells<a class="headerlink" href="#code-smells" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=PJjHfa5yxlU">Get a Whiff of This by Sandi Metz (Talk)</a></p>
+<ul>
+<li><p><a class="reference external" href="https://people.scs.carleton.ca/~jeanpier/Fall2021/Topic%204-%20About%20Smells%20and%20Refactoring/1a-%20Smells%20to%20Refactorings.pdf">Smells to Refactorings (pdf)</a>
+Quick Reference Guide</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://sandimetz.com/99bottles">99 Bottles of OOP by Sandi Metz (Book)</a></p></li>
+</ul>
+</section>
+<section id="refactoring">
+<h3>Refactoring<a class="headerlink" href="#refactoring" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=8bZh5LMaSmE">All the Little Things by Sandi Metz (Talk)</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=59YClXmkCVM">Succession by Katrina Owen (Talk)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/kytrinyx/succession">Succession by Katrina Owen (git)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=YtROlyWWhV0">Polly Want a Message by Sandi Metz (Talk)</a></p></li>
+</ul>
+</section>
+<section id="solid">
+<h3>SOLID<a class="headerlink" href="#solid" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=v-2yFMzxqwU">SOLID Object-Oriented Design by Sandi Metz (Talk)</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/SOLID">SOLID (Wikipedia)</a></p></li>
+<li><p><a class="reference external" href="https://medium.com/&#64;RikamPalkar/solid-design-principles-simplified-with-uml-8432a3406248">SOLID Design Principles simplified with UML</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=VUvEDg30FyY">How to write actually object-oriented python by Per Fagrell (Talk)</a></p></li>
+</ul>
+</section>
+<section id="design-patterns">
+<h3>Design Patterns<a class="headerlink" href="#design-patterns" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-patterns.guide/">Python Design Patterns (Web)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=bsyjSW46TDg">Design Patterns in Python by Peter Ullrich (Talk)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=o1FZ_Bd4DSM">Design Patterns in Python for the Untrained Eye by Ariel Ortiz (Talk)</a></p>
+<ul>
+<li><p><a class="reference external" href="https://arielortiz.info/s201911/pycon2019/docs/design_patterns.html">(Web)</a></p></li>
+<li><p><a class="reference external" href="https://docs.google.com/presentation/d/e/2PACX-1vQquDxG5_99RvxxKY8i8-DmpVM_3Ca76mU58Nf4sab25-bTY3kKjmMy3JihDtG0jVopZ-Or-BnIjNdX/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g567ca5727c_0_67">(Slides)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=G5OeYHCJuv0">Why you don’t need design patterns in Python? by Sebastian Buczyński(Talk)</a></p></li>
+<li><p><a class="reference external" href="https://www.toptal.com/python/python-design-patterns">Python Design Patterns: For Sleek And Fashionable Code</a></p></li>
+<li><p><a class="reference external" href="https://refactoring.guru/design-patterns/python">Design Patterns for Python</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="oo-class-message">
+<h3>OO, Class &amp; Message<a class="headerlink" href="#oo-class-message" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Object-oriented_programming">OO</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/">UML Class Diagram Tutorial</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.quora.com/Why-is-object-oriented-programming-more-about-messaging-than-objects">Messaging</a></p></li>
+</ul>
+</section>
+</section>
+<section id="dealing-with-change-requests">
+<h2>Dealing with change [requests]<a class="headerlink" href="#dealing-with-change-requests" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>“For each desired change, make the change easy (warning: this may be hard), then make the easy change”
+from <a class="reference external" href="https://twitter.com/KentBeck/status/250733358307500032?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E250733358307500032%7Ctwgr%5E%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Fmokacoding.com%2Fblog%2Fhow-to-choose-what-to-refactor%2F">Kent Beck on Twitter</a></p>
+</div></blockquote>
+</section>
+<section id="manifests">
+<h2>Manifests<a class="headerlink" href="#manifests" title="Permalink to this headline">¶</a></h2>
+<p>Following these rules, which basically reduce our possibilities,
+we enable ourselves to write maintainable software. They build upon each other.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns</a></p></li>
+<li><p><a class="reference external" href="https://agilemanifesto.org/">Manifesto for Agile Software Development</a></p></li>
+<li><p><a class="reference external" href="https://manifesto.softwarecraftsmanship.org/">Manifesto for Software Craftsmanship</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_craftsmanship">Software Craftsmanship (Wikipedia)</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="time-to-burn">
+<h2>Time to burn<a class="headerlink" href="#time-to-burn" title="Permalink to this headline">¶</a></h2>
+<section id="id3">
+<h3>OOO<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=LeuChRCByZc">Modern Python patterns and idioms by Alex Martelli (Talk)</a></p></li>
+<li><p><a class="reference external" href="https://web.engr.oregonstate.edu/~budd/Books/oopintro3e/info/ReadMe.html">An Introduction to Object-Oriented Programming by Timothy A Budd (Book)</a></p></li>
+</ul>
+</section>
+<section id="solvers">
+<h3>Solvers<a class="headerlink" href="#solvers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=_GP9OpZPUYc">Modern solvers: Problems well-defined are problems solved by Raymond Hettinger(Talk)</a></p>
+<ul>
+<li><p><a class="reference external" href="https://rhettinger.github.io/index.html">Presentation / Slides</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=YoaZzIZFErI">Six Impossible Things by Kevlin Henney (Talk)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=Sg4U4r_AgJU">How to succeed in language design without really trying by Brian Kernighan (Talk)</a></p></li>
+</ul>
+</section>
+<section id="lambda-calculus">
+<h3>Lambda Calculus<a class="headerlink" href="#lambda-calculus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=pkCLMl0e_0k">Lambda Calculus from the Ground Up by David Beazley (Talk)</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cli-calc</a></h1>
+
+
+
+
+
+
+
+
+<ul>
+  <li>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/cruisen/cli-calc" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cruisen/cli-calc on GitHub">Star</a>
+  </li>
+  <li>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/cruisen/cli-calc/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue cruisen/cli-calc on GitHub">Issue</a>
+  </li>
+</ul>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/changelog.html">Version history</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="develop.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#tools">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#python-packages">Python Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#style-and-type-annotations">Style and type annotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#testing">Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#continuous-testing-integration-ct-ci">Continuous Testing &amp; Integration (CT &amp; CI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#build-and-publish-to-pypi">Build and publish to pypi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#following-semantic-versioning">Following Semantic Versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#development-environment">Development Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#version-and-issue-management">Version and Issue Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#ide">IDE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="develop.html#if-needed">If needed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#shell">Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#metric">Metric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#jason-query-for-makefile-and-shields">Jason Query for Makefile and Shields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#about-python">About Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-introduction">Python Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#context-managers">Context Managers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ooo">OOO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#principles">Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-smells">Code Smells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#refactoring">Refactoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solid">SOLID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#design-patterns">Design Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#oo-class-message">OO, Class &amp; Message</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dealing-with-change-requests">Dealing with change [requests]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manifests">Manifests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#time-to-burn">Time to burn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">OOO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solvers">Solvers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lambda-calculus">Lambda Calculus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="zsh.html">Tips and Tricks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="zsh.html#zsh-shell">zsh shell</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="zsh.html#fast-cd">Fast cd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="zsh.html#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zsh.html#explanation">Explanation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zsh.html#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="zsh.html#zsh-options">zsh options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Selected Python Packages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#ares-project">ARES Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#text-file-parsing">Text File Parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#output-format">Output Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#hadoop-cluster-just-read">Hadoop Cluster (just read)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#standard-lib">Standard Lib</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#typing">Typing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#standard-types">Standard Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#cli-parser">CLI Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#regular-expressions">Regular expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#date-time">Date / Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#context-manager">Context Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#db">DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#caching">Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#web">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#printing">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#functional-programming">Functional Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#data-structures">Data Structures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#other">Other</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#config-management">Config Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id4">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#machine-learning">Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#date">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id5">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#visualisation">Visualisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#used-standard-lib">Used Standard Lib</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#os-files">OS &amp; Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#math">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#web-async">Web &amp; Async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#inspect">Inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#good-to-know">Good to know</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id8">Inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#mail">Mail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#sql-db">SQL &amp; DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#astro-science">Astro &amp; Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#high-performance">High Performance</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+Links
+</h3>
+<ul>
+    <li>
+        <a href="https://github.com/cruisen/cli-calc">GitHub</a>
+    </li>
+    <li>
+        <a href="https://pypi.python.org/pypi/cli-calc">PyPI</a>
+    </li>
+    <li>
+        <a href="https://travis-ci.com/cruisen/cli-calc">Travis CI</a>
+    </li>
+    <li>
+        <a href="https://coveralls.io/github/cruisen/cli-calc?branch=master">Coverage</a>
+    </li>
+</ul><!-- GitHub Logo -->
+<a href="https://github.com/cruisen/cli-calc" class="github-corner" aria-label="View source on GitHub">
+  <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+  </svg>
+</a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Nikolai von Krusenstiern.
+
+      |
+      <a href="../_sources/extras/teaching.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Development &#8212; cli-calc 0.2.20 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python course" href="teaching.html" />
+    <link rel="prev" title="Version history" href="../pages/changelog.html" />
+
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+
+
+          <div class="body" role="main">
+
+  <section id="development">
+<h1>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h1>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fully <a class="reference external" href="https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html">typed with annotations</a></p></li>
+<li><p>Checked with <a class="reference external" href="https://mypy.readthedocs.io/en/stable/">mypy</a></p></li>
+<li><p>Packaging <a class="reference external" href="https://www.python.org/dev/peps/pep-0561/">PEP561 compatible</a></p></li>
+</ul>
+</section>
+<section id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<section id="python-packages">
+<h3>Python Packages<a class="headerlink" href="#python-packages" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypi.org/">pypi.org</a> Python Package Index</p>
+<ul>
+<li><p><a class="reference external" href="https://pythonrepo.com/catalog/popular/">pythonrepo.com</a> Popular Python Libraries</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#add">poetry add</a></p></li>
+<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#update">poetry update</a></p></li>
+</ul>
+</section>
+<section id="style-and-type-annotations">
+<h3>Style and type annotations<a class="headerlink" href="#style-and-type-annotations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pylint.pycqa.org/en/latest/">pylint</a> vim linter</p></li>
+<li><p><a class="reference external" href="https://pycqa.github.io/isort/">isort</a> sort imports</p></li>
+<li><p><a class="reference external" href="https://black.readthedocs.io/en/stable/">black</a> opinionated code formatter</p>
+<ul>
+<li><p><a class="reference external" href="https://wemake-python-stylegui.de/en/latest/">wemake</a> strictest and most opinionated Python linter</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://mypy.readthedocs.io/en/stable/">mypy</a> static type checker</p></li>
+<li><p><a class="reference external" href="https://flake8.pycqa.org/en/latest/">flake8</a> Style Guide Enforcement</p>
+<ul>
+<li><p><a class="reference external" href="https://nitpick.readthedocs.io/en/latest/">nitpick</a> enforce the same settings across configuration files</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="testing">
+<h3>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.pytest.org/">pytest</a> test framework</p>
+<ul>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=URSWYvyc42M">The Magic Tricks of Testing by Sandi Metz (Talk)</a> on what to test, and what not</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="continuous-testing-integration-ct-ci">
+<h3>Continuous Testing &amp; Integration (CT &amp; CI)<a class="headerlink" href="#continuous-testing-integration-ct-ci" title="Permalink to this headline">¶</a></h3>
+<p>Integration as in: Deployment and Integration testing.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://linux.die.net/man/5/crontab">crontab</a></p></li>
+<li><p><a class="reference external" href="https://pre-commit.com/">git pre-commit</a></p></li>
+<li><p><a class="reference external" href="https://github.com/features/actions">github actions</a></p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-basic.yml">pytest &amp; coverage (yml)</a>
+pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></li>
+<li><p><a class="reference external" href="https://github.com/reviewdog/action-misspell">misspell (yml)</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-the-codeql-workflow-for-compiled-languages">codeql-analysis (yml)</a></p></li>
+</ul>
+</li>
+<li><p>Alternatives to github actions</p>
+<ul>
+<li><p><a class="reference external" href="https://tox.wiki/en/latest/">tox</a> test and deploy, w/yaml (py version centric)</p></li>
+<li><p><a class="reference external" href="https://nox.thea.codes/en/stable/">nox</a> test and deploy, w/ python (more general)</p></li>
+<li><p><a class="reference external" href="https://www.travis-ci.com/">travis</a> test and deploy</p></li>
+<li><p><a class="reference external" href="https://coveralls.io/">coveralls.io</a> coverage</p></li>
+</ul>
+</li>
+<li><p>Possible alternatives to make / Makefile?</p>
+<ul>
+<li><p><a class="reference external" href="https://www.pyinvoke.org/">invoke</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="build-and-publish-to-pypi">
+<h3>Build and publish to pypi<a class="headerlink" href="#build-and-publish-to-pypi" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.gnu.org/software/make/manual/make.html">make Makefile</a> automate above</p>
+<ul>
+<li><p><a class="reference external" href="https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html">Managing Projects with GNU Make, 3rd Edition</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#version">poetry version bump</a> bump version</p></li>
+<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#build">poetry build</a> wheel</p></li>
+<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#publish">poetry publish</a> to pypi</p></li>
+</ul>
+</section>
+<section id="following-semantic-versioning">
+<h3>Following Semantic Versioning<a class="headerlink" href="#following-semantic-versioning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://semver.org/">Semantic Versioning</a></p>
+<ul>
+<li><p><a class="reference external" href="https://pypi.org/project/semver/">semver</a> Python Package</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="development-environment">
+<h3>Development Environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-poetry.org/">poetry</a> python packaging and dependency management</p></li>
+<li><p><a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/README.html">cookiecutter</a> creates projects from project templates</p></li>
+</ul>
+</section>
+<section id="version-and-issue-management">
+<h3>Version and Issue Management<a class="headerlink" href="#version-and-issue-management" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/">git</a> distributed version control system</p></li>
+<li><p><a class="reference external" href="https://github.com/">github</a> online collaborative version control</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/cli/cli">gh</a> GitHub on the command line</p>
+<ul>
+<li><p><a class="reference external" href="https://gist.github.com/doi-t/5735f9f0f7f8b7664aa6739bc810a2cc">gh Milestones</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/augmentable-dev/tickgit">tickgit</a> Not used, but collects TODO from source code</p></li>
+</ul>
+</section>
+<section id="ide">
+<h3>IDE<a class="headerlink" href="#ide" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.vim.org/about.php">vi</a> advanced text editor</p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">VS Code</a> source-code editor</p></li>
+</ul>
+<section id="if-needed">
+<h4>If needed<a class="headerlink" href="#if-needed" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyter.org/">jupyter</a> for rapid prototyping only</p></li>
+</ul>
+</section>
+</section>
+<section id="shell">
+<h3>Shell<a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ohmyz.sh/">oh-my-zsh</a></p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms">zsh</a></p></li>
+<li><p><a class="reference external" href="https://chiamakaikeanyi.dev/how-to-configure-your-macos-terminal-with-zsh-like-a-pro/">MAC config</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.markdownguide.org/basic-syntax/">Markdown</a> lightweight markup language</p>
+<ul>
+<li><p><a class="reference external" href="https://dillinger.io/">Markdown to PDF (online)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">sphinx</a> Python documentation Generator</p></li>
+<li><p><a class="reference external" href="https://github.com/pycqa/doc8">doc8</a> opinionated style checker for rst</p></li>
+<li><p><a class="reference external" href="https://readthedocs.org/">readthedocs</a> document style and service</p></li>
+</ul>
+</section>
+<section id="metric">
+<h3>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://shields.io/">shields</a> for Shields and Badges</p>
+<ul>
+<li><p><a class="reference external" href="http://issuehub.pro/label-guide">issuehub.pro</a> Label Guide</p>
+<ul>
+<li><p><a class="reference external" href="https://naereen.github.io/badges/">List of Badges</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/AlDanial/cloc">cloc</a> for SLOC</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="jason-query-for-makefile-and-shields">
+<h3>Jason Query for Makefile and Shields<a class="headerlink" href="#jason-query-for-makefile-and-shields" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-keyhttps://stedolan.github.io/jq/">jq</a></p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key">Syntax</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cli-calc</a></h1>
+
+
+
+
+
+
+
+
+<ul>
+  <li>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/cruisen/cli-calc" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cruisen/cli-calc on GitHub">Star</a>
+  </li>
+  <li>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/cruisen/cli-calc/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue cruisen/cli-calc on GitHub">Issue</a>
+  </li>
+</ul>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/changelog.html">Version history</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tools">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-packages">Python Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#style-and-type-annotations">Style and type annotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#continuous-testing-integration-ct-ci">Continuous Testing &amp; Integration (CT &amp; CI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-and-publish-to-pypi">Build and publish to pypi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#following-semantic-versioning">Following Semantic Versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment">Development Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-and-issue-management">Version and Issue Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ide">IDE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#if-needed">If needed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#shell">Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metric">Metric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jason-query-for-makefile-and-shields">Jason Query for Makefile and Shields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching.html">Python course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#about-python">About Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#python-introduction">Python Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#context-managers">Context Managers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#ooo">OOO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#principles">Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#code-smells">Code Smells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#refactoring">Refactoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#solid">SOLID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#design-patterns">Design Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#oo-class-message">OO, Class &amp; Message</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#dealing-with-change-requests">Dealing with change [requests]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#manifests">Manifests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#time-to-burn">Time to burn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#id3">OOO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#solvers">Solvers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#lambda-calculus">Lambda Calculus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="zsh.html">Tips and Tricks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="zsh.html#zsh-shell">zsh shell</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="zsh.html#fast-cd">Fast cd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="zsh.html#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zsh.html#explanation">Explanation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zsh.html#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="zsh.html#zsh-options">zsh options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Selected Python Packages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#ares-project">ARES Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#text-file-parsing">Text File Parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#output-format">Output Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#hadoop-cluster-just-read">Hadoop Cluster (just read)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#standard-lib">Standard Lib</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#typing">Typing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#standard-types">Standard Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#cli-parser">CLI Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#regular-expressions">Regular expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#date-time">Date / Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#context-manager">Context Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#db">DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#caching">Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#web">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#printing">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#functional-programming">Functional Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#data-structures">Data Structures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#other">Other</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#config-management">Config Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id4">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#machine-learning">Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#date">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id5">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#visualisation">Visualisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#used-standard-lib">Used Standard Lib</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#os-files">OS &amp; Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#math">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#web-async">Web &amp; Async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#inspect">Inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#good-to-know">Good to know</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id8">Inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#mail">Mail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#sql-db">SQL &amp; DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#astro-science">Astro &amp; Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#high-performance">High Performance</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+Links
+</h3>
+<ul>
+    <li>
+        <a href="https://github.com/cruisen/cli-calc">GitHub</a>
+    </li>
+    <li>
+        <a href="https://pypi.python.org/pypi/cli-calc">PyPI</a>
+    </li>
+    <li>
+        <a href="https://travis-ci.com/cruisen/cli-calc">Travis CI</a>
+    </li>
+    <li>
+        <a href="https://coveralls.io/github/cruisen/cli-calc?branch=master">Coverage</a>
+    </li>
+</ul><!-- GitHub Logo -->
+<a href="https://github.com/cruisen/cli-calc" class="github-corner" aria-label="View source on GitHub">
+  <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+  </svg>
+</a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Nikolai von Krusenstiern.
+
+      |
+      <a href="../_sources/extras/develop.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+
+
+
+  </body>
+</html>

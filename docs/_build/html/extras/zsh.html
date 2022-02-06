@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tips and Tricks &#8212; cli-calc 0.2.20 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Selected Python Packages" href="packages.html" />
+    <link rel="prev" title="Python course" href="teaching.html" />
+
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+
+
+          <div class="body" role="main">
+
+  <section id="tips-and-tricks">
+<h1>Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permalink to this headline">¶</a></h1>
+<section id="zsh-shell">
+<h2>zsh shell<a class="headerlink" href="#zsh-shell" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>zsh <a class="reference external" href="https://zsh.sourceforge.io/Doc/zsh_a4.pdf">man</a></p>
+<ul>
+<li><p><a class="reference external" href="https://scriptingosx.com/2019/06/moving-to-zsh/">guide</a></p></li>
+</ul>
+</li>
+</ul>
+<section id="fast-cd">
+<h3>Fast cd<a class="headerlink" href="#fast-cd" title="Permalink to this headline">¶</a></h3>
+<p>To <code class="docutils literal notranslate"><span class="pre">cd</span></code> seaming less into directories in a <code class="docutils literal notranslate"><span class="pre">zsh</span></code>:</p>
+<section id="example">
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pwd
+~
+$ cf foo
+$ pwd
+~/path/to/working/dir/foo
+$
+</pre></div>
+</div>
+</section>
+<section id="explanation">
+<h4>Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Dirs in the file <code class="docutils literal notranslate"><span class="pre">~/.zshrc_dirs</span></code> will be placed on the stack when the shell starts</p></li>
+<li><p>All directories which are visited by <code class="docutils literal notranslate"><span class="pre">cd</span></code> are pushed on the dir stack as well</p></li>
+<li><p>In this example <code class="docutils literal notranslate"><span class="pre">cd</span></code> is re-configured as a zsh function</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">foo</span></code> will:</p>
+<ul class="simple">
+<li><p>execute <code class="docutils literal notranslate"><span class="pre">builtin</span> <span class="pre">cd</span></code> cmd.</p></li>
+<li><p>When it fails it executes <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">foo</span></code> instead, and</p></li>
+<li><p>will try to find a matching <em>foo</em> dir in <code class="docutils literal notranslate"><span class="pre">dirs</span> <span class="pre">-v</span></code> with <code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">-i</span> <span class="pre">foo</span></code> (case independent).</p></li>
+<li><p>If it finds one, it will <code class="docutils literal notranslate"><span class="pre">cd</span></code> into it.</p></li>
+<li><p>If not it will print a final error message and exit.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="configuration">
+<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Create ~/.zshrc_dirs:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">working</span><span class="o">/</span><span class="nb">dir</span><span class="o">/</span><span class="n">foo</span>
+<span class="o">~/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">other</span><span class="o">/</span><span class="nb">dir</span><span class="o">/</span><span class="n">bar</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Add to ~/.zshrc:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>setopt autopushd pushdignoredups pushdminus
+
+alias d=&#39;dirs -v&#39;
+
+dirs $(&lt; ~/.zshrc_dirs)
+
+cd() {
+  builtin cd $1 2&gt; /dev/null || cf $1
+}
+
+cf() {
+ new=$(dirs -v | grep -i $1 | head -1 | cut -f1)
+ if [[ -n $new ]] ; then
+   cd -$new
+ else
+   echo &quot;cd error: dir $1 not found...&quot;
+ fi
+}
+</pre></div>
+</div>
+</section>
+</section>
+<section id="zsh-options">
+<h3>zsh options<a class="headerlink" href="#zsh-options" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">setops</span></code> to list all set options</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">emulate</span> <span class="pre">-lLR</span> <span class="pre">zsh</span></code> to list all avaiable options</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cli-calc</a></h1>
+
+
+
+
+
+
+
+
+<ul>
+  <li>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/cruisen/cli-calc" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cruisen/cli-calc on GitHub">Star</a>
+  </li>
+  <li>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/cruisen/cli-calc/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue cruisen/cli-calc on GitHub">Issue</a>
+  </li>
+</ul>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/changelog.html">Version history</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="develop.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#tools">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#python-packages">Python Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#style-and-type-annotations">Style and type annotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#testing">Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#continuous-testing-integration-ct-ci">Continuous Testing &amp; Integration (CT &amp; CI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#build-and-publish-to-pypi">Build and publish to pypi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#following-semantic-versioning">Following Semantic Versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#development-environment">Development Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#version-and-issue-management">Version and Issue Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#ide">IDE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="develop.html#if-needed">If needed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#shell">Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#metric">Metric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="develop.html#jason-query-for-makefile-and-shields">Jason Query for Makefile and Shields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching.html">Python course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#about-python">About Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#python-introduction">Python Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#context-managers">Context Managers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#ooo">OOO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#principles">Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#code-smells">Code Smells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#refactoring">Refactoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#solid">SOLID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#design-patterns">Design Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#oo-class-message">OO, Class &amp; Message</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#dealing-with-change-requests">Dealing with change [requests]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#manifests">Manifests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching.html#time-to-burn">Time to burn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#id3">OOO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#solvers">Solvers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teaching.html#lambda-calculus">Lambda Calculus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tips and Tricks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#zsh-shell">zsh shell</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fast-cd">Fast cd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#explanation">Explanation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#zsh-options">zsh options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Selected Python Packages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#ares-project">ARES Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#text-file-parsing">Text File Parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#output-format">Output Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="packages.html#hadoop-cluster-just-read">Hadoop Cluster (just read)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#standard-lib">Standard Lib</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#typing">Typing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#standard-types">Standard Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#cli-parser">CLI Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#regular-expressions">Regular expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#date-time">Date / Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#context-manager">Context Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#db">DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#caching">Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#web">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#printing">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#functional-programming">Functional Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#data-structures">Data Structures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#other">Other</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#config-management">Config Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id4">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#machine-learning">Machine Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#date">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id5">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#visualisation">Visualisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#used-standard-lib">Used Standard Lib</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#os-files">OS &amp; Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#math">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#web-async">Web &amp; Async</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#inspect">Inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html#good-to-know">Good to know</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#id8">Inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#mail">Mail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#sql-db">SQL &amp; DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#astro-science">Astro &amp; Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages.html#high-performance">High Performance</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+Links
+</h3>
+<ul>
+    <li>
+        <a href="https://github.com/cruisen/cli-calc">GitHub</a>
+    </li>
+    <li>
+        <a href="https://pypi.python.org/pypi/cli-calc">PyPI</a>
+    </li>
+    <li>
+        <a href="https://travis-ci.com/cruisen/cli-calc">Travis CI</a>
+    </li>
+    <li>
+        <a href="https://coveralls.io/github/cruisen/cli-calc?branch=master">Coverage</a>
+    </li>
+</ul><!-- GitHub Logo -->
+<a href="https://github.com/cruisen/cli-calc" class="github-corner" aria-label="View source on GitHub">
+  <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+  </svg>
+</a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Nikolai von Krusenstiern.
+
+      |
+      <a href="../_sources/extras/zsh.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+
+
+
+  </body>
+</html>

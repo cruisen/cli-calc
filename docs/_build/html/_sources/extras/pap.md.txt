@@ -1,0 +1,46 @@
+1.) Requirment
+
+[gh issue, close when test passes, link to test issue]
+
+We will collect requirments. For most of the requiment we will be able to descibe an excample in a "fudged" protbuf file.
+
+
+2.) Test cases
+
+for tgsi requirment [gh issue, link to requiment issue, link to test_ file and class/function inside, close when test passes]
+
+We will wriet a pytest test or some test to make sure that each version of out project is houting teh requiments
+
+We will add a feature to one of out test protobuf escample test files
+
+
+3.) Code
+
+Write code
+
+Add Commnet to Requment issue
+
+
+4.) Test
+
+test for green
+
+--------
+
+5.) First Simple prototype:
+
+Python:
+a.) open a given ascii file in a dir
+
+b.) parse Filename and set meta data
+
+c.) parse file content and set further meta data as well as (mostly) events with a time and additional values
+
+d.) Write meta data and data into ProtoBuf file
+
+e.) maybe also safe meta data in local database (TBD/TBC)
+
+f.) end
+
+
+6.) write Makefile to execute pytest tests

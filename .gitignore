@@ -128,7 +128,10 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+# NvK
+#docs/_build/
+docs/_build/html/_sources/
+# NvK
 
 # PyBuilder
 target/
