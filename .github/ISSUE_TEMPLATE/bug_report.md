@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: "[BUG] "
-labels: is_Bug, need_Triage
+labels: is_Bug
 assignees: cruisen
 
 ---
