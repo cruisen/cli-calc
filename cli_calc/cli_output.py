@@ -26,7 +26,11 @@ class Output:
         out: str = """Input:
     "q" for quit, "h" for help
 
-    "_float_" and/or "_int_" for last value
+    "_" for last float value
+    "_int_" for last int value
+
+    "sin(pi/2)" for sinus, ...
+
     "pi", "tau" and "e" for pi, tau and Euler
 
     "+f" to add display for fraction, "-f" to suppress display for fraction

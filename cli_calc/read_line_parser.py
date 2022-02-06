@@ -172,6 +172,10 @@ class ReadLineParser:  # noqa: WPS214
             "_int_",
             str(Memory.value_dict[Config.ValueNS.int]),  # type: ignore  # pylint: disable=E1101  # noqa: E501
         )
+        in_string = in_string.replace(
+            "_",
+            str(Memory.value_dict[Config.ValueNS.float]),  # type: ignore  # pylint: disable=E1101  # noqa: E501
+        )
 
         # Handle True/False
         in_string = in_string.replace("true", "True")

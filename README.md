@@ -14,23 +14,64 @@ Powerful yet easy command line calculator.
 
 ## Introduction
 
+### python at the comand line (cli)
+
 It is easy and common to use
 [Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
 
-Based on this ```cli-calc``` adds not only the standard
+```bash
+$ python
+Python 3.8.5 (default, Aug  2 2020, 16:00:15)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2**10
+1024
+>>> _ / 10
+102.4
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> math.sin(math.pi / 2)
+1.0
+>>> exit()
+```
+
+[There must be a better way!](https://www.youtube.com/watch?v=UANN2Eu6ZnM)
+
+### cli-calc
+
+```bash
+$ cli-calc
+hex, int, float,
+0x0, 0, 0.0, : 2**10
+2**10
+0x400, 1024, 1024.0, : _ / 10
+1024.0/10
+0x66, 102, 102.4, : sin(pi / 2)
+sin(pi/2)
+0x1, 1, 1.0, : q
+$
+```
+
+[Batteries included](https://www.python.org/dev/peps/pep-0206/#batteries-included-philosophy):
+
+* ```cli-calc``` adds the standard
 [math](https://docs.python.org/3/library/math.html)
-library to the mix.
-Other convenience functions for formatted output, like
+library to the mix, as well as cmath and others.
+
+* Provides convenience functions for formatted output, like
 [fractions](https://docs.python.org/3.6/library/fractions.html)
 and
-[IEEE 754](https://en.wikipedia.org/wiki/IEEE_754),
-as well as line input from files and unix pipes are supported.
-And some more... :-)
+[IEEE 754](https://en.wikipedia.org/wiki/IEEE_754).
+
+* Supports line input from files and unix pipes.
+
+* And some more... :-)
 
 
-## Example Usage
+## More examples
 
-```
+```bash
 cos(pi/2)
 0xFF ^ 0b10
 2**8-1
@@ -41,7 +82,9 @@ random()
 cmath.phase(complex(-1.0, 0.0))
 ```
 
-## All function of the following Math Libraries are ready to use out of the box
+## Included Math Libraries
+
+Ready to use out of the box:
 
 - [standard operators](https://www.w3schools.com/python/python_operators.asp)
   ``` -, >>, ...```
@@ -90,7 +133,11 @@ h
 Input:
     "q" for quit, "h" for help
 
-    "_float_" and/or "_int_" for last value
+    "_" for last float value
+    "_int_" for last int value
+
+    "sin(pi/2)" for sinus, ...
+
     "pi", "tau" and "e" for pi, tau and Euler
 
     "+f" to add display for fraction, "-f" to suppress display for fraction
@@ -109,7 +156,7 @@ Input:
 ## Warning
 
 - Use of [```eval```](https://docs.python.org/3/library/functions.html#eval) is evil.
-  However some precautions are taken.
+  However precautions are taken.
 
 
 # Development
