@@ -63,6 +63,7 @@ bump: git-status
 	git pull
 	git push
 	git pull
+	poetry run open "https://pypi.org/project/cli-calc/"
 
 .PHONY: publish
 publish: bump
