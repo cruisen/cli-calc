@@ -36,7 +36,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 
+But:
 [There must be a better way!](https://www.youtube.com/watch?v=UANN2Eu6ZnM)
+And there is...
+
 
 ### cli-calc
 
