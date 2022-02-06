@@ -90,6 +90,7 @@ bump_minor: git-status
 
 .PHONY: all
 all: lint2 lint package unit html
+	gh browse
 
 .PHONY: allWithErrorHandling
 allWithErrorHandling:
