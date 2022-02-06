@@ -135,6 +135,7 @@ and
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
 
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
+[![PyPI - Implementation](https://img.shields.io/pypi/implementation/cli-calc)](https://realpython.com/cpython-source-code-guide/)
 [![Python Lang](https://img.shields.io/github/languages/top/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/search?l=python)
 [![Languages](https://img.shields.io/github/languages/count/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/search?l=python)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
@@ -175,13 +176,13 @@ and
 1. [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
    [flake8-commas](https://github.com/PyCQA/flake8-commas)
    one of the development plugins of the
-   [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
+   [wemake-python-styleguide 2](https://github.com/wemake-services/wemake-python-styleguide)
    is marked as *No Maintenance Intended*.
    Hence the **1 deprecated dependency**.
    See this
    [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
    Most probable
-   [wemake](https://github.com/wemake-services/wemake-python-styleguide)
+   [wemake 2](https://github.com/wemake-services/wemake-python-styleguide)
    will replace this dependency with a fork.
 
 ## Features
