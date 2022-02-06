@@ -89,7 +89,7 @@ bump_minor: git-status
 
 
 .PHONY: all
-all: lint2 lint package unit
+all: lint2 lint package unit html
 
 .PHONY: allWithErrorHandling
 allWithErrorHandling:
