@@ -65,6 +65,11 @@ bump: git-status
 	git pull
 	poetry run open "https://pypi.org/project/cli-calc/"
 
+.PHONY: publish-test
+publish-test:
+	poetry publish --repository testpypi --build
+	open "https://test.pypi.org/project/cli-calc/"
+
 .PHONY: publish
 publish: bump
 	poetry publish --build
