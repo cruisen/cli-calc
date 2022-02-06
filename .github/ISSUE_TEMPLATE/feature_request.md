@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: "[FEATURE REQUEST] "
-labels: is_enhancement, is_Requirement
+labels: is_enhancement, is_Requirement, needs_Triage
 assignees: cruisen
 
 ---
