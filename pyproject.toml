@@ -17,7 +17,7 @@ style = [
 [tool.poetry]
 name = "cli-calc"
 description = "Powerful yet easy command line calculator."
-version = "0.2.21"
+version = "0.2.22"
 license = "MIT"
 
 authors = [
