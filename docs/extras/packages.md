@@ -157,3 +157,7 @@ It is a good idea to at least quick read through the [The Python Standard Librar
 * [astroquery](https://astroquery.readthedocs.io/en/latest/)
 * [scipy](https://scipy.org/)
 * [geopy](https://pypi.org/project/geopy/)
+
+## High Performance
+* [High Performance Python by Micha Gorelick, Ian Ozsvald (book)](https://www.oreilly.com/library/view/high-performance-python/9781449361747/)
+* [High Performance Python by Gus Cavanaugh (talk)](https://www.youtube.com/watch?v=ewaY9CcjLt0)
