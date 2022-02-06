@@ -170,6 +170,9 @@ Input:
         "help(math)"
 ```
 
+* Permalink to this document as a
+[github page](https://cruisen.github.io/cli-calc/)
+
 ## Warning
 
 - Use of [```eval```](https://docs.python.org/3/library/functions.html#eval) is evil.
