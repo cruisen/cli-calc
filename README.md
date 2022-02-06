@@ -20,11 +20,12 @@ It is easy and common to use
 Based on this ```cli-calc``` adds not only the standard
 [math](https://docs.python.org/3/library/math.html)
 library to the mix.
-Other convenience functions for formatted output like
+Other convenience functions for formatted output, like
 [fractions](https://docs.python.org/3.6/library/fractions.html)
 and
 [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754)
-as well as line input from files and unix pipes are supported.
+, as well as line input from files and unix pipes are supported.
+And some more... :-)
 
 
 ## Example Usage
