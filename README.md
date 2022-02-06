@@ -23,8 +23,8 @@ library to the mix.
 Other convenience functions for formatted output, like
 [fractions](https://docs.python.org/3.6/library/fractions.html)
 and
-[IEEE 754](https://en.wikipedia.org/wiki/IEEE_754)
-, as well as line input from files and unix pipes are supported.
+[IEEE 754](https://en.wikipedia.org/wiki/IEEE_754),
+as well as line input from files and unix pipes are supported.
 And some more... :-)
 
 
