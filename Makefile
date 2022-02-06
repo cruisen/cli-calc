@@ -51,7 +51,7 @@ build: git-status
 
 .PHONY: bump
 bump: git-status
-	dev_tools/meters/make_shields.py
+	poetry run dev_tools/meters/make_shields.py
 	git pull
 	git add .
 	poetry version patch
@@ -76,7 +76,7 @@ bump_minor: git-status
 	@echo $(MINOR)
 	@echo $(MINOR_ISSUES)
 	# TODO add user OK
-	dev_tools/meters/make_shields.py
+	poetry run dev_tools/meters/make_shields.py
 	git pull
 	poetry version minor
 	git add .
