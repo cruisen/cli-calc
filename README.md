@@ -113,19 +113,33 @@ pip install cli-calc
 
 ## Configuration
 
-In order to run it from anywhere: Add a symbolic link in ~/bin
+For convenience, add a shell script in ```~/bin```:
 
 ```bash
 cd ~/bin
-ln -s ~/path/to/your/install/cli_calc/warpper.sh calc
+vi cli-calc
 ```
 
-Then use it anywhere. :-)
+with the following lines:
 
 ```bash
-calc
-echo "7+8" | calc
-cat foo.bar | calc
+path=~/path/to/your/cli-calc/cli_calc
+cd $path
+./main.py
+```
+
+Make it executeable:
+
+```bash
+chmod a+x cli-calc
+```
+
+then use it anywhere. :-)
+
+```bash
+echo "7+8" | cli-calc
+cat foo.bar | cli-calc
+cli-calc
 ```
 
 ## Help
