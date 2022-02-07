@@ -242,17 +242,20 @@ and
 
 ### Note on Shields
 
-1. [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
-   [flake8-commas](https://github.com/PyCQA/flake8-commas)
+[![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
+
+1. [flake8-commas](https://github.com/PyCQA/flake8-commas)
    one of the development plugins of the
    [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide)
    is marked as *No Maintenance Intended*.
    Hence the **1 deprecated dependency**.
    See this
    [Issue](https://github.com/wemake-services/wemake-python-styleguide/issues/2276).
-   Most probable
-   [wemake 2](https://github.com/wemake-services/wemake-python-styleguide)
-   will replace this dependency with a fork.
+   Most probable *wemake* will replace this dependency with a fork.
+
+1. [python 3.7](https://www.python.org/dev/peps/pep-0537/#and-beyond-schedule)
+   is deprecated.
+   However some dev tools are still dpendant.
 
 ## Features
 
