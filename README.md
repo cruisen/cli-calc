@@ -14,7 +14,7 @@ Powerful yet easy command line calculator.
 
 ## Introduction
 
-### python at the comand line (cli)
+### python at the command line (cli)
 
 It is easy and common to use
 [Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
@@ -67,7 +67,7 @@ library to the mix, as well as cmath and others.
 and
 [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754).
 
-* Supports line input from files and unix pipes.
+* Supports line input from files and Unix pipes.
 
 * And some more... :-)
 
@@ -128,7 +128,7 @@ cd $path
 ./main.py
 ```
 
-Make it executeable:
+Make it executable:
 
 ```bash
 chmod a+x cli-calc
@@ -255,7 +255,7 @@ and
 
 1. [python 3.7](https://www.python.org/dev/peps/pep-0537/#and-beyond-schedule)
    is deprecated.
-   However some dev tools are still dpendant.
+   However some dev tools are still dependant.
 
 ## Features
 
@@ -347,7 +347,7 @@ Integration as in: Deployment and Integration testing.
   * [cloc](https://github.com/AlDanial/cloc) for SLOC
 
 ### Jason Query for Makefile and Shields
-* [jq](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-keyhttps://stedolan.github.io/jq/)
+* [jq](https://stedolan.github.io/jq/)
   * [Syntax](https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key)
 
 ## Teaching Python Development
