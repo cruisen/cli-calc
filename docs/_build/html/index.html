@@ -100,14 +100,26 @@ and
 </section>
 <section id="more-examples">
 <h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cos<span class="o">(</span>pi/2<span class="o">)</span>
-0xFF ^ 0b10
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cli-calc
+hex, int, float,
+0x0, <span class="m">0</span>, <span class="m">0</span>.0, : cos<span class="o">(</span>pi/2<span class="o">)</span>
+cos<span class="o">(</span>pi/2<span class="o">)</span>
+0x0, <span class="m">0</span>, <span class="m">6</span>.123233995736766e-17, : 0xFF ^ 0b10
+0xFF^0b10
+0xfd, <span class="m">253</span>, <span class="m">253</span>.0, : <span class="m">2</span>**8-1
 <span class="m">2</span>**8-1
-log<span class="o">(</span><span class="m">2</span><span class="o">)</span>
+0xff, <span class="m">255</span>, <span class="m">255</span>.0, : log<span class="o">(</span>e<span class="o">)</span>
+log<span class="o">(</span>e<span class="o">)</span>
+0x1, <span class="m">1</span>, <span class="m">1</span>.0, : comb<span class="o">(</span><span class="m">49</span>,6<span class="o">)</span>
 comb<span class="o">(</span><span class="m">49</span>,6<span class="o">)</span>
+0xd56048, <span class="m">13983816</span>, <span class="m">13983816</span>.0, : factorial<span class="o">(</span><span class="m">42</span><span class="o">)</span>
 factorial<span class="o">(</span><span class="m">42</span><span class="o">)</span>
+0x3c1581d491b28f523c23abdf35b689c908000000000, <span class="m">1405006117752879898543142606244511569936384000000000</span>, <span class="m">1</span>.40500611775288e+51, : random<span class="o">()</span>
 random<span class="o">()</span>
-cmath.phase<span class="o">(</span>complex<span class="o">(</span>-1.0, <span class="m">0</span>.0<span class="o">))</span>
+0x0, <span class="m">0</span>, <span class="m">0</span>.24958817003921918, : cmath.phase<span class="o">(</span>complex<span class="o">(</span>-1.0, <span class="m">0</span>.0<span class="o">))</span>
+cmath.phase<span class="o">(</span>complex<span class="o">(</span>-1.0,0.0<span class="o">))</span>
+0x3, <span class="m">3</span>, <span class="m">3</span>.141592653589793, : q
+$
 </pre></div>
 </div>
 </section>
