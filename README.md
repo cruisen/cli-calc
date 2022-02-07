@@ -77,6 +77,7 @@ and
 ## More examples
 
 ```bash
+$ cli-calc
 hex, int, float,
 0x0, 0, 0.0, : cos(pi/2)
 cos(pi/2)
@@ -95,6 +96,7 @@ random()
 0x0, 0, 0.24958817003921918, : cmath.phase(complex(-1.0, 0.0))
 cmath.phase(complex(-1.0,0.0))
 0x3, 3, 3.141592653589793, : q
+$
 ```
 
 ## Included Math Libraries
