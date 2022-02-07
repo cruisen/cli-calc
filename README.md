@@ -77,14 +77,24 @@ and
 ## More examples
 
 ```bash
+hex, int, float,
+0x0, 0, 0.0, : cos(pi/2)
 cos(pi/2)
-0xFF ^ 0b10
+0x0, 0, 6.123233995736766e-17, : 0xFF ^ 0b10
+0xFF^0b10
+0xfd, 253, 253.0, : 2**8-1
 2**8-1
-log(2)
+0xff, 255, 255.0, : log(e)
+log(e)
+0x1, 1, 1.0, : comb(49,6)
 comb(49,6)
+0xd56048, 13983816, 13983816.0, : factorial(42)
 factorial(42)
+0x3c1581d491b28f523c23abdf35b689c908000000000, 1405006117752879898543142606244511569936384000000000, 1.40500611775288e+51, : random()
 random()
-cmath.phase(complex(-1.0, 0.0))
+0x0, 0, 0.24958817003921918, : cmath.phase(complex(-1.0, 0.0))
+cmath.phase(complex(-1.0,0.0))
+0x3, 3, 3.141592653589793, : q
 ```
 
 ## Included Math Libraries
