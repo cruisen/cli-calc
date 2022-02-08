@@ -14,7 +14,7 @@ Powerful yet easy command line calculator.
 
 ## Introduction
 
-Just using python at the command line provides a pretty decent calculator:
+Using plain python at the command line already provides a pretty decent calculator:
 
 ```bash
 $ python
@@ -36,13 +36,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 Read more about
 [Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
 
-But it is a little cumbersome,
-if you want to use a ```sin()``` function or the like.
-Typing ```import math```,
-and then ```math.sin( math.pi )``` is not straight forward.
+But not all is straight forward.
+For example, if you want to calculate ```sin(pi/2)```:
+* First you need to ```import math```,
+* and then use it with```math.sin( math.pi / 2 )```.
 
 But:
-[There must be a better way!](https://www.youtube.com/watch?v=UANN2Eu6ZnM)
+[there must be a better way!](https://www.youtube.com/watch?v=UANN2Eu6ZnM)
 And there is...
 
 
