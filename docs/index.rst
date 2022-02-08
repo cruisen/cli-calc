@@ -11,8 +11,8 @@ Contents
 
 .. toctree::
   extras/develop.md
-  extras/teaching.md
   extras/zsh.md
+  extras/teaching.md
   extras/packages.md
 
 

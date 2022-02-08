@@ -41,6 +41,7 @@
 <a class="reference external image-reference" href="https://pypi.org/project/cli-calc/"><img alt="pypi" src="https://img.shields.io/pypi/v/cli-calc" /></a>
 <a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/releases"><img alt="github release" src="https://img.shields.io/github/release-date/cruisen/cli-calc" /></a>
 <a class="reference external image-reference" href="https://pypistats.org/packages/cli-calc"><img alt="pypi downloads" src="https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads" /></a>
+<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/blob/main/docs/extras/development.md"><img alt="DEV" src="https://img.shields.io/badge/about-dev-green" /></a>
 <p>Powerful yet easy command line calculator.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
@@ -180,7 +181,7 @@ cli-calc
 </section>
 <section id="help">
 <h2>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>calc
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cli-calc
 h
 Input:
     <span class="s2">&quot;q&quot;</span> <span class="k">for</span> quit, <span class="s2">&quot;h&quot;</span> <span class="k">for</span> <span class="nb">help</span>
@@ -222,272 +223,32 @@ However precautions are taken.</p></li>
 <h1>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h1>
 <section id="pull-request">
 <h2>Pull Request<a class="headerlink" href="#pull-request" title="Permalink to this headline">¶</a></h2>
-<p>PR’s are Welcome! See
-<a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/PULL_REQUEST_TEMPLATE.md">PULL_REQUEST_TEMPLATE</a>
-and
-<a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
-</section>
-<section id="metric-dashboard">
-<h2>Metric Dashboard<a class="headerlink" href="#metric-dashboard" title="Permalink to this headline">¶</a></h2>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/actions/workflows/test.yml"><img alt="test" src="https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg" /></a>
-<a class="reference external image-reference" href="https://codecov.io/gh/cruisen/cli-calc"><img alt="codecov" src="https://codecov.io/gh/cruisen/cli-calc/branch/main/graph/badge.svg?token=i9nYZL3MM3" /></a>
-<a class="reference external image-reference" href="https://results.pre-commit.ci/latest/github/cruisen/cli-calc/main"><img alt="pre-commit.ci status" src="https://results.pre-commit.ci/badge/github/cruisen/cli-calc/main.svg" /></a>
-<a class="reference external image-reference" href="https://readthedocs.org/projects/cli-calc/builds/"><img alt="Documentation Status" src="https://readthedocs.org/projects/cli-calc/badge/?version=latest" /></a>
-<a class="reference external image-reference" href="https://www.sphinx-doc.org/"><img alt="made-with-sphinx-doc" src="https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg" /></a>
-<a class="reference external image-reference" href="https://scrutinizer-ci.com/g/cruisen/cli-calc/?branch=main"><img alt="Scrutinizer Code Quality" src="https://scrutinizer-ci.com/g/cruisen/cli-calc/badges/quality-score.png?b=main" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml"><img alt="CodeQL" src="https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml/badge.svg?branch=main" /></a>
-<a class="reference external image-reference" href="https://requires.io/github/cruisen/cli-calc/requirements/?branch=main"><img alt="Requirements Status" src="https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main" /></a>
-<a class="reference external image-reference" href="https://libraries.io/github/cruisen/cli-calc"><img alt="Dependencies" src="https://img.shields.io/librariesio/release/github/cruisen/cli-calc" /></a>
-<a class="reference external image-reference" href="https://pypi.org/project/cli-calc/"><img alt="Python Version" src="https://img.shields.io/pypi/pyversions/cli-calc.svg" /></a>
-<a class="reference external image-reference" href="https://realpython.com/cpython-source-code-guide/"><img alt="PyPI - Implementation" src="https://img.shields.io/pypi/implementation/cli-calc" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/search?l=python"><img alt="Python Lang" src="https://img.shields.io/github/languages/top/cruisen/cli-calc" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/search?l=python"><img alt="Languages" src="https://img.shields.io/github/languages/count/cruisen/cli-calc" /></a>
-<a class="reference external image-reference" href="https://github.com/wemake-services/wemake-python-styleguide"><img alt="wemake-python-styleguide" src="https://img.shields.io/badge/style-wemake-000000.svg" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/tree/main/cli_calc"><img alt="SLOC" src="https://img.shields.io/endpoint?color=blue&amp;url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/cli_calc_shields.json" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/tree/main/tests"><img alt="SLOC Tests" src="https://img.shields.io/endpoint?color=blue&amp;url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/tests_shields.json" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/tree/main/dev_tools"><img alt="SLOC Dev" src="https://img.shields.io/endpoint?color=blue&amp;url=https://raw.githubusercontent.com/cruisen/cli-calc/main/dev_tools/meters/dev_tools_shields.json" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc.git"><img alt="code size" src="https://img.shields.io/github/languages/code-size/cruisen/cli-calc" /></a>
-<a class="reference external image-reference" href="https://GitHub.com/cruisen/cli-calc/graphs/commit-activity"><img alt="Maintenance" src="https://img.shields.io/badge/Maintained-yes-green" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/blob/main/LICENSE"><img alt="MIT" src="https://img.shields.io/pypi/l/cli-calc" /></a>
-<a class="reference external image-reference" href="https://www.python.org/dev/peps/pep-0301/#distutils-trove-classification"><img alt="pypi status" src="https://img.shields.io/pypi/status/cli-calc" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/stargazers"><img alt="github stars" src="https://img.shields.io/github/stars/cruisen/cli-calc?style=social" /></a>
-<a class="reference external image-reference" href="https://pypi.org/project/cli-calc/"><img alt="pypi" src="https://img.shields.io/pypi/v/cli-calc" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/releases"><img alt="github release" src="https://img.shields.io/github/release-date/cruisen/cli-calc" /></a>
-<a class="reference external image-reference" href="https://pypi.org/project/cli-calc/#files"><img alt="pypi wheel" src="https://img.shields.io/pypi/wheel/cli-calc" /></a>
-<a class="reference external image-reference" href="https://pypistats.org/packages/cli-calc"><img alt="pypi downloads" src="https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/commits/main"><img alt="last commit" src="https://img.shields.io/github/last-commit/cruisen/cli-calc" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/releases/latest"><img alt="GitHub commits since latest release (by SemVer)" src="https://img.shields.io/github/commits-since/cruisen/cli-calc/latest?sort=semver" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/commits/main"><img alt="github commits since" src="https://img.shields.io/github/commits-since/cruisen/cli-calc/v0.1.1" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/commits/main"><img alt="github commits rate" src="https://img.shields.io/github/commit-activity/m/cruisen/cli-calc?label=commits" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/milestone/6"><img alt="github issues next milestone" src="https://img.shields.io/github/milestones/progress-percent/cruisen/cli-calc/6" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Ais_Bug"><img alt="github bugs open" src="https://img.shields.io/github/issues-raw/cruisen/cli-calc/is_Bug?color=red&amp;label=bugs" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed+label%3Ais_Bug"><img alt="github bugs closed" src="https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc/is_Bug?color=green&amp;label=closed" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/issues"><img alt="github issues open" src="https://img.shields.io/github/issues-raw/cruisen/cli-calc?color=blue" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3A1-Now-Important"><img alt="github now" src="https://img.shields.io/github/issues-raw/cruisen/cli-calc/1-Now-Important?color=yellow&amp;label=queued" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed"><img alt="github issues closed" src="https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green&amp;label=closed" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds_Help"><img alt="github help open" src="https://img.shields.io/github/issues-raw/cruisen/cli-calc/needs_Help?color=yellow&amp;label=need%20help" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/pulls"><img alt="Pull Requests open" src="https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed"><img alt="Pull Requests merged" src="https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=merged&amp;color=green" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736"><img alt="Relative date" src="https://img.shields.io/date/1642071600?label=first%20commit" /></a>
-<a class="reference external image-reference" href="https://github.com/cruisen/cli-calc"><img alt="github downloads" src="https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads" /></a>
-<section id="note-on-shields">
-<h3>Note on Shields<a class="headerlink" href="#note-on-shields" title="Permalink to this headline">¶</a></h3>
-<a class="reference external image-reference" href="https://libraries.io/github/cruisen/cli-calc"><img alt="Dependencies" src="https://img.shields.io/librariesio/release/github/cruisen/cli-calc" /></a>
+<p>PR’s are Welcome!</p>
+<section id="tldr">
+<h3>TLDR<a class="headerlink" href="#tldr" title="Permalink to this headline">¶</a></h3>
+<p>In summary, if you want to contribute to a cli-calc, the simplest way is to:</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="https://github.com/PyCQA/flake8-commas">flake8-commas</a>,
-one of the development plugins of the
-<a class="reference external" href="https://github.com/wemake-services/wemake-python-styleguide">wemake-python-styleguide</a>
-is marked as <em>No Maintenance Intended</em>.
-See this
-<a class="reference external" href="https://github.com/wemake-services/wemake-python-styleguide/issues/2276">Issue</a>.
-Most probable <em>wemake</em> will replace this dependency with a fork.</p></li>
-<li><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0537/#and-beyond-schedule">python 3.7</a>
-is deprecated.
-However some dev tools are still dependant.</p></li>
+<li><p>Find cli-calc at <a class="reference external" href="https://github.com/cruisen/cli-calc">github</a></p></li>
+<li><p>Fork it</p></li>
+<li><p>Clone it to your local system</p></li>
+<li><p>Make a new branch</p></li>
+<li><p>Make your changes</p></li>
+<li><p>Push it back to your repo</p></li>
+<li><p>Click the Compare &amp; pull request button</p></li>
+<li><p>Click Create pull request to open a new pull request</p></li>
+<li><p>If the reviewers ask for changes, repeat steps 5 and 6 to add more commits to your pull request.</p></li>
 </ol>
+<p>Happy coding!</p>
+<p>From <a class="reference external" href="https://opensource.com/article/19/7/create-pull-request-github">How to create a pull request in GitHub</a>.</p>
 </section>
-</section>
-<section id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<section id="resources">
+<h3>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Fully <a class="reference external" href="https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html">typed with annotations</a></p></li>
-<li><p>Checked with <a class="reference external" href="https://mypy.readthedocs.io/en/stable/">mypy</a></p></li>
-<li><p>Packaging <a class="reference external" href="https://www.python.org/dev/peps/pep-0561/">PEP561 compatible</a></p></li>
-</ul>
-</section>
-<section id="tools">
-<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
-<section id="python-packages">
-<h3>Python Packages<a class="headerlink" href="#python-packages" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://pypi.org/">pypi.org</a> Python Package Index</p>
-<ul>
-<li><p><a class="reference external" href="https://pythonrepo.com/catalog/popular/">pythonrepo.com</a> Popular Python Libraries</p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#add">poetry add</a></p></li>
-<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#update">poetry update</a></p></li>
-</ul>
-</section>
-<section id="style-and-type-annotations">
-<h3>Style and type annotations<a class="headerlink" href="#style-and-type-annotations" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://pylint.pycqa.org/en/latest/">pylint</a> vim linter</p></li>
-<li><p><a class="reference external" href="https://pycqa.github.io/isort/">isort</a> sort imports</p></li>
-<li><p><a class="reference external" href="https://black.readthedocs.io/en/stable/">black</a> opinionated code formatter</p>
-<ul>
-<li><p><a class="reference external" href="https://wemake-python-stylegui.de/en/latest/">wemake</a> strictest and most opinionated Python linter</p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://mypy.readthedocs.io/en/stable/">mypy</a> static type checker</p></li>
-<li><p><a class="reference external" href="https://flake8.pycqa.org/en/latest/">flake8</a> Style Guide Enforcement</p>
-<ul>
-<li><p><a class="reference external" href="https://nitpick.readthedocs.io/en/latest/">nitpick</a> enforce the same settings across configuration files</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="testing">
-<h3>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.pytest.org/">pytest</a> test framework</p>
-<ul>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=URSWYvyc42M">The Magic Tricks of Testing by Sandi Metz (Talk)</a> on what to test, and what not</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="continuous-testing-integration-ct-ci">
-<h3>Continuous Testing &amp; Integration (CT &amp; CI)<a class="headerlink" href="#continuous-testing-integration-ct-ci" title="Permalink to this headline">¶</a></h3>
-<p>Integration as in: Deployment and Integration testing.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://linux.die.net/man/5/crontab">crontab</a></p></li>
-<li><p><a class="reference external" href="https://github.com/features/actions">github actions</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/cypress-io/github-action/blob/master/.github/workflows/example-basic.yml">pytest &amp; coverage (yml)</a>
-pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></li>
-<li><p><a class="reference external" href="https://github.com/reviewdog/action-misspell">misspell (yml)</a></p></li>
-<li><p><a class="reference external" href="https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-the-codeql-workflow-for-compiled-languages">codeql-analysis (yml)</a></p></li>
-</ul>
-</li>
-<li><p>Alternatives to github actions</p>
-<ul>
-<li><p><a class="reference external" href="https://tox.wiki/en/latest/">tox</a> test and deploy</p></li>
-<li><p><a class="reference external" href="https://www.travis-ci.com/">travis</a> test and deploy</p></li>
-<li><p><a class="reference external" href="https://coveralls.io/">coveralls.io</a> coverage</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="build-and-publish-to-pypi">
-<h3>Build and publish to pypi<a class="headerlink" href="#build-and-publish-to-pypi" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.gnu.org/software/make/manual/make.html">make Makefile</a> automate above</p>
-<ul>
-<li><p><a class="reference external" href="https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html">Managing Projects with GNU Make, 3rd Edition</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#version">poetry version bump</a> bump version</p></li>
-<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#build">poetry build</a> wheel</p></li>
-<li><p><a class="reference external" href="https://python-poetry.org/docs/cli/#publish">poetry publish</a> to pypi</p></li>
-</ul>
-</section>
-<section id="following-semantic-versioning">
-<h3>Following Semantic Versioning<a class="headerlink" href="#following-semantic-versioning" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://semver.org/">Semantic Versioning</a></p>
-<ul>
-<li><p><a class="reference external" href="https://pypi.org/project/semver/">semver</a> Python Package</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="development-environment">
-<h3>Development Environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://python-poetry.org/">poetry</a> python packaging and dependency management</p></li>
-<li><p><a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/README.html">cookiecutter</a> creates projects from project templates</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a> creates projects from project templates</p></li>
-</ul>
-</section>
-<section id="version-and-issue-management">
-<h3>Version and Issue Management<a class="headerlink" href="#version-and-issue-management" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://git-scm.com/">git</a> distributed version control system</p></li>
-<li><p><a class="reference external" href="https://github.com/">github</a> online collaborative version control</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/cli/cli">gh</a> GitHub on the command line</p>
-<ul>
-<li><p><a class="reference external" href="https://gist.github.com/doi-t/5735f9f0f7f8b7664aa6739bc810a2cc">gh Milestones</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://github.com/augmentable-dev/tickgit">tickgit</a> Not used, but collects TODO from source code</p></li>
-</ul>
-</section>
-<section id="ide">
-<h3>IDE<a class="headerlink" href="#ide" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.vim.org/about.php">vi</a> advanced text editor</p></li>
-<li><p><a class="reference external" href="https://code.visualstudio.com/">VS Code</a> source-code editor</p></li>
-</ul>
-</section>
-<section id="shell">
-<h3>Shell<a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://ohmyz.sh/">oh-my-zsh</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms">zsh</a></p></li>
-<li><p><a class="reference external" href="https://chiamakaikeanyi.dev/how-to-configure-your-macos-terminal-with-zsh-like-a-pro/">MAC config</a></p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="documentation">
-<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.markdownguide.org/basic-syntax/">Markdown</a> lightweight markup language</p>
-<ul>
-<li><p><a class="reference external" href="https://dillinger.io/">Markdown to PDF (online)</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">sphinx</a> Python documentation Generator</p></li>
-<li><p><a class="reference external" href="https://github.com/pycqa/doc8">doc8</a> opinionated style checker for rst</p></li>
-<li><p><a class="reference external" href="https://readthedocs.org/">readthedocs</a> document style and service</p></li>
-</ul>
-</section>
-<section id="metric">
-<h3>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://shields.io/">shields</a> for Shields and Badges</p>
-<ul>
-<li><p><a class="reference external" href="http://issuehub.pro/label-guide">issuehub.pro</a> Label Guide</p>
-<ul>
-<li><p><a class="reference external" href="https://naereen.github.io/badges/">List of Badges</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://github.com/AlDanial/cloc">cloc</a> for SLOC</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="jason-query-for-makefile-and-shields">
-<h3>Jason Query for Makefile and Shields<a class="headerlink" href="#jason-query-for-makefile-and-shields" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://stedolan.github.io/jq/">jq</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/stedolan/jq/wiki/Cookbook#filter-objects-based-on-the-contents-of-a-key">Syntax</a></p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="teaching-python-development">
-<h2>Teaching Python Development<a class="headerlink" href="#teaching-python-development" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/docs/extras/teaching.md">Teaching</a></p></li>
-</ul>
-<section id="cli-calc-examples">
-<h3>cli-calc Examples<a class="headerlink" href="#cli-calc-examples" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/actions">github actions (cli-calc)</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml">pytest &amp; coverage (yml) (cli-calc)</a></p></li>
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml">codeql-analysis (yml) (cli-calc)</a></p></li>
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml">misspell (yml) (cli-calc)</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/Makefile">make Makefile (cli-calc)</a> automate above</p></li>
-<li><p><a class="reference external" href="https://cli-calc.readthedocs.io/en/latest/?badge=latest#">cli-calc</a></p></li>
-</ul>
-</section>
-<section id="nvk-tools">
-<h3>NvK Tools<a class="headerlink" href="#nvk-tools" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py">make_shields.py (dev_tool)</a> for SLOC</p></li>
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/dev_tools/sem_ver/get_ver_for_rule.py">get_ver_for_rule (dev_tool)</a></p></li>
-<li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/docs/extras/zsh.md">Tips</a></p></li>
+<li><p>Read more about
+<a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md">Contributing</a>.</p></li>
+<li><p>and our
+<a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/docs/extras/development.md">development</a>
+enviroment and tool set.</p></li>
 </ul>
 </section>
 </section>
@@ -510,6 +271,11 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="extras/develop.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extras/develop.html#pull-request">Pull Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extras/develop.html#metric-dashboard">Metric Dashboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="extras/develop.html#note-on-shields">Note on Shields</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="extras/develop.html#features">Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="extras/develop.html#tools">Tools</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#python-packages">Python Packages</a></li>
@@ -528,6 +294,24 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#documentation">Documentation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#metric">Metric</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#jason-query-for-makefile-and-shields">Jason Query for Makefile and Shields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="extras/develop.html#teaching-python-development">Teaching Python Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="extras/develop.html#cli-calc-examples">cli-calc Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extras/develop.html#nvk-tools">NvK Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="extras/zsh.html">Tips and Tricks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extras/zsh.html#zsh-shell">zsh shell</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#fast-cd">Fast cd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#explanation">Explanation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#zsh-options">zsh options</a></li>
 </ul>
 </li>
 </ul>
@@ -556,19 +340,6 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 <li class="toctree-l3"><a class="reference internal" href="extras/teaching.html#solvers">Solvers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/teaching.html#general">General</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/teaching.html#lambda-calculus">Lambda Calculus</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extras/zsh.html">Tips and Tricks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extras/zsh.html#zsh-shell">zsh shell</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#fast-cd">Fast cd</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#example">Example</a></li>
-<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#explanation">Explanation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#configuration">Configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#zsh-options">zsh options</a></li>
 </ul>
 </li>
 </ul>
@@ -670,6 +441,11 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="extras/develop.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extras/develop.html#pull-request">Pull Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extras/develop.html#metric-dashboard">Metric Dashboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="extras/develop.html#note-on-shields">Note on Shields</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="extras/develop.html#features">Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="extras/develop.html#tools">Tools</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#python-packages">Python Packages</a></li>
@@ -688,6 +464,24 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#documentation">Documentation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#metric">Metric</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/develop.html#jason-query-for-makefile-and-shields">Jason Query for Makefile and Shields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="extras/develop.html#teaching-python-development">Teaching Python Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="extras/develop.html#cli-calc-examples">cli-calc Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extras/develop.html#nvk-tools">NvK Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="extras/zsh.html">Tips and Tricks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extras/zsh.html#zsh-shell">zsh shell</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#fast-cd">Fast cd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#explanation">Explanation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#zsh-options">zsh options</a></li>
 </ul>
 </li>
 </ul>
@@ -716,19 +510,6 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 <li class="toctree-l3"><a class="reference internal" href="extras/teaching.html#solvers">Solvers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/teaching.html#general">General</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extras/teaching.html#lambda-calculus">Lambda Calculus</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extras/zsh.html">Tips and Tricks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extras/zsh.html#zsh-shell">zsh shell</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#fast-cd">Fast cd</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#example">Example</a></li>
-<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#explanation">Explanation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="extras/zsh.html#configuration">Configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="extras/zsh.html#zsh-options">zsh options</a></li>
 </ul>
 </li>
 </ul>
