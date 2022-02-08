@@ -10,7 +10,7 @@
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
 
-[![DEV](https://img.shields.io/badge/about-dev-green)](https://github.com/cruisen/cli-calc/blob/main/docs/extras/development.md)
+[![DEV](https://img.shields.io/badge/about-dev-green)](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md)
 
 Powerful yet easy command line calculator.
 
@@ -228,7 +228,7 @@ From [How to create a pull request in GitHub](https://opensource.com/article/19/
 * Read more about
   [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
 * and our
-  [development](https://github.com/cruisen/cli-calc/blob/main/docs/extras/development.md)
+  [development](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md)
   enviroment and tool set.
 
 
