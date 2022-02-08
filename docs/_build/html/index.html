@@ -44,10 +44,7 @@
 <p>Powerful yet easy command line calculator.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<section id="python-at-the-command-line-cli">
-<h3>python at the command line (cli)<a class="headerlink" href="#python-at-the-command-line-cli" title="Permalink to this headline">¶</a></h3>
-<p>It is easy and common to use
-<a class="reference external" href="https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator">Python as a Calculator</a>.</p>
+<p>Just using python at the command line provides a pretty decent calculator:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python
 Python <span class="m">3</span>.8.5 <span class="o">(</span>default, Aug  <span class="m">2</span> <span class="m">2020</span>, <span class="m">16</span>:00:15<span class="o">)</span>
 <span class="o">[</span>Clang <span class="m">11</span>.0.0 <span class="o">(</span>clang-1100.0.33.17<span class="o">)]</span> on darwin
@@ -64,10 +61,15 @@ Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&
 &gt;&gt;&gt; exit<span class="o">()</span>
 </pre></div>
 </div>
+<p>Read more about
+<a class="reference external" href="https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator">Python as a Calculator</a>.</p>
+<p>But it is a little cumbersome,
+if you want to use a <code class="docutils literal notranslate"><span class="pre">sin()</span></code> function or the like.
+Typing <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code>,
+and then <code class="docutils literal notranslate"><span class="pre">math.sin(</span> <span class="pre">math.pi</span> <span class="pre">)</span></code> is not straight forward.</p>
 <p>But:
 <a class="reference external" href="https://www.youtube.com/watch?v=UANN2Eu6ZnM">There must be a better way!</a>
 And there is…</p>
-</section>
 <section id="id1">
 <h3>cli-calc<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cli-calc
