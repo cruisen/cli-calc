@@ -163,7 +163,7 @@ cli-calc
 ## Help
 
 ```bash
-calc
+cli-calc
 h
 Input:
     "q" for quit, "h" for help
