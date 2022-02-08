@@ -1,6 +1,6 @@
 ---
 name: Change Request
-about: Describe this issue template's purpose here.
+about: Raising a Change Request
 title: "[CR] "
 labels: needs_Triage
 assignees: cruisen
