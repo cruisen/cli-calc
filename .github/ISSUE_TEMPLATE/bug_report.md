@@ -4,6 +4,7 @@ about: Create a report to help us improve
 title: "[BUG] "
 labels: is_Bug, needs_Triage
 assignees: cruisen
+milestones: Bug_Fixes
 
 ---
 
