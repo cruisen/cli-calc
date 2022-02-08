@@ -220,8 +220,9 @@ In summary, if you want to contribute to a cli-calc, the simplest way is to:
 
 Happy coding!
 
+[
 From [How to create a pull request in GitHub](https://opensource.com/article/19/7/create-pull-request-github).
-
+]
 ### Resources
 
 * Read more about
