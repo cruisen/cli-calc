@@ -182,12 +182,20 @@ Integration as in: Deployment and Integration testing.
 * [Teaching](https://github.com/cruisen/cli-calc/blob/main/docs/extras/teaching.md)
 
 ### cli-calc Examples
+
+#### make
+* [make Makefile (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
+
+#### github actions
 * [github actions (cli-calc)](https://github.com/cruisen/cli-calc/actions)
   * [pytest & coverage (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml)
   * [codeql-analysis (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
   * [misspell (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
-* [make Makefile (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/Makefile) automate above
-* [cli-calc](https://cli-calc.readthedocs.io/en/latest/?badge=latest#)
+
+#### Doc
+* [cruisen.github.io/cli-calc](https://cruisen.github.io/cli-calc/)
+* [cli-calc.readthedocs.io](https://cli-calc.readthedocs.io/en/latest/?badge=latest#)
+
 
 ### NvK Tools
 * [make_shields.py (dev_tool)](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
