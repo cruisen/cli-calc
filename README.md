@@ -33,15 +33,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 
-Read more about
+* Read more about
 [Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
 
 But not all is straight forward.
 For example, if you want to calculate ```sin(pi/2)```:
 * First you need to ```import math```,
-* and then use it with```math.sin( math.pi / 2 )```.
+* and then use it with ```math.sin( math.pi / 2 )```.
 
-But:
+But
 [there must be a better way!](https://www.youtube.com/watch?v=UANN2Eu6ZnM)
 And there is...
 
@@ -68,14 +68,11 @@ $
 * ```cli-calc``` adds the standard
 [math](https://docs.python.org/3/library/math.html)
 library to the mix, as well as cmath and others.
-
 * Provides convenience functions for formatted output, like
 [fractions](https://docs.python.org/3.6/library/fractions.html)
 and
 [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754).
-
 * Supports line input from files and Unix pipes.
-
 * And some more... :-)
 
 
