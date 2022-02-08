@@ -56,10 +56,10 @@ PR's are Welcome! See
 [![github issues closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed)
 [![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/needs_Help?color=yellow&label=need%20help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds_Help)
 
-[![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
-[![Pull Requests merged](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=merged&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
-[![Relative date](https://img.shields.io/date/1642071600?label=first%20commit)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
-[![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=guthub%20uptime)](https://github-com.pingpong.host/en/)
+[![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR&color=blue)](https://github.com/cruisen/cli-calc/pulls)
+[![Pull Requests merged](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=merged&color=blue)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
+[![Relative date](https://img.shields.io/date/1642071600?label=first%20commit&color=blue)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
+[![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=guthub%20uptime&color=blue)](https://github-com.pingpong.host/en/)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
 ### Note on Shields
