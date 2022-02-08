@@ -1,7 +1,7 @@
-
 # Pull Request
 
-PR's are welcome. Thank you for considering teh effort :-)
+* PR's are welcome. Thank you for considering the effort :-)
+* Or just simply raise an [issue](https://github.com/cruisen/cli-calc/issues/new/choose).
 
 # TLDR
 In summary, if you want to contribute to cli-calc, the simplest way is to:

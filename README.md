@@ -208,7 +208,7 @@ PR's are Welcome!
 * and our
   [development](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md)
   enviroment and tool set.
-
+* Or just simply raise an [issue](https://github.com/cruisen/cli-calc/issues/new/choose).
 
 # License
 
