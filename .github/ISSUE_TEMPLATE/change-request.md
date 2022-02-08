@@ -1,6 +1,6 @@
 ---
 name: Change Request
-about: Raising a Change Request
+about: Create a Change Request to help us to improve
 title: "[CR] "
 labels: needs_Triage
 assignees: cruisen
