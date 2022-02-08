@@ -1,15 +1,15 @@
 ---
-name: Change Request
-about: Create a Change Request to help us to improve
-title: "[CR] "
-labels: needs_Triage, is_Change_Request
+name: Requirement
+about: Create a new Requirement
+title: "[Requirement] "
+labels: needs_Triage, is_Requirement
 assignees: cruisen
 
 ---
 
 ---
 
-**Is your change request related to a problem? Please describe.**
+**Is your new Requirement request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
 **Describe the solution you'd like**
