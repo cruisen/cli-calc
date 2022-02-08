@@ -15,6 +15,9 @@ All this will move into a sister project to actually teach this approach. See [A
 ### Context Managers
 * [Building A Custom Context Manager In Python: A Closer Look by ArjanCodes (Tutorial)](https://www.youtube.com/watch?v=14z_Tf3p2Mw)
 
+### Error Handling
+* [Exceptional Exceptions - How to properly raise, handle and create them by Mario Corchero (Talk)](https://www.youtube.com/watch?v=V2fGAv2R5j8)
+
 ## OOO
 
 > “I’m sorry that I long ago coined the term “objects” for this topic because it gets many people to focus on the lesser idea. The big idea is messaging.”
