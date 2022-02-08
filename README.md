@@ -204,7 +204,7 @@ Input:
 PR's are Welcome!
 
 * Please read more about
-  [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
+  [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md)
 * and our
   [development](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md)
   enviroment and tool set.
