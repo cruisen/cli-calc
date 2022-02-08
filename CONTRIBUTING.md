@@ -1,4 +1,37 @@
-## Dependencies
+
+# Pull Request
+
+PR's are welcome. Thank you for considering teh effort :-)
+
+# TLDR
+In summary, if you want to contribute to cli-calc, the simplest way is to:
+
+1. Find cli-calc at [github](https://github.com/cruisen/cli-calc)
+1. Fork it
+1. Clone it to your local system
+1. Make a new branch
+1. Make your changes
+1. Push it back to your repo
+1. Click the Compare & pull request button
+1. Click Create pull request to open a new pull request
+1. If the reviewers ask for changes, repeat steps 5 and 6 to add more commits to your pull request.
+
+Happy coding!
+
+[
+From [How to create a pull request in GitHub](https://opensource.com/article/19/7/create-pull-request-github).
+]
+
+## Overview
+
+This is a quick run down on how our development process is meant to be run.
+
+Also have a look at our detailed list describing all
+[development](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md)
+tools and more.
+
+
+## Dependancies
 
 We use [poetry](https://github.com/python-poetry/poetry) to manage the dependencies.
 
@@ -13,7 +46,7 @@ To activate your `virtualenv` run `poetry shell`.
 
 ## One magic command
 
-Run `make test` to run everything we have!
+Run `make` to run everything we have!
 
 
 ## Tests

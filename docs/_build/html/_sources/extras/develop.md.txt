@@ -3,9 +3,10 @@
 ## Pull Request
 
 PR's are Welcome! See
-[PULL_REQUEST_TEMPLATE](https://github.com/cruisen/cli-calc/blob/main/PULL_REQUEST_TEMPLATE.md)
-and
-[CONTRIBUTING](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
+
+* Please read more about
+  [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
+
 
 ## Metric Dashboard
 
