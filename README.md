@@ -250,7 +250,7 @@ and
 [![github help open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/needs_Help?color=yellow&label=need%20help)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds_Help)
 
 [![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
-[![Pull Requests closed](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=closed&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
+[![Pull Requests merged](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=merged&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
 [![Relative date](https://img.shields.io/date/1642071600?label=first%20commit)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
