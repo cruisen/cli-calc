@@ -33,8 +33,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 
-* Read more about
+[
+Read more about
 [Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
+]
 
 But not all is straight forward.
 For example, if you want to calculate ```sin(pi/2)```:
