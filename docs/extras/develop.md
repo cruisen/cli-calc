@@ -2,7 +2,7 @@
 
 ## Pull Request
 
-PR's are Welcome! See
+PR's are Welcome!
 
 * Please read more about
   [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
