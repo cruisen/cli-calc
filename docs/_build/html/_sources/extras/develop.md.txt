@@ -2,7 +2,7 @@
 
 ## Pull Request
 
-PR's are Welcome! See
+PR's are Welcome!
 
 * Please read more about
   [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
@@ -40,6 +40,7 @@ PR's are Welcome! See
 [![pypi](https://img.shields.io/pypi/v/cli-calc)](https://pypi.org/project/cli-calc/)
 [![github release](https://img.shields.io/github/release-date/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/releases)
 [![pypi wheel](https://img.shields.io/pypi/wheel/cli-calc)](https://pypi.org/project/cli-calc/#files)
+[![pypi uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_95c996da63fe45faa6089b68cc4e112e?label=pypi%20uptime)](https://pypi.pingpong.host/en/)
 [![pypi downloads](https://img.shields.io/pypi/dm/cli-calc?label=pypi%20downloads)](https://pypistats.org/packages/cli-calc)
 
 [![last commit](https://img.shields.io/github/last-commit/cruisen/cli-calc)](https://github.com/cruisen/cli-calc/commits/main)
@@ -57,7 +58,8 @@ PR's are Welcome! See
 
 [![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
 [![Pull Requests merged](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=merged&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
-[![Relative date](https://img.shields.io/date/1642071600?label=first%20commit)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
+[![Relative date](https://img.shields.io/date/1642071600?label=first%20commit&color=green)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
+[![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=github%20uptime)](https://github-com.pingpong.host/en/)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
 ### Note on Shields

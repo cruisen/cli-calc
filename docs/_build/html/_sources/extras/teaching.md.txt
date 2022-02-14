@@ -47,7 +47,11 @@ From:
   * [Succession by Katrina Owen (git)](https://github.com/kytrinyx/succession)
 * [Polly Want a Message by Sandi Metz (Talk)](https://www.youtube.com/watch?v=YtROlyWWhV0)
 
-### SOLID
+### CUPID
+* [CUPID—for joyful coding by Dan North](https://dannorth.net/2022/02/10/cupid-for-joyful-coding/)
+
+#### SOLID
+A litte outdated, and superseeded by CUPID, but...
 * [SOLID Object-Oriented Design by Sandi Metz (Talk)](https://www.youtube.com/watch?v=v-2yFMzxqwU)
 * [SOLID (Wikipedia)](https://en.wikipedia.org/wiki/SOLID)
 * [SOLID Design Principles simplified with UML](https://medium.com/@RikamPalkar/solid-design-principles-simplified-with-uml-8432a3406248)
