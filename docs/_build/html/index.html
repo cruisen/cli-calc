@@ -46,20 +46,20 @@
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Using plain python at the command line already provides a pretty decent calculator:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python
-Python <span class="m">3</span>.8.5 <span class="o">(</span>default, Aug  <span class="m">2</span> <span class="m">2020</span>, <span class="m">16</span>:00:15<span class="o">)</span>
-<span class="o">[</span>Clang <span class="m">11</span>.0.0 <span class="o">(</span>clang-1100.0.33.17<span class="o">)]</span> on darwin
-Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
-&gt;&gt;&gt; <span class="m">2</span>**10
-<span class="m">1024</span>
-&gt;&gt;&gt; _ / <span class="m">10</span>
-<span class="m">102</span>.4
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>$ python
+Python 3.8.5 (default, Aug  2 2020, 16:00:15)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; 2**10
+1024
+&gt;&gt;&gt; _ / 10
+102.4
 &gt;&gt;&gt; import math
 &gt;&gt;&gt; math.pi
-<span class="m">3</span>.141592653589793
-&gt;&gt;&gt; math.sin<span class="o">(</span>math.pi / <span class="m">2</span><span class="o">)</span>
-<span class="m">1</span>.0
-&gt;&gt;&gt; exit<span class="o">()</span>
+3.141592653589793
+&gt;&gt;&gt; math.sin(math.pi / 2)
+1.0
+&gt;&gt;&gt; exit()
 </pre></div>
 </div>
 <p>[
@@ -77,17 +77,17 @@ For example, if you want to calculate <code class="docutils literal notranslate"
 And there is…</p>
 <section id="id1">
 <h3>cli-calc<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cli-calc
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>$ cli-calc
 hex, int, float,
-0x0, <span class="m">0</span>, <span class="m">0</span>.0, : <span class="m">2</span>**10
-<span class="m">2</span>**10
-0x400, <span class="m">1024</span>, <span class="m">1024</span>.0, : _ / <span class="m">10</span>
-<span class="m">1024</span>.0/10
-0x66, <span class="m">102</span>, <span class="m">102</span>.4, : pi
+0x0, 0, 0.0, : 2**10
+2**10
+0x400, 1024, 1024.0, : _ / 10
+1024.0/10
+0x66, 102, 102.4, : pi
 pi
-0x3, <span class="m">3</span>, <span class="m">3</span>.141592653589793, : sin<span class="o">(</span>pi / <span class="m">2</span><span class="o">)</span>
-sin<span class="o">(</span>pi/2<span class="o">)</span>
-0x1, <span class="m">1</span>, <span class="m">1</span>.0, : q
+0x3, 3, 3.141592653589793, : sin(pi / 2)
+sin(pi/2)
+0x1, 1, 1.0, : q
 $
 </pre></div>
 </div>
@@ -107,25 +107,25 @@ and
 </section>
 <section id="more-examples">
 <h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cli-calc
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>$ cli-calc
 hex, int, float,
-0x0, <span class="m">0</span>, <span class="m">0</span>.0, : cos<span class="o">(</span>pi/2<span class="o">)</span>
-cos<span class="o">(</span>pi/2<span class="o">)</span>
-0x0, <span class="m">0</span>, <span class="m">6</span>.123233995736766e-17, : 0xFF ^ 0b10
+0x0, 0, 0.0, : cos(pi/2)
+cos(pi/2)
+0x0, 0, 6.123233995736766e-17, : 0xFF ^ 0b10
 0xFF^0b10
-0xfd, <span class="m">253</span>, <span class="m">253</span>.0, : <span class="m">2</span>**8-1
-<span class="m">2</span>**8-1
-0xff, <span class="m">255</span>, <span class="m">255</span>.0, : log<span class="o">(</span>e<span class="o">)</span>
-log<span class="o">(</span>e<span class="o">)</span>
-0x1, <span class="m">1</span>, <span class="m">1</span>.0, : comb<span class="o">(</span><span class="m">49</span>,6<span class="o">)</span>
-comb<span class="o">(</span><span class="m">49</span>,6<span class="o">)</span>
-0xd56048, <span class="m">13983816</span>, <span class="m">13983816</span>.0, : factorial<span class="o">(</span><span class="m">42</span><span class="o">)</span>
-factorial<span class="o">(</span><span class="m">42</span><span class="o">)</span>
-0x3c1581d491b28f523c23abdf35b689c908000000000, <span class="m">1405006117752879898543142606244511569936384000000000</span>, <span class="m">1</span>.40500611775288e+51, : random<span class="o">()</span>
-random<span class="o">()</span>
-0x0, <span class="m">0</span>, <span class="m">0</span>.24958817003921918, : cmath.phase<span class="o">(</span>complex<span class="o">(</span>-1.0, <span class="m">0</span>.0<span class="o">))</span>
-cmath.phase<span class="o">(</span>complex<span class="o">(</span>-1.0,0.0<span class="o">))</span>
-0x3, <span class="m">3</span>, <span class="m">3</span>.141592653589793, : q
+0xfd, 253, 253.0, : 2**8-1
+2**8-1
+0xff, 255, 255.0, : log(e)
+log(e)
+0x1, 1, 1.0, : comb(49,6)
+comb(49,6)
+0xd56048, 13983816, 13983816.0, : factorial(42)
+factorial(42)
+0x3c1581d491b28f523c23abdf35b689c908000000000, 1405006117752879898543142606244511569936384000000000, 1.40500611775288e+51, : random()
+random()
+0x0, 0, 0.24958817003921918, : cmath.phase(complex(-1.0, 0.0))
+cmath.phase(complex(-1.0,0.0))
+0x3, 3, 3.141592653589793, : q
 $
 </pre></div>
 </div>
