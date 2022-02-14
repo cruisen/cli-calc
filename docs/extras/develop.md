@@ -59,7 +59,7 @@ PR's are Welcome!
 [![Pull Requests open](https://img.shields.io/github/issues-pr-raw/cruisen/cli-calc?label=PR)](https://github.com/cruisen/cli-calc/pulls)
 [![Pull Requests merged](https://img.shields.io/github/issues-pr-closed-raw/cruisen/cli-calc?label=merged&color=green)](https://github.com/cruisen/cli-calc/pulls?q=is%3Apr+is%3Aclosed)
 [![Relative date](https://img.shields.io/date/1642071600?label=first%20commit&color=green)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
-[![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=guthub%20uptime)](https://github-com.pingpong.host/en/)
+[![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=github%20uptime)](https://github-com.pingpong.host/en/)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
 ### Note on Shields
