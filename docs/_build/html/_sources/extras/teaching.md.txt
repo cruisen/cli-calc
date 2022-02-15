@@ -85,7 +85,15 @@ we enable ourselves to write maintainable software. They build upon each other.
 * [Manifesto for Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/)
   * [Software Craftsmanship (Wikipedia)](https://en.wikipedia.org/wiki/Software_craftsmanship)
 
-## Time to burn
+## Time to burn?
+### Learn from *my* Heroes
+* [Dan North (Talks)](https://dannorth.net/talks/)
+* [Kevlin Henney (Talks)](https://vimeo.com/channels/761265)
+* [Brandon Rhodes (Talks)](https://rhodesmill.org/brandon/talks/)
+  * [skyfield, a astronomy package by Brandon Rhodes](https://github.com/skyfielders/python-skyfield)
+* [Raymond Hettinger (Talks)](https://www.youtube.com/results?search_query=%22Raymond+Hettinger%22)
+* [Arjan Egges (Talks)](https://www.youtube.com/c/ArjanCodes)
+
 ### OOO
 * [Modern Python patterns and idioms by Alex Martelli (Talk)](https://www.youtube.com/watch?v=LeuChRCByZc)
 * [An Introduction to Object-Oriented Programming by Timothy A Budd (Book)](https://web.engr.oregonstate.edu/~budd/Books/oopintro3e/info/ReadMe.html)
