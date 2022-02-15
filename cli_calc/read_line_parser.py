@@ -2,6 +2,7 @@
 """CLI ReadLineParser."""
 
 
+import math
 import sys
 from typing import Optional, Union
 
@@ -31,11 +32,16 @@ class ReadLineParser:  # noqa: WPS214
         ] = ReadLineParser.handle_input(in_string)
 
         if isinstance(out_obj, (int, float)):  # pragma: no cover
-            Memory.value_dict[Config.ValueNS.float] = float(out_obj)  # type: ignore  # pylint: disable=E1101  # noqa: E501
+            try:
+                Memory.value_dict[Config.ValueNS.float] = float(out_obj)  # type: ignore  # pylint: disable=E1101  # noqa: E501
+            except OverflowError as ofe:
+                Memory.value_dict[Config.ValueNS.float] = math.nan  # type: ignore  # pylint: disable=E1101  # noqa: E501
+                print(f"{type(ofe).__name__}: {ofe}")  # noqa: WPS237, WPS421
+
             try:
                 Memory.value_dict[Config.ValueNS.int] = int(out_obj)  # type: ignore  # pylint: disable=E1101  # noqa: E501
-            except ValueError as err:
-                print(f"{type(err).__name__}: {err}")  # noqa: WPS237, WPS421
+            except ValueError as verr:
+                print(f"{type(verr).__name__}: {verr}")  # noqa: WPS237, WPS421
 
     @staticmethod
     def handle_input(  # noqa: WPS602
