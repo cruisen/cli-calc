@@ -18,7 +18,7 @@ Powerful yet easy command line calculator.
 
 Using plain python at the command line already provides a pretty decent calculator:
 
-```python
+```
 $ python
 Python 3.8.5 (default, Aug  2 2020, 16:00:15)
 [Clang 11.0.0 (clang-1100.0.33.17)] on darwin
@@ -52,7 +52,7 @@ And there is...
 
 ### cli-calc
 
-```python
+```
 $ cli-calc
 hex, int, float,
 0x0, 0, 0.0, : 2**10
@@ -82,7 +82,7 @@ and
 
 ## More examples
 
-```python
+```
 $ cli-calc
 hex, int, float,
 0x0, 0, 0.0, : cos(pi/2)
