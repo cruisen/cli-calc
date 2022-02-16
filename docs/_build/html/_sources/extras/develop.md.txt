@@ -79,6 +79,12 @@ PR's are Welcome!
    is deprecated.
    However some dev tools are still dependant.
 
+[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/.requirements/dev/requirements.txt)](https://app.snyk.io/org/cruisen)
+
+1. [mistune@0.8.4](https://app.snyk.io/org/cruisen/project/9ba152b5-1687-45c1-82ab-d85eadb74748)
+   Introduced through: project@0.0.0 › m2r2@0.3.2 › mistune@0.8.4
+   Fix: Pin mistune to version 2.0.1
+
 ## Features
 
 * Fully [typed with annotations](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
