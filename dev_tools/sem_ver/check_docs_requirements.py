@@ -27,7 +27,7 @@ cmd_doc = os.popen(  # noqa: S605,S607
 doc = cmd_doc.readlines()
 
 
-for line_nl in doc:
+for line_nl in doc:  # noqa: C901
     line = line_nl.strip()
     package = re.split("=|<|>", line)[0]
 
@@ -48,4 +48,4 @@ for line_nl in doc:
             print(line)  # noqa: WPS421
 
     if not found:
-        print(f"In doc only: {line}")
+        print(f"In doc only: {line}")  # noqa: WPS421
