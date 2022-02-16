@@ -19,7 +19,7 @@ PR's are Welcome!
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cruisen/cli-calc/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/cruisen/cli-calc/?branch=main)
 [![CodeQL](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml)
 [![Requirements Status](https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main)](https://requires.io/github/cruisen/cli-calc/requirements/?branch=main)
-[![Snyk Vulnerabilities for GitHub Repo (Specific Manifest)](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/blob/main/.requirements/dev.txt?label=dev%20vulnerabilities)](https://app.snyk.io/org/cruisen)
+[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/requirements/dev/requirements.txt)](https://app.snyk.io/org/cruisen)
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
 
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
