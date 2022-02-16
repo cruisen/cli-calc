@@ -70,7 +70,7 @@ sphinx = "^4.4"
 sphinx-autodoc-typehints = "^1.15"
 doc8 = "^0.10"
 m2r2 = "^0.3"
-mistune = "^2.0.1" # not directly required, pinned by Snyk to avoid a vulnerability
+mistune = "0.8.4"
 
 tomlkit = "^0.9"
 semver = "^2.13.0"
