@@ -22,13 +22,14 @@ cmd_dev = os.popen(  # noqa: S605,S607
 dev: str = cmd_dev.read().strip()
 
 cmd_doc = os.popen(  # noqa: S605,S607
-    'cd $(git rev-parse --show-toplevel) ; cat docs/requirements.txt | grep -v "^$" | grep -v "^#" | sed "s/#.*//" | sort',  # noqa: E501
+    'cd $(git rev-parse --show-toplevel) ; cat docs/requirements.txt | grep -v "^$" | grep -v "^#" | sort',  # noqa: E501
 )
 doc = cmd_doc.readlines()
 
 
 for line_nl in doc:  # noqa: C901
-    line = line_nl.strip()
+    line_with_comment = line_nl.strip()
+    line = line_with_comment.split("#")[0]
     package = re.split("=|<|>", line)[0]
 
     found = 0
@@ -45,7 +46,7 @@ for line_nl in doc:  # noqa: C901
 
         if match_line != line:
             print(match_line)  # noqa: WPS421
-            print(line)  # noqa: WPS421
+            print(line_with_comment)  # noqa: WPS421
 
     if not found:
-        print(f"In doc only: {line}")  # noqa: WPS421
+        print(f"In doc only: {line_with_comment}")  # noqa: WPS421
