@@ -166,7 +166,7 @@ Integration as in: Deployment and Integration testing.
 ### IDE
 * [vi](https://www.vim.org/about.php) advanced text editor
 * [VS Code](https://code.visualstudio.com/) source-code editor
-** [VS Code sttings](https://www.youtube.com/watch?v=fj2tuTIcUys) for python [video]
+  * [VS Code sttings](https://www.youtube.com/watch?v=fj2tuTIcUys) for python [video]
 
 #### If needed
 * [jupyter](https://jupyter.org/) for rapid prototyping only
