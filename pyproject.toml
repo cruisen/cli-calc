@@ -73,4 +73,4 @@ m2r2 = "^0.3"
 
 tomlkit = "^0.9"
 semver = "^2.13.0"
-pre-commit = "^2.17.0"
+pre-commit = "^2.19.0"
