@@ -166,6 +166,7 @@ Integration as in: Deployment and Integration testing.
 ### IDE
 * [vi](https://www.vim.org/about.php) advanced text editor
 * [VS Code](https://code.visualstudio.com/) source-code editor
+  * [VS Code sttings](https://www.youtube.com/watch?v=fj2tuTIcUys) for python [video]
 
 #### If needed
 * [jupyter](https://jupyter.org/) for rapid prototyping only
@@ -174,6 +175,9 @@ Integration as in: Deployment and Integration testing.
 * [oh-my-zsh](https://ohmyz.sh/)
   * [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
   * [MAC config](https://chiamakaikeanyi.dev/how-to-configure-your-macos-terminal-with-zsh-like-a-pro/)
+
+### Hardware
+* [Mac Dev Setup [video]](https://youtu.be/5eSaJGSGLs0)
 
 ### Documentation
 * [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language

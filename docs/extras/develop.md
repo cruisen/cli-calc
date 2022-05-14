@@ -176,6 +176,9 @@ Integration as in: Deployment and Integration testing.
   * [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
   * [MAC config](https://chiamakaikeanyi.dev/how-to-configure-your-macos-terminal-with-zsh-like-a-pro/)
 
+### Hardware
+* [Mac Dev Setup [video]](https://youtu.be/5eSaJGSGLs0)
+
 ### Documentation
 * [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
   * [Markdown to PDF (online)](https://dillinger.io/)
