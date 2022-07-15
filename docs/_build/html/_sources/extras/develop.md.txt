@@ -179,6 +179,9 @@ Integration as in: Deployment and Integration testing.
 ### Hardware
 * [Mac Dev Setup [video]](https://youtu.be/5eSaJGSGLs0)
 
+### Server
+* [Free Server for Open Source Projects](https://docs.fosshost.org/general/application/)
+
 ### Documentation
 * [Markdown](https://www.markdownguide.org/basic-syntax/) lightweight markup language
   * [Markdown to PDF (online)](https://dillinger.io/)
