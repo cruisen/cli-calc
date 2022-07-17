@@ -1,16 +1,30 @@
 # -*- coding: utf-8 -*-
-"""Test input parsing and eval functions with pytest."""
+"""
+Test input parsing and eval functions with pytest.
+
+AI NvK: Add NaN test.
+"""
+
 
 from contextlib import nullcontext as does_not_raise
 from typing import Optional, Union
 
 import pytest  # pylint: disable=E0401
+from hypothesis import given
+from hypothesis.strategies import floats
 
 from cli_calc.cli_eval import Eval  # pylint: disable=E0401
 from cli_calc.config import Config  # pylint: disable=E0401
 from cli_calc.memory import Memory  # pylint: disable=E0401
 
 Config.init(Memory.value_dict)
+
+
+@given(floats(allow_nan=False))
+def test_eval_floats(test_float):
+    """Find float edge cases with hypothesis."""
+    string_from_float = str(test_float)
+    assert Eval.eval_string(string_from_float) == test_float
 
 
 @pytest.mark.parametrize(  # noqa: WPS317
