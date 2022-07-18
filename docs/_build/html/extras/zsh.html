@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Tips and Tricks &#8212; cli-calc 0.2.25 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -12,6 +12,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -34,9 +35,9 @@
           <div class="body" role="main">
 
   <section id="tips-and-tricks">
-<h1>Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permalink to this headline">¶</a></h1>
+<h1>Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permalink to this heading">¶</a></h1>
 <section id="zsh-shell">
-<h2>zsh shell<a class="headerlink" href="#zsh-shell" title="Permalink to this headline">¶</a></h2>
+<h2>zsh shell<a class="headerlink" href="#zsh-shell" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>zsh <a class="reference external" href="https://zsh.sourceforge.io/Doc/zsh_a4.pdf">man</a></p>
 <ul>
@@ -45,10 +46,10 @@
 </li>
 </ul>
 <section id="fast-cd">
-<h3>Fast cd<a class="headerlink" href="#fast-cd" title="Permalink to this headline">¶</a></h3>
+<h3>Fast cd<a class="headerlink" href="#fast-cd" title="Permalink to this heading">¶</a></h3>
 <p>To <code class="docutils literal notranslate"><span class="pre">cd</span></code> seaming less into directories in a <code class="docutils literal notranslate"><span class="pre">zsh</span></code>:</p>
 <section id="example">
-<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pwd
 ~
 $ cf foo
@@ -59,7 +60,7 @@ $
 </div>
 </section>
 <section id="explanation">
-<h4>Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline">¶</a></h4>
+<h4>Explanation<a class="headerlink" href="#explanation" title="Permalink to this heading">¶</a></h4>
 <ol class="arabic simple">
 <li><p>Dirs in the file <code class="docutils literal notranslate"><span class="pre">~/.zshrc_dirs</span></code> will be placed on the stack when the shell starts</p></li>
 <li><p>All directories which are visited by <code class="docutils literal notranslate"><span class="pre">cd</span></code> are pushed on the dir stack as well</p></li>
@@ -76,7 +77,7 @@ $
 </ol>
 </section>
 <section id="configuration">
-<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h4>
+<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h4>
 <ul class="simple">
 <li><p>Create ~/.zshrc_dirs:</p></li>
 </ul>
@@ -110,7 +111,7 @@ cf() {
 </section>
 </section>
 <section id="zsh-options">
-<h3>zsh options<a class="headerlink" href="#zsh-options" title="Permalink to this headline">¶</a></h3>
+<h3>zsh options<a class="headerlink" href="#zsh-options" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">setops</span></code> to list all set options</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">emulate</span> <span class="pre">-lLR</span> <span class="pre">zsh</span></code> to list all avaiable options</p></li>
@@ -323,7 +324,7 @@ Links
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>

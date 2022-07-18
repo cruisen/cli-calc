@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>cli-calc &#8212; cli-calc 0.2.25 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -12,6 +12,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -34,7 +35,7 @@
 
   <a class="reference external image-reference" href="https://raw.githubusercontent.com/cruisen/cli-calc/4986df3abb3f1871d6669dec27d5e37aba0d11a3/assets/images/Cli-Calc.png"><img alt="Logo" src="https://raw.githubusercontent.com/cruisen/cli-calc/4986df3abb3f1871d6669dec27d5e37aba0d11a3/assets/images/Cli-Calc.png" /></a>
 <section id="cli-calc">
-<h1>cli-calc<a class="headerlink" href="#cli-calc" title="Permalink to this headline">¶</a></h1>
+<h1>cli-calc<a class="headerlink" href="#cli-calc" title="Permalink to this heading">¶</a></h1>
 <a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/actions/workflows/test.yml"><img alt="test" src="https://github.com/cruisen/cli-calc/actions/workflows/test.yml/badge.svg" /></a>
 <a class="reference external image-reference" href="https://codecov.io/gh/cruisen/cli-calc"><img alt="codecov" src="https://codecov.io/gh/cruisen/cli-calc/branch/main/graph/badge.svg?token=i9nYZL3MM3" /></a>
 <a class="reference external image-reference" href="https://pypi.org/project/cli-calc/"><img alt="Python Version" src="https://img.shields.io/pypi/pyversions/cli-calc.svg" /></a>
@@ -44,7 +45,7 @@
 <a class="reference external image-reference" href="https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md"><img alt="DEV" src="https://img.shields.io/badge/about-dev-green" /></a>
 <p>Powerful yet easy command line calculator.</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>Using plain python at the command line already provides a pretty decent calculator:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python
 Python 3.8.5 (default, Aug  2 2020, 16:00:15)
@@ -76,7 +77,7 @@ For example, if you want to calculate <code class="docutils literal notranslate"
 <a class="reference external" href="https://www.youtube.com/watch?v=UANN2Eu6ZnM">there must be a better way!</a>
 And there is…</p>
 <section id="id1">
-<h3>cli-calc<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>cli-calc<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cli-calc
 hex, int, float,
 0x0, 0, 0.0, : 2**10
@@ -106,7 +107,7 @@ and
 </section>
 </section>
 <section id="more-examples">
-<h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
+<h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cli-calc
 hex, int, float,
 0x0, 0, 0.0, : cos(pi/2)
@@ -131,7 +132,7 @@ $
 </div>
 </section>
 <section id="included-math-libraries">
-<h2>Included Math Libraries<a class="headerlink" href="#included-math-libraries" title="Permalink to this headline">¶</a></h2>
+<h2>Included Math Libraries<a class="headerlink" href="#included-math-libraries" title="Permalink to this heading">¶</a></h2>
 <p>Ready to use out of the box:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.w3schools.com/python/python_operators.asp">standard operators</a>
@@ -148,7 +149,7 @@ $
 </section>
 </section>
 <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h1>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install cli-calc
 </pre></div>
 </div>
@@ -156,7 +157,7 @@ $
 <li><p><a class="reference external" href="https://pypi.org/project/cli-calc/">pypi cli-calc</a></p></li>
 </ul>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>For convenience, add a shell script in <code class="docutils literal notranslate"><span class="pre">~/bin</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/bin
 vi cli-calc
@@ -180,7 +181,7 @@ cli-calc
 </div>
 </section>
 <section id="help">
-<h2>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h2>
+<h2>Help<a class="headerlink" href="#help" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cli-calc
 h
 Input:
@@ -212,7 +213,7 @@ Input:
 </ul>
 </section>
 <section id="warning">
-<h2>Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h2>
+<h2>Warning<a class="headerlink" href="#warning" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Use of <cite>``eval`</cite> &lt;<a class="reference external" href="https://docs.python.org/3/library/functions.html#eval">https://docs.python.org/3/library/functions.html#eval</a>&gt;`_ is evil.
 However precautions are taken.</p></li>
@@ -220,7 +221,7 @@ However precautions are taken.</p></li>
 </section>
 </section>
 <section id="pull-request">
-<h1>Pull Request<a class="headerlink" href="#pull-request" title="Permalink to this headline">¶</a></h1>
+<h1>Pull Request<a class="headerlink" href="#pull-request" title="Permalink to this heading">¶</a></h1>
 <p>PR’s are Welcome!</p>
 <ul class="simple">
 <li><p>Please read more about
@@ -232,14 +233,14 @@ environment and tool set.</p></li>
 </ul>
 </section>
 <section id="license">
-<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h1>
+<h1>License<a class="headerlink" href="#license" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/master/LICENSE">MIT</a></p>
 <section id="credits">
-<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this heading">¶</a></h2>
 <p>This project was generated with <cite>``wemake-python-package`</cite> &lt;<a class="reference external" href="https://github.com/wemake-services/wemake-python-package">https://github.com/wemake-services/wemake-python-package</a>&gt;`_. Current template version is: <a class="reference external" href="https://github.com/wemake-services/wemake-python-package/tree/d06993f12e3ffad79652a2aec86189dee92d94dd">d06993f12e3ffad79652a2aec86189dee92d94dd</a>. See what is <a class="reference external" href="https://github.com/wemake-services/wemake-python-package/compare/d06993f12e3ffad79652a2aec86189dee92d94dd...master">updated</a> since then.</p>
 </section>
 <section id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Changelog</span></p>
 <ul>
@@ -387,7 +388,7 @@ environment and tool set.</p></li>
 </div>
 </section>
 <section id="indices-and-tables">
-<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
@@ -600,7 +601,7 @@ Links
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
