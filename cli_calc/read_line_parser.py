@@ -186,5 +186,11 @@ class ReadLineParser:  # noqa: WPS214
         # Handle True/False
         in_string = in_string.replace("true", "True")
         in_string = in_string.replace("false", "False")
+        in_string = in_string.replace("TRUE", "True")
+        in_string = in_string.replace("FALSE", "False")
+
+        # Handle String NaN
+        in_string = in_string.replace("NaN", "math.nan")
+        in_string = in_string.replace("NAN", "math.nan")
 
         return in_string  # noqa: WPS331

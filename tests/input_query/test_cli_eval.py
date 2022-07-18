@@ -5,6 +5,7 @@ Test input parsing and eval functions with pytest.
 AI NvK: Add NaN test.
 """
 
+import math
 
 from contextlib import nullcontext as does_not_raise
 from typing import Optional, Union
@@ -25,6 +26,25 @@ def test_eval_floats(test_float):
     """Find float edge cases with hypothesis."""
     string_from_float = str(test_float)
     assert Eval.eval_string(string_from_float) == test_float
+
+
+@pytest.mark.parametrize(  # noqa: WPS317
+    ("in_string", "expected"),
+    [
+        ("math.nan", math.nan),
+        ("nan", math.nan),
+        ("nan", float("NaN")),
+        ('float("nan")', math.nan),
+        ('float("NaN")', math.nan),
+        # ("NaN", math.nan), see test_read_line_parser_nan.py
+    ],
+)
+def test_eval_nan(  # noqa: WPS602
+    in_string: str,
+    expected: float,
+):
+    """Input to Output test for NaN."""
+    assert math.isnan(Eval.eval_string(in_string)) and math.isnan(expected)  # noqa: S101
 
 
 @pytest.mark.parametrize(  # noqa: WPS317
