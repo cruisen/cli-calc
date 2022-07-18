@@ -36,7 +36,7 @@ lint2:
 
 .PHONY: git-status
 git-status:
-	git status
+	poetry run git status
 	@status=$$(git status --porcelain); \
 	if [ ! -z "$${status}" ]; \
 	then \
