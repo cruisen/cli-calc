@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Test input parsing and eval functions with pytest.
-"""
+"""Test input parsing and eval functions with pytest."""
 
 import math
 from contextlib import nullcontext as does_not_raise
@@ -30,7 +28,7 @@ def test_eval_floats(test_float):
     [
         ("math.nan", math.nan),
         ("nan", math.nan),
-        ("nan", float("NaN")),
+        ("nan", float("NaN")),  # noqa: WPS456
         ('float("nan")', math.nan),
         ('float("NaN")', math.nan),
         # ("NaN", math.nan), see test_read_line_parser_nan.py
@@ -41,7 +39,8 @@ def test_eval_nan(  # noqa: WPS602
     expected: float,
 ):
     """Input to Output test for NaN."""
-    assert math.isnan(Eval.eval_string(in_string)) and math.isnan(expected)  # noqa: S101
+    assert math.isnan(Eval.eval_string(in_string))  # type: ignore
+    assert math.isnan(expected)
 
 
 @pytest.mark.parametrize(  # noqa: WPS317
