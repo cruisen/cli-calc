@@ -47,9 +47,8 @@ class Eval:  # pylint: disable=R0903
                 in_string,
                 globals(),  # noqa: WPS421
             )
-        except (NameError, TypeError, SyntaxError) as err:
+        except (NameError, TypeError, SyntaxError, ZeroDivisionError) as err:
             print(f"{type(err).__name__}: {err}")  # noqa: WPS237, WPS421
-            Output.print_help()
             return None
 
         # int: +0 == -0, but float +0 != -0
