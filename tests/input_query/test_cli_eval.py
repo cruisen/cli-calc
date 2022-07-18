@@ -2,9 +2,9 @@
 """Test input parsing and eval functions with pytest."""
 
 import math
+from contextlib import contextmanager
 from contextlib import nullcontext as does_not_raise
 from typing import Optional, Union
-from contextlib import contextmanager
 
 import pytest  # pylint: disable=E0401
 from hypothesis import given
@@ -17,6 +17,11 @@ from cli_calc.memory import Memory  # pylint: disable=E0401
 
 @contextmanager
 def raises_not(exception):
+    """
+    Empty context Manger for NOT raising a particyulat Error.
+
+    Fails on all other Errors, which are not excepted.
+    """
     try:
         yield
     except exception:
@@ -88,7 +93,7 @@ def test_eval_string(  # noqa: WPS602
         ("1/0"),  # raises ZeroDivisionError
     ],
 )
-def test_eval_string_ZeroDivisionError(  # noqa: WPS602
+def test_eval_string_ZeroDivisionError(  # noqa: N802, WPS602
     in_string: Optional[str],
 ):
     """Check for ZeroDivisionError."""
@@ -102,7 +107,7 @@ def test_eval_string_ZeroDivisionError(  # noqa: WPS602
         ("sic(1/2)"),  # raises NameError ("sic" function is not in math)
     ],
 )
-def test_eval_string_NameError(  # noqa: WPS602
+def test_eval_string_NameError(  # noqa: N802, WPS602
     in_string: Optional[str],
 ):
     """Check for ZeroDivisionError."""
@@ -116,7 +121,7 @@ def test_eval_string_NameError(  # noqa: WPS602
         ("2*(3+1"),  # raises SyntaxError (Missing ")")
     ],
 )
-def test_eval_string_SyntaxError(  # noqa: WPS602
+def test_eval_string_SyntaxError(  # noqa: N802, WPS602
     in_string: Optional[str],
 ):
     """Check for ZeroDivisionError."""
@@ -130,7 +135,7 @@ def test_eval_string_SyntaxError(  # noqa: WPS602
         ("2.0^2"),  # raises TypeError ("^" is XOR, does not work on Float)  # noqa: E501
     ],
 )
-def test_eval_string_TypeError(  # noqa: WPS602
+def test_eval_string_TypeError(  # noqa: N802, WPS602
     in_string: Optional[str],
 ):
     """Check for ZeroDivisionError."""
