@@ -70,7 +70,7 @@ class Output:
                 Config.Column.Name.name,  # pylint: disable=E1101
             )
             print(name, end=", ")  # noqa: WPS421
-        print()  # noqa: WPS421
+        print(": INPUT")  # noqa: WPS421
 
     @staticmethod
     def echo_input(in_string: str) -> None:  # pragma: no cover  # noqa: WPS602, WPS605
