@@ -4,7 +4,6 @@ Test input parsing and eval functions with pytest.
 """
 
 import math
-
 from contextlib import nullcontext as does_not_raise
 from typing import Optional, Union
 
