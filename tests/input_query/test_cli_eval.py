@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Test input parsing and eval functions with pytest.
-
-AI NvK: Add NaN test.
 """
 
 import math
