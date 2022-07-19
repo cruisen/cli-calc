@@ -19,38 +19,42 @@ unit:
 package:
 	poetry check
 	poetry run pip check
-	# NvK
-	#	poetry run safety check --full-report
+	@# NvK
+	@#	poetry run safety check --full-report
 	poetry run safety check --bare
 
 .PHONY: test
 test: lint package unit
 
 # NvK
-.PHONY: lint2
-lint2:
-	echo "Current version: $(CURRENT)"
+.PHONY: lint-pre
+lint-pre:
+	@echo "Current version: $(CURRENT)"
 	poetry run isort .
 	poetry run black .
-	poetry run git status
 
 .PHONY: git-status
 git-status:
-	poetry run git status
+	@echo "PR: $$(gh pr list | wc -l)"
+	@poetry run git status
+
+.PHONY: git-fail
+git-fail: git-status
 	@status=$$(git status --porcelain); \
-	if [ ! -z "$${status}" ]; \
-	then \
-		echo "Error - working directory is dirty. Commit those changes!"; \
-		exit 1; \
-	fi
+	@if [ ! -z "$${status}" ]; \
+	@then \
+	@	echo "Error - working directory is dirty. Commit those changes!"; \
+	@	exit 1; \
+	@fi
+
 
 .PHONY: build
-build: git-status
+build: git-fail
 	git pull
 	poetry build
 
 .PHONY: bump
-bump: git-status
+bump: git-fail
 	poetry run dev_tools/meters/make_shields.py
 	git pull
 	git add .
@@ -68,20 +72,20 @@ bump: git-status
 .PHONY: publish-test
 publish-test:
 	poetry publish --repository testpypi --build
-	open "https://test.pypi.org/project/cli-calc/"
+	@open "https://test.pypi.org/project/cli-calc/"
 
 .PHONY: publish
 publish: bump
 	poetry publish --build
 
 .PHONY: bump_minor
-bump_minor: git-status
-	$(eval MINOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py minor))
-	$(eval MINOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number'))
-	$(eval MINOR_ISSUES = $(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
+bump_minor: git-fail
+	@$(eval MINOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py minor))
+	@$(eval MINOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MINOR)"))' | jq -c '.number'))
+	@$(eval MINOR_ISSUES = $(shell gh viewMilestone $(MINOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
 	@echo $(MINOR)
 	@echo $(MINOR_ISSUES)
-	# TODO add user OK
+	@# TODO add user OK
 	poetry run dev_tools/meters/make_shields.py
 	git pull
 	poetry version minor
@@ -91,30 +95,30 @@ bump_minor: git-status
 	gh release create "v$$(poetry version --short)" --generate-notes --notes "$(MINOR): $(MINOR_ISSUES)"
 	git pull
 	git push
-	echo "Consider to link Milestone to tag."
+	@echo "Consider to link Milestone to tag."
 
 
 .PHONY: all
-all: lint2 lint package unit html
+all: lint-pre git-status lint package unit html
 	gh browse
 
 .PHONY: allWithErrorHandling
 allWithErrorHandling:
-	# From: https://stackoverflow.com/questions/21118020/can-gnu-make-execute-a-rule-whenever-an-error-occurs
-	$(MAKE) all || $(MAKE) withError
+	@# From: https://stackoverflow.com/questions/21118020/can-gnu-make-execute-a-rule-whenever-an-error-occurs
+	@$(MAKE) all || $(MAKE) withError
 
 .PHONY: withError
 withError:
-	cd -
+	@cd -
 
 .PHONY: bump_major
 bump_major:
-	$(eval MAJOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py major))
-	$(eval MAJOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MAJOR)"))' | jq -c '.number'))
-	$(eval MAJOR_ISSUES = $(shell gh viewMilestone $(MAJOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
+	@$(eval MAJOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py major))
+	@$(eval MAJOR_NUM = $(shell gh listMilestones | jq '.data.repository.milestones.nodes[]' | jq '. | select(.title | contains("$(MAJOR)"))' | jq -c '.number'))
+	@$(eval MAJOR_ISSUES = $(shell gh viewMilestone $(MAJOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
 	@echo $(MAJOR)
 	@echo $(MAJOR_ISSUES)
-	# TODO add user OK
+	@# TODO add user OK
 
 .DEFAULT:
 	@cd docs && $(MAKE) $@
