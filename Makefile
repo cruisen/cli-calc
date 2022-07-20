@@ -1,43 +1,68 @@
+##############
+## SET
 export SHELL:=/usr/bin/env bash
 export SHELLOPTS:=$(if $(SHELLOPTS),$(SHELLOPTS):)pipefail:errexit
 # from: https://stackoverflow.com/questions/28597794/how-can-i-clean-up-after-an-error-in-a-makefile
 $(eval CURRENT = $(shell poetry version --short))
 
+
+##############
+## LINT
 .PHONY: lint
 lint:
+	@echo "Poetry version: $(CURRENT)"
+	poetry run isort .
+	poetry run black .
 	poetry run mypy cli_calc dev_tools/*/*.py tests/**/*.py
 	poetry run flake8 .
 	poetry run nitpick check
 	poetry run pre-commit run --all-files
 	poetry run doc8 -q docs
 
-.PHONY: unit
-unit:
-	poetry run pytest
 
-.PHONY: package
-package:
+##############
+## ALL
+.PHONY: all
+all: lint check-package git-status unit html
+	#gh browse
+
+
+.PHONY: allWithErrorHandling
+allWithErrorHandling:
+	@# From: https://stackoverflow.com/questions/21118020/can-gnu-make-execute-a-rule-whenever-an-error-occurs
+	@$(MAKE) all || $(MAKE) withError
+
+
+.PHONY: withError
+withError:
+	@cd -
+
+
+##############
+## check-package
+.PHONY: check-package
+check-package:
 	poetry check
 	poetry run pip check
 	@# NvK
 	@#	poetry run safety check --full-report
 	poetry run safety check --bare
 
-.PHONY: test
-test: lint package unit
 
-# NvK
-.PHONY: lint-pre
-lint-pre:
-	@echo "Current version: $(CURRENT)"
-	poetry run isort .
-	poetry run black .
+.PHONY: build
+build: git-fail check-package
+	git pull
+	poetry build
 
+
+##############
+## GIT
 .PHONY: git-status
 git-status:
 	@gh pr list
 	@gh issue list --label 1-Now-Important
 	@poetry run git status
+
 
 .PHONY: git-fail
 git-fail: git-status
@@ -49,11 +74,19 @@ git-fail: git-status
 	fi
 
 
-.PHONY: build
-build: git-fail
-	git pull
-	poetry build
+##############
+## TEST
+.PHONY: test
+test: lint check-package unit
 
+
+.PHONY: unit
+unit:
+	poetry run pytest
+
+
+##############
+## BUMP
 .PHONY: bump
 bump: git-fail
 	poetry run dev_tools/meters/make_shields.py
@@ -70,14 +103,6 @@ bump: git-fail
 	git pull
 	poetry run open "https://pypi.org/project/cli-calc/"
 
-.PHONY: publish-test
-publish-test:
-	poetry publish --repository testpypi --build
-	@open "https://test.pypi.org/project/cli-calc/"
-
-.PHONY: publish
-publish: bump
-	poetry publish --build
 
 .PHONY: bump_minor
 bump_minor: git-fail
@@ -99,19 +124,6 @@ bump_minor: git-fail
 	@echo "Consider to link Milestone to tag."
 
 
-.PHONY: all
-all: lint-pre git-status lint package unit html
-	gh browse
-
-.PHONY: allWithErrorHandling
-allWithErrorHandling:
-	@# From: https://stackoverflow.com/questions/21118020/can-gnu-make-execute-a-rule-whenever-an-error-occurs
-	@$(MAKE) all || $(MAKE) withError
-
-.PHONY: withError
-withError:
-	@cd -
-
 .PHONY: bump_major
 bump_major:
 	@$(eval MAJOR = $(shell dev_tools/sem_ver/get_ver_for_rule.py major))
@@ -121,5 +133,21 @@ bump_major:
 	@echo $(MAJOR_ISSUES)
 	@# TODO add user OK
 
+
+##############
+## PUBLISH
+.PHONY: publish-test
+publish-test:
+	poetry publish --repository testpypi --build
+	@open "https://test.pypi.org/project/cli-calc/"
+
+
+.PHONY: publish
+publish: bump
+	poetry publish --build
+
+
+##############
+## DEFAULT (e.g. -> docs/Makefile html)
 .DEFAULT:
 	@cd docs && $(MAKE) $@
