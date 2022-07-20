@@ -35,7 +35,8 @@ lint-pre:
 
 .PHONY: git-status
 git-status:
-	@echo "PR: $$(gh pr list | wc -l)"
+	@gh pr list
+	@gh issue list --label 1-Now-Important
 	@poetry run git status
 
 .PHONY: git-fail
