@@ -12,7 +12,7 @@ CLI Calculator.
 import os
 import sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))  # noqa: WPS221
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))  # noqa: WPS221 # pragma: no cover
 
 
 from cli_calc.cli_output import Output  # pylint: disable=C0413  # noqa: E402
