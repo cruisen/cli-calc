@@ -19,7 +19,7 @@ help:
 %: Makefile
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	@if [ $@ = "html" ] ;\
-	then ( make open ) ;\
+	then ( sleep 3 ; make open ) ;\
 	fi
 
 .PHONY: open

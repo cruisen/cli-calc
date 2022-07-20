@@ -24,7 +24,7 @@ lint:
 ## ALL
 .PHONY: all
 all: lint check-package git-status unit html
-	#gh browse
+	@#gh browse
 
 
 .PHONY: allWithErrorHandling
