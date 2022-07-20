@@ -41,11 +41,11 @@ git-status:
 .PHONY: git-fail
 git-fail: git-status
 	@status=$$(git status --porcelain); \
-	@if [ ! -z "$${status}" ]; \
-	@then \
-	@	echo "Error - working directory is dirty. Commit those changes!"; \
-	@	exit 1; \
-	@fi
+	if [ ! -z "$${status}" ]; \
+	then \
+		echo "Error - working directory is dirty. Commit those changes!"; \
+		exit 1; \
+	fi
 
 
 .PHONY: build
