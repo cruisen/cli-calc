@@ -145,7 +145,7 @@ with the following lines:
 ```bash
 path=~/path/to/your/cli-calc/cli_calc
 cd $path
-./main.py
+./__main__.py
 ```
 
 Make it executable:
