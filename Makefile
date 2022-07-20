@@ -12,6 +12,7 @@ $(eval CURRENT = $(shell poetry version --short))
 lint:
 	@echo "Poetry version: $(CURRENT)"
 	poetry run nitpick check
+	poetry run pre-commit run --all-files
 	poetry run isort .
 	poetry run black .
 	poetry run mypy cli_calc dev_tools/*/*.py tests/**/*.py
@@ -60,7 +61,6 @@ build: git-fail check-package
 git-status:
 	@gh pr list
 	@gh issue list --label 1-Now-Important
-	poetry run pre-commit run --all-files
 	@poetry run git status
 
 
