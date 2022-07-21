@@ -121,7 +121,9 @@ bump_minor: git-fail
 	gh release create "v$$(poetry version --short)" --generate-notes --notes "$(MINOR): $(MINOR_ISSUES)"
 	git pull
 	git push
+	@$(MAKE) publish-test
 	@echo "Consider to link Milestone to tag."
+	@echo "Consider to make publish."
 
 
 .PHONY: bump_major
@@ -131,6 +133,9 @@ bump_major:
 	@$(eval MAJOR_ISSUES = $(shell gh viewMilestone $(MAJOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
 	@echo $(MAJOR)
 	@echo $(MAJOR_ISSUES)
+	@$(MAKE) publish-test
+	@echo "Consider to link Milestone to tag."
+	@echo "Consider to make publish."
 	@# TODO add user OK
 
 
