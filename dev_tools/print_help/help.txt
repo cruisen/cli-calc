@@ -1,0 +1,23 @@
+--------------------------------------------------
+INPUT:
+    "q" for quit, "h" for help
+
+    "_" for last float value
+    "_int_" for last int value
+
+    "sin(pi/2)" for sinus, ...
+
+    "pi", "tau" and "e" for pi, tau and Euler
+
+    "+f" to add display for fraction, "-f" to suppress display for fraction
+        Other letters are:
+        he(x), (o)ctal, (b)inary, (i)nteger,
+        (f)raction, (t)ruth, i(e)ee, ieee_bi(n), f(r)om_ieee
+        "float" is always visible
+
+    See https://docs.python.org/3/library/math.html, use without "math."
+        https://www.w3schools.com/python/python_operators.asp
+
+    Try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
+--------------------------------------------------
+hex, int, float, : INPUT

@@ -23,7 +23,7 @@ class Output:
         if not Config.option[Config.Option.print_help]:  # type: ignore  # pylint: disable=E1101
             return
 
-        out: str = """Input:
+        out: str = """INPUT:
     "q" for quit, "h" for help
 
     "_" for last float value
