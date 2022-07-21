@@ -90,7 +90,9 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
     if abs(size_old - size_new) <= 2:
         move(temp_file_path, readme_file_path)
     else:
-        print("To much delta, please check.")  # noqa: WPS421
+        raise ResourceWarning(
+            f"{temp_file_path} is too differnt from {readme_file_path}. Please check.",
+        )
 
 
 def main() -> None:  # pragma: no cover
