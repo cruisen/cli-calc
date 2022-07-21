@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.90",
-  "elapsed_seconds"    : 0.0350310802459717,
+  "elapsed_seconds"    : 0.0424270629882812,
   "n_files"            : 12,
   "n_lines"            : 848,
-  "files_per_second"   : 342.552953427119,
-  "lines_per_second"   : 24207.0753755164,
+  "files_per_second"   : 282.83833842834,
+  "lines_per_second"   : 19987.2425822694,
   "report_file"        : "/Users/nkrusens/esabox/Developer/python/cli-calc/dev_tools/meters/cli_calc.json"},
 "Python" :{
   "nFiles": 12,
