@@ -6,6 +6,7 @@ CLI Calculator.
 * print help
 """
 
+import os
 import sys
 from contextlib import redirect_stdout
 from shutil import move
@@ -16,11 +17,14 @@ from cli_calc.config import Config  # pylint: disable=C0413  # noqa: E402
 from cli_calc.memory import Memory  # pylint: disable=C0413  # noqa: E402
 
 ROOT_DIR = sys.path[-1]
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 
-help_file_name: str = "help.txt"
-prompt_file_name: str = "prompt.txt"
-readme_file_name: str = "README.md"
-readme_file_path: str = f"{ROOT_DIR}/{readme_file_name}"
+
+help_file_path: str = f"{SCRIPT_DIR}/help.txt"
+prompt_file_path: str = f"{SCRIPT_DIR}/prompt.txt"
+
+readme_file_path: str = f"{ROOT_DIR}/README.md"
+
 temp_file_path: str = NamedTemporaryFile("w", dir=".", delete=False).name
 
 prompt_old: str = "hex, int, float,"
@@ -37,16 +41,16 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
     replace: bool = False
 
     # Get Help from app
-    with open(help_file_name, "w") as help_file_handle:
+    with open(help_file_path, "w") as help_file_handle:
         with redirect_stdout(help_file_handle):
             Output.print_help()
 
     # Save Help from app
-    with open(help_file_name, "r") as help_file_handle:  # noqa: WPS440
+    with open(help_file_path, "r") as help_file_handle:  # noqa: WPS440
         last_line: str = help_file_handle.readlines()[-1]
 
     # Save Prompt from app
-    with open(prompt_file_name, "w") as prompt_file_handle:
+    with open(prompt_file_path, "w") as prompt_file_handle:
         prompt_file_handle.writelines(last_line)
 
     # Get Readme.md, replace lines and save in temp file
@@ -70,7 +74,7 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
                 if signature >= help_old_len:
                     replace = True
                     signature = 0
-                    with open(help_file_name, "r") as help_file_handle:  # noqa: WPS440
+                    with open(help_file_path, "r") as help_file_handle:  # noqa: WPS440
                         help_lines = help_file_handle.readlines()  # noqa: WPS220
                         for help_line in help_lines:  # noqa: WPS220
                             temp_file_handle.write(help_line)  # noqa: WPS220
