@@ -10,7 +10,7 @@ $(eval CURRENT = $(shell poetry version --short))
 ## LINT
 .PHONY: lint
 lint:
-	@echo "Poetry version: $(CURRENT)"
+	@poetry version
 	poetry run nitpick check
 	poetry run pre-commit run --all-files
 	poetry run isort .
