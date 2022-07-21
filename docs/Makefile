@@ -22,6 +22,10 @@ help:
 	then ( sleep 3 ; make open ) ;\
 	fi
 
+.PHONY: update-readme
+update-readme:
+	$$(git rev-parse --show-toplevel)/dev_tools/print_help/print_help.py
+
 .PHONY: open
 open:
 	@find . -name index.html | head -1 | xargs open
