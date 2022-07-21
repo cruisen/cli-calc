@@ -16,7 +16,7 @@ Powerful yet easy command line calculator.
 
 ## Introduction
 
-Using plain python at the command line already provides a pretty decent calculator:
+Please note: Using plain python at the command line already does provide a pretty decent calculator:
 
 ```
 $ python
@@ -145,7 +145,7 @@ with the following lines:
 ```bash
 path=~/path/to/your/cli-calc/cli_calc
 cd $path
-./main.py
+./__main__.py
 ```
 
 Make it executable:
