@@ -46,7 +46,7 @@
 <p>Powerful yet easy command line calculator.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
-<p>Using plain python at the command line already provides a pretty decent calculator:</p>
+<p>Please note: Using plain python at the command line already does provide a pretty decent calculator:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python
 Python 3.8.5 (default, Aug  2 2020, 16:00:15)
 [Clang 11.0.0 (clang-1100.0.33.17)] on darwin
@@ -79,7 +79,7 @@ And there is…</p>
 <section id="id1">
 <h3>cli-calc<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cli-calc
-hex, int, float,
+hex, int, float, : INPUT
 0x0, 0, 0.0, : 2**10
 2**10
 0x400, 1024, 1024.0, : _ / 10
@@ -109,7 +109,7 @@ and
 <section id="more-examples">
 <h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cli-calc
-hex, int, float,
+hex, int, float, : INPUT
 0x0, 0, 0.0, : cos(pi/2)
 cos(pi/2)
 0x0, 0, 6.123233995736766e-17, : 0xFF ^ 0b10
@@ -166,7 +166,7 @@ vi cli-calc
 <p>with the following lines:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">path</span><span class="o">=</span>~/path/to/your/cli-calc/cli_calc
 <span class="nb">cd</span> <span class="nv">$path</span>
-./main.py
+./__main__.py
 </pre></div>
 </div>
 <p>Make it executable:</p>
@@ -184,7 +184,8 @@ cli-calc
 <h2>Help<a class="headerlink" href="#help" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cli-calc
 h
-Input:
+--------------------------------------------------
+INPUT:
     <span class="s2">&quot;q&quot;</span> <span class="k">for</span> quit, <span class="s2">&quot;h&quot;</span> <span class="k">for</span> <span class="nb">help</span>
 
     <span class="s2">&quot;_&quot;</span> <span class="k">for</span> last float value
@@ -203,8 +204,9 @@ Input:
     See https://docs.python.org/3/library/math.html, use without <span class="s2">&quot;math.&quot;</span>
         https://www.w3schools.com/python/python_operators.asp
 
-    Try <span class="s2">&quot;cos(pi/2)&quot;</span>, XOR: <span class="s2">&quot;0xFF ^ 0b10&quot;</span>, <span class="s2">&quot;2**8-1&quot;</span>, <span class="s2">&quot;factorial(42)&quot;</span>,
-        <span class="s2">&quot;help(math)&quot;</span>
+    Try <span class="s2">&quot;cos(pi/2)&quot;</span>, <span class="s2">&quot;0xFF ^ 0b10&quot;</span>, <span class="s2">&quot;2**8-1&quot;</span>, <span class="s2">&quot;factorial(42)&quot;</span>, <span class="s2">&quot;help(math)&quot;</span>
+--------------------------------------------------
+hex, int, float, : INPUT
 </pre></div>
 </div>
 <ul class="simple">

@@ -54,7 +54,7 @@ And there is...
 
 ```
 $ cli-calc
-hex, int, float,
+hex, int, float, : INPUT
 0x0, 0, 0.0, : 2**10
 2**10
 0x400, 1024, 1024.0, : _ / 10
@@ -84,7 +84,7 @@ and
 
 ```
 $ cli-calc
-hex, int, float,
+hex, int, float, : INPUT
 0x0, 0, 0.0, : cos(pi/2)
 cos(pi/2)
 0x0, 0, 6.123233995736766e-17, : 0xFF ^ 0b10
@@ -167,7 +167,8 @@ cli-calc
 ```bash
 cli-calc
 h
-Input:
+--------------------------------------------------
+INPUT:
     "q" for quit, "h" for help
 
     "_" for last float value
@@ -186,8 +187,9 @@ Input:
     See https://docs.python.org/3/library/math.html, use without "math."
         https://www.w3schools.com/python/python_operators.asp
 
-    Try "cos(pi/2)", XOR: "0xFF ^ 0b10", "2**8-1", "factorial(42)",
-        "help(math)"
+    Try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
+--------------------------------------------------
+hex, int, float, : INPUT
 ```
 
 * Permalink to this document as a
