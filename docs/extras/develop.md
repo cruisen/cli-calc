@@ -63,6 +63,8 @@ PR's are Welcome!
 [![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=github%20uptime)](https://github-com.pingpong.host/en/)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
 
+### SNYK mostly not working :-(
+
 [![Known Vulnerabilities](https://snyk.io/test/github/cruisen/cli-calc/badge.svg)](https://app.snyk.io/org/cruisen)
 [![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/.requirements/dev/requirements.txt)](https://app.snyk.io/org/cruisen)
 
