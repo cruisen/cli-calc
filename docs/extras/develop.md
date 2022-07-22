@@ -20,8 +20,6 @@ PR's are Welcome!
 [![CodeQL](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml)
 [![Requirements Status](https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main)](https://requires.io/github/cruisen/cli-calc/requirements/?branch=main)
 [![cli-calc](https://snyk.io/advisor/python/cli-calc/badge.svg)](https://snyk.io/advisor/python/cli-calc)
-[![Known Vulnerabilities](https://snyk.io/test/github/cruisen/cli-calc/badge.svg)](https://app.snyk.io/org/cruisen)
-[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/.requirements/dev/requirements.txt)](https://app.snyk.io/org/cruisen)
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
 
 [![Python Version](https://img.shields.io/pypi/pyversions/cli-calc.svg)](https://pypi.org/project/cli-calc/)
@@ -64,6 +62,9 @@ PR's are Welcome!
 [![Relative date](https://img.shields.io/date/1642071600?label=first%20commit&color=green)](https://github.com/cruisen/cli-calc/commit/ac96ed51041c26195840186de1f1fd60375c0736)
 [![gh uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_8ea2eba2d5f0435cb91d4c1d59c446cc?label=github%20uptime)](https://github-com.pingpong.host/en/)
 [![github downloads](https://img.shields.io/github/downloads/cruisen/cli-calc/total?label=github%20downloads)](https://github.com/cruisen/cli-calc)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/cruisen/cli-calc/badge.svg)](https://app.snyk.io/org/cruisen)
+[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/.requirements/dev/requirements.txt)](https://app.snyk.io/org/cruisen)
 
 ### Note on Shields
 
