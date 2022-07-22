@@ -20,6 +20,8 @@ PR's are Welcome!
 [![CodeQL](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/cruisen/cli-calc/actions/workflows/codeql-analysis.yml)
 [![Requirements Status](https://requires.io/github/cruisen/cli-calc/requirements.svg?branch=main)](https://requires.io/github/cruisen/cli-calc/requirements/?branch=main)
 [![cli-calc](https://snyk.io/advisor/python/cli-calc/badge.svg)](https://snyk.io/advisor/python/cli-calc)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/cruisen/cli-calc/badge.svg)]
 [![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/cruisen/cli-calc/.requirements/dev/requirements.txt)](https://app.snyk.io/org/cruisen)
 [![Dependencies](https://img.shields.io/librariesio/release/github/cruisen/cli-calc)](https://libraries.io/github/cruisen/cli-calc)
 
