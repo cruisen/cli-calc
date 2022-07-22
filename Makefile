@@ -157,3 +157,4 @@ publish: bump
 ## DEFAULT (e.g. -> docs/Makefile html)
 .DEFAULT:
 	@cd docs && $(MAKE) $@
+	poetry run pre-commit run --all-files
