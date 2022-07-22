@@ -24,6 +24,7 @@ lint:
 ## ALL
 .PHONY: all
 all: lint check-package git-status unit html
+	@echo "Consider to run: make update-readme."
 	@#gh browse
 
 
