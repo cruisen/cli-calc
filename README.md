@@ -142,10 +142,12 @@ vi cli-calc
 
 with the following lines:
 
+*Note*: Please adjust the path!
+
 ```bash
-path=~/path/to/your/cli-calc/cli_calc
+path=~/path/to/your/cli-calc/
 cd $path
-./__main__.py
+python3 -m cli_calc
 ```
 
 Make it executable:
