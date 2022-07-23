@@ -49,7 +49,7 @@ PR's are Welcome!
 [![github commits since](https://img.shields.io/github/commits-since/cruisen/cli-calc/v0.1.1)](https://github.com/cruisen/cli-calc/commits/main)
 [![github commits rate](https://img.shields.io/github/commit-activity/m/cruisen/cli-calc?label=commits)](https://github.com/cruisen/cli-calc/commits/main)
 
-[![github issues next milestone](https://img.shields.io/github/milestones/progress-percent/cruisen/cli-calc/6)](https://github.com/cruisen/cli-calc/milestone/6)
+[![github issues next milestone](https://img.shields.io/github/milestones/progress-percent/cruisen/cli-calc/10)](https://github.com/cruisen/cli-calc/milestone/10)
 [![github bugs open](https://img.shields.io/github/issues-raw/cruisen/cli-calc/is_Bug?color=red&label=bugs)](https://github.com/cruisen/cli-calc/issues?q=is%3Aopen+is%3Aissue+label%3Ais_Bug)
 [![github bugs closed](https://img.shields.io/github/issues-closed-raw/cruisen/cli-calc/is_Bug?color=green&label=closed)](https://github.com/cruisen/cli-calc/issues?q=is%3Aissue+is%3Aclosed+label%3Ais_Bug)
 [![github issues open](https://img.shields.io/github/issues-raw/cruisen/cli-calc?color=blue)](https://github.com/cruisen/cli-calc/issues)
