@@ -102,7 +102,7 @@ bump-worker2:
 	git push --tags
 
 .PHONY: bump-worker3
-bump-worker:3
+bump-worker3:
 	git pull
 	git push
 	git pull
