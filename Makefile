@@ -88,21 +88,40 @@ unit:
 
 ##############
 ## BUMP
-.PHONY: bump
-bump: git-fail
-	poetry run dev_tools/meters/make_shields.py
+.PHONY: bump-worker
+bump-worker:
 	git pull
-	git add .
-	poetry version patch
+	poetry run git-chglog -o CHANGELOG.md
+	poetry run dev_tools/meters/make_shields.py
+
+.PHONY: bump-worker2
+bump-worker2:
 	git add .
 	git commit --no-verify -m "Update to $$(poetry version --short)."
 	git push
 	git push --tags
-	gh release create "v$$(poetry version --short)" --generate-notes
+
+.PHONY: bump-worker3
+bump-worker:3
 	git pull
 	git push
 	git pull
-	poetry run open "https://pypi.org/project/cli-calc/"
+	@$(MAKE) publish-test
+	poetry run open "https://test.pypi.org/project/cli-calc/"
+
+.PHONY: bump-worker4
+bump-worker4:
+	@echo "Consider to link Milestone to tag."
+	@echo "Consider to make publish."
+
+.PHONY: bump
+bump: git-fail bump-worker
+	@$(MAKE) bump-worker
+	poetry version patch
+	@$(MAKE) bump-worker2
+	gh release create "v$$(poetry version --short)" --generate-notes
+	@$(MAKE) bump-worker3
+	@$(MAKE) bump-worker4
 
 
 .PHONY: bump_minor
@@ -113,18 +132,12 @@ bump_minor: git-fail
 	@echo $(MINOR)
 	@echo $(MINOR_ISSUES)
 	@# TODO add user OK
-	poetry run dev_tools/meters/make_shields.py
-	git pull
+	@$(MAKE) bump-worker
 	poetry version minor
-	git add .
-	git commit --no-verify -m "Update to $$(poetry version --short)."
-	git push --tags
+	@$(MAKE) bump-worker2
 	gh release create "v$$(poetry version --short)" --generate-notes --notes "$(MINOR): $(MINOR_ISSUES)"
-	git pull
-	git push
-	@$(MAKE) publish-test
-	@echo "Consider to link Milestone to tag."
-	@echo "Consider to make publish."
+	@$(MAKE) bump-worker3
+	@$(MAKE) bump-worker4
 
 
 .PHONY: bump_major
@@ -135,8 +148,7 @@ bump_major:
 	@echo $(MAJOR)
 	@echo $(MAJOR_ISSUES)
 	@$(MAKE) publish-test
-	@echo "Consider to link Milestone to tag."
-	@echo "Consider to make publish."
+	@$(MAKE) bump-worker4
 	@# TODO add user OK
 
 
@@ -151,6 +163,7 @@ publish-test:
 .PHONY: publish
 publish: bump
 	poetry publish --build
+	poetry run open "https://pypi.org/project/cli-calc/"
 
 
 ##############
