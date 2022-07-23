@@ -1,3 +1,7 @@
+# Version history
+
+We follow [Semantic Versions](https://semver.org/).
+
 
 <a name="v0.3.1"></a>
 ## [v0.3.1](https://github.com/cruisen/cli-calc/compare/v0.3.0...v0.3.1)
