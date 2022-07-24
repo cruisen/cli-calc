@@ -91,6 +91,7 @@ unit:
 .PHONY: bump-worker
 bump-worker:
 	git pull
+	git fetch --tags origin
 	poetry run git-chglog -o CHANGELOG.md
 	poetry run dev_tools/meters/make_shields.py
 
@@ -115,11 +116,12 @@ bump-worker4:
 	@echo "Consider to make publish."
 
 .PHONY: bump
-bump: git-fail bump-worker
+bump: git-fail
 	@$(MAKE) bump-worker
 	poetry version patch
 	@$(MAKE) bump-worker2
 	gh release create "v$$(poetry version --short)" --generate-notes
+	#gh release create $(poetry version --short) --notes-file changelog.md
 	@$(MAKE) bump-worker3
 	@$(MAKE) bump-worker4
 
