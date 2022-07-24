@@ -219,6 +219,13 @@ Integration as in: Deployment and Integration testing.
   * [codeql-analysis (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
   * [misspell (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
 
+#### about commits
+* [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+* [Conventional Commits](https://www.conventionalcommits.org/)
+* [Git Commit Msg](https://karma-runner.github.io/1.0/dev/git-commit-msg.html)
+
+* [git-filter-repo](https://andrewlock.net/rewriting-git-history-simply-with-git-filter-repo/)
+
 #### Doc
 * [cruisen.github.io/cli-calc](https://cruisen.github.io/cli-calc/)
 * [cli-calc.readthedocs.io](https://cli-calc.readthedocs.io/en/latest/?badge=latest#)
