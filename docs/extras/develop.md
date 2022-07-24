@@ -228,3 +228,23 @@ Integration as in: Deployment and Integration testing.
 * [make_shields.py (dev_tool)](https://github.com/cruisen/cli-calc/blob/main/dev_tools/meters/make_shields.py) for SLOC
 * [get_ver_for_rule (dev_tool)](https://github.com/cruisen/cli-calc/blob/main/dev_tools/sem_ver/get_ver_for_rule.py)
 * [Tips](https://github.com/cruisen/cli-calc/blob/main/docs/extras/zsh.md)
+
+
+### Work-Arounds
+
+In order to supress the setup.py warning:
+
+```bash
+vi /YOUR-PATH/virtualenvs/cli-calc-kPZNduUb-py3.9/lib/python3.9/site-packages/setuptools/command/install.py +34
+```
+
+```python
+        """
+        NvK 2022-07: comment out
+        warnings.warn(
+            "setup.py install is deprecated. "
+            "Use build and pip and other standards-based tools.",
+            setuptools.SetuptoolsDeprecationWarning,
+        )
+        """
+```

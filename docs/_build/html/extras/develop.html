@@ -369,6 +369,23 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 <li><p><a class="reference external" href="https://github.com/cruisen/cli-calc/blob/main/docs/extras/zsh.md">Tips</a></p></li>
 </ul>
 </section>
+<section id="work-arounds">
+<h3>Work-Arounds<a class="headerlink" href="#work-arounds" title="Permalink to this heading">¶</a></h3>
+<p>In order to supress the setup.py warning:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>vi /YOUR-PATH/virtualenvs/cli-calc-kPZNduUb-py3.9/lib/python3.9/site-packages/setuptools/command/install.py +34
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">NvK 2022-07: comment out</span>
+<span class="sd">warnings.warn(</span>
+<span class="sd">    &quot;setup.py install is deprecated. &quot;</span>
+<span class="sd">    &quot;Use build and pip and other standards-based tools.&quot;,</span>
+<span class="sd">    setuptools.SetuptoolsDeprecationWarning,</span>
+<span class="sd">)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -442,6 +459,7 @@ pytest &#64; python-version: [‘3.7’, ‘3.8’, ‘3.9’, ‘3.10’]</p></
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#nvk-tools">NvK Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#work-arounds">Work-Arounds</a></li>
 </ul>
 </li>
 </ul>
