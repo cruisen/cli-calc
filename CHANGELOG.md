@@ -6,6 +6,40 @@ We follow Semantic Versions as well as Semantic Commits:
 for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md#semantic-commits)
 
 
+<a name="v0.3.2"></a>
+## [v0.3.2](https://github.com/cruisen/cli-calc/compare/v0.3.1...v0.3.2)
+
+> 2022-07-25
+
+### Chore
+
+* move PULL_REQUEST_TEMPLATE.md -> .github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md
+* **dev:** add poetry update
+
+### DOC
+
+* Add section to supress setup.py deprecated warning
+
+### Doc
+
+* add git-chglog example link
+* reduce moise in changelog by ref develop.md
+
+### Docs
+
+* update the docs based on develop.md
+* Add links for commit semantics
+
+### Refactor
+
+* Add update of tags from origin.
+
+### Pull Requests
+
+* Merge pull request [#132](https://github.com/cruisen/cli-calc/issues/132) from cruisen/dependabot/pip/docs/sphinx-5.1.0
+* Merge pull request [#133](https://github.com/cruisen/cli-calc/issues/133) from cruisen/dependabot/pip/hypothesis-6.52.4
+
+
 <a name="v0.3.1"></a>
 ## [v0.3.1](https://github.com/cruisen/cli-calc/compare/v0.3.0...v0.3.1)
 
