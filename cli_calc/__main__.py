@@ -21,26 +21,28 @@ from cli_calc.input import Input  # pylint: disable=C0413  # noqa: E402
 from cli_calc.memory import Memory  # pylint: disable=C0413  # noqa: E402
 
 
-def io_loop() -> None:  # pragma: no cover
-    """
-    Main IO Loop.
+class Main:
 
-    Handle CTRL-C.
-    """
-    try:
-        while True:  # noqa: WPS457
-            Input.get_line()
-            Output.print_line()
-    except KeyboardInterrupt:
-        sys.exit(0)
+    def io_loop() -> None:  # pragma: no cover
+        """
+        Main IO Loop.
+
+        Handle CTRL-C.
+        """
+        try:
+            while True:  # noqa: WPS457
+                Input.get_line()
+                Output.print_line()
+        except KeyboardInterrupt:
+            sys.exit(0)
 
 
-def main() -> None:  # pragma: no cover
-    """Main."""
-    Config.init(Memory.value_dict)
-    Input.init_output()
-    io_loop()
+    def main() -> None:  # pragma: no cover
+        """Main."""
+        Config.init(Memory.value_dict)
+        Input.init_output()
+        Main.io_loop()
 
 
 if __name__ == "__main__":  # pragma: no cover
-    main()
+    Main.main()
