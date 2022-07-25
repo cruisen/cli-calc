@@ -5,7 +5,9 @@
 PR's are Welcome!
 
 * Please read more about
-  [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md).
+  [Contributing](https://github.com/cruisen/cli-calc/blob/main/CONTRIBUTING.md)
+* [Change Log](https://github.com/cruisen/cli-calc/blob/main/CHANGELOG.md)
+
 
 
 ## Metric Dashboard
