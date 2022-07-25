@@ -145,6 +145,17 @@ Integration as in: Deployment and Integration testing.
 * Possible alternatives to make / Makefile?
   * [invoke](https://www.pyinvoke.org/)
 
+### Semantic Commits
+* [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+* [Conventional Commits](https://www.conventionalcommits.org/)
+* [Git Commit Msg](https://karma-runner.github.io/1.0/dev/git-commit-msg.html)
+* [Semantic commit](https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular/)
+* [Keep a changelog](https://keepachangelog.com/)
+
+#### Commit tools
+* [git-chglog](https://github.com/git-chglog/git-chglog) for auto Changlog.md files
+* [git-filter-repo](https://andrewlock.net/rewriting-git-history-simply-with-git-filter-repo/) for rewrites
+
 ### Build and publish to pypi
 * [make Makefile](https://www.gnu.org/software/make/manual/make.html) automate above
   * [Managing Projects with GNU Make, 3rd Edition](https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch01.html)
@@ -218,13 +229,6 @@ Integration as in: Deployment and Integration testing.
   * [pytest & coverage (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/test.yml)
   * [codeql-analysis (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/codeql-analysis.yml)
   * [misspell (yml) (cli-calc)](https://github.com/cruisen/cli-calc/blob/main/.github/workflows/misspell.yml)
-
-#### about commits
-* [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
-* [Conventional Commits](https://www.conventionalcommits.org/)
-* [Git Commit Msg](https://karma-runner.github.io/1.0/dev/git-commit-msg.html)
-
-* [git-filter-repo](https://andrewlock.net/rewriting-git-history-simply-with-git-filter-repo/)
 
 #### Doc
 * [cruisen.github.io/cli-calc](https://cruisen.github.io/cli-calc/)
