@@ -154,6 +154,7 @@ Integration as in: Deployment and Integration testing.
 
 #### Commit tools
 * [git-chglog](https://github.com/git-chglog/git-chglog) for auto Changlog.md files
+  * [git-chglog examples](https://github.com/git-chglog/example-type-scope-subject)
 * [git-filter-repo](https://andrewlock.net/rewriting-git-history-simply-with-git-filter-repo/) for rewrites
 
 ### Build and publish to pypi
