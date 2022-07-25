@@ -49,6 +49,9 @@ check-package:
 	@#	poetry run safety check --full-report
 	poetry run safety check --bare
 
+.PHONY: update
+update:
+	poetry update
 
 .PHONY: build
 build: git-fail check-package
