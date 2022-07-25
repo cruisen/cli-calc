@@ -52,6 +52,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+ConfigArgParse = "^1.5.3"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.971"
