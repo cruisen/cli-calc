@@ -22,7 +22,6 @@ from cli_calc.memory import Memory  # pylint: disable=C0413  # noqa: E402
 
 
 class Main:
-
     def io_loop() -> None:  # pragma: no cover
         """
         Main IO Loop.
@@ -35,7 +34,6 @@ class Main:
                 Output.print_line()
         except KeyboardInterrupt:
             sys.exit(0)
-
 
     def main() -> None:  # pragma: no cover
         """Main."""
