@@ -14,9 +14,20 @@
 
 Powerful yet easy command line calculator.
 
-## Introduction
+```
+$ cli-calc
+hex, int, float, : INPUT
+0x0, 0, 0.0, : 24 * 60
+24*60
+0x5a0, 1440, 1440.0, : _ * 60
+1440.0*60
+0x15180, 86400, 86400.0, : sin(pi / 2)
+sin(pi/2)
+0x1, 1, 1.0, : q
+$
+```
 
-Please note: Using plain python at the command line already does provide a pretty decent calculator:
+## Why cli-calc, and not plain python?
 
 ```
 $ python
@@ -35,12 +46,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 
-[
-Read more about
+Please note: Using plain python at the command line already does provide a pretty decent calculator:
 [Python as a Calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator).
-]
 
-But not all is straight forward.
+Not all is straight forward.
 For example, if you want to calculate ```sin(pi/2)```:
 * First you need to ```import math```,
 * and then use it with ```math.sin( math.pi / 2 )```.
@@ -49,23 +58,7 @@ But
 [there must be a better way!](https://www.youtube.com/watch?v=UANN2Eu6ZnM)
 And there is...
 
-
 ### cli-calc
-
-```
-$ cli-calc
-hex, int, float, : INPUT
-0x0, 0, 0.0, : 2**10
-2**10
-0x400, 1024, 1024.0, : _ / 10
-1024.0/10
-0x66, 102, 102.4, : pi
-pi
-0x3, 3, 3.141592653589793, : sin(pi / 2)
-sin(pi/2)
-0x1, 1, 1.0, : q
-$
-```
 
 [Batteries included](https://www.python.org/dev/peps/pep-0206/#batteries-included-philosophy):
 
@@ -122,6 +115,43 @@ Ready to use out of the box:
 - [built in functions](https://docs.python.org/3/library/functions.html)
   ```max, help, sum, ...```
 
+## Calling Help
+
+```bash
+cli-calc
+h
+--------------------------------------------------
+
+    cli-calc 0.3.1: Powerful yet easy command line calculator.
+
+    INPUT:
+    "q" for quit, "h" for help
+
+    "_" for last float value
+    "_int_" for last int value
+
+    "sin(pi/2)" for sinus, ...
+
+    "pi", "tau" and "e" for pi, tau and Euler
+
+    "+f" to add display for fraction, "-f" to suppress display for fraction
+        Other letters are:
+        he(x), (o)ctal, (b)inary, (i)nteger,
+        (f)raction, (t)ruth, i(e)ee, ieee_bi(n), f(r)om_ieee
+        "float" is always visible
+
+    Also try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
+
+    See https://docs.python.org/3/library/math.html, use without "math."
+        https://www.w3schools.com/python/python_operators.asp
+        https://github.com/cruisen/cli-calc
+
+    (c) 2022-2022 Nikolai von Krusenstiern, License: MIT
+    
+--------------------------------------------------
+hex, int, float, : INPUT
+```
+
 
 # Installation
 
@@ -164,43 +194,6 @@ cat foo.bar | cli-calc
 cli-calc
 ```
 
-## Help
-
-```bash
-cli-calc
-h
---------------------------------------------------
-
-    cli-calc 0.3.1: Powerful yet easy command line calculator.
-
-    INPUT:
-    "q" for quit, "h" for help
-
-    "_" for last float value
-    "_int_" for last int value
-
-    "sin(pi/2)" for sinus, ...
-
-    "pi", "tau" and "e" for pi, tau and Euler
-
-    "+f" to add display for fraction, "-f" to suppress display for fraction
-        Other letters are:
-        he(x), (o)ctal, (b)inary, (i)nteger,
-        (f)raction, (t)ruth, i(e)ee, ieee_bi(n), f(r)om_ieee
-        "float" is always visible
-
-    Also try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
-
-    See https://docs.python.org/3/library/math.html, use without "math."
-        https://www.w3schools.com/python/python_operators.asp
-        https://github.com/cruisen/cli-calc
-
-    (c) 2022-2022 Nikolai von Krusenstiern, License: MIT
-    
---------------------------------------------------
-hex, int, float, : INPUT
-```
-
 * Permalink to this document as a
 [github page](https://cruisen.github.io/cli-calc/)
 
@@ -224,6 +217,9 @@ PR's are Welcome!
 # License
 
 [MIT](https://github.com/cruisen/cli-calc/blob/master/LICENSE)
+
+Author: Nikolai von Krusenstiern
+
 
 ## Credits
 
