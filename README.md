@@ -147,7 +147,7 @@ h
         https://github.com/cruisen/cli-calc
 
     (c) 2022-2022 Nikolai von Krusenstiern, License: MIT
-    
+
 --------------------------------------------------
 hex, int, float, : INPUT
 ```
@@ -223,4 +223,4 @@ Author: Nikolai von Krusenstiern
 
 ## Credits
 
-This project was generated with [`wemake-python-package`](https://github.com/wemake-services/wemake-python-package). Current template version is: [d06993f12e3ffad79652a2aec86189dee92d94dd](https://github.com/wemake-services/wemake-python-package/tree/d06993f12e3ffad79652a2aec86189dee92d94dd). See what is [updated](https://github.com/wemake-services/wemake-python-package/compare/d06993f12e3ffad79652a2aec86189dee92d94dd...master) since then.
+This project was generated with [wemake-python-package](https://github.com/wemake-services/wemake-python-package). Current template version is: [d06993f12e3ffad79652a2aec86189dee92d94dd](https://github.com/wemake-services/wemake-python-package/tree/d06993f12e3ffad79652a2aec86189dee92d94dd). See what is [updated](https://github.com/wemake-services/wemake-python-package/compare/d06993f12e3ffad79652a2aec86189dee92d94dd...master) since then.
