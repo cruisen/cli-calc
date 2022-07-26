@@ -9,7 +9,6 @@ ToDo: add Jason or like
 from enum import Enum, auto
 from typing import Callable, Dict, List, Union
 
-from cli_calc.arg_parser import Parser
 from cli_calc.format import Format
 from cli_calc.ieee import IEEE
 
@@ -204,5 +203,3 @@ class Config:  # noqa: WPS214
             Config.Column.Function.name,  # pylint: disable=E1101
             IEEE.ieee_to_float,
         )
-
-        Parser.init()
