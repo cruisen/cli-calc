@@ -1,3 +1,4 @@
 [run]
 omit =
 	cli_calc/__main__.py
+	cli_calc/arg_parser.py
