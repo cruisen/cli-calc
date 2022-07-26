@@ -11,13 +11,13 @@ class Parser:
     """Parser for CLI."""
 
     @staticmethod  # pragma: no cover
-    def init() -> None:  # noqa: WPS602, WPS605 # pragma: no cover
+    def init() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """Init."""
         # Parser.add_arguments()  # noqa: E800
         # Parser.test()  # noqa: E800
 
     @staticmethod  # pragma: no cover
-    def add_arguments() -> None:  # noqa: WPS602, WPS605  # pragma: no cover
+    def add_arguments() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """Add arguments."""
         argparser.add(
             "-c",
@@ -32,7 +32,7 @@ class Parser:
         argparser.add("vcf", nargs="+", help="variant file(s)")
 
     @staticmethod
-    def test() -> None:  # noqa: WPS602, WPS605  # pragma: no cover
+    def test() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """Test."""
         options = argparser.parse_args()
 
