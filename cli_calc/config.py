@@ -206,4 +206,3 @@ class Config:  # noqa: WPS214
         )
 
         Parser.init()
-
