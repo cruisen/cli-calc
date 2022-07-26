@@ -9,12 +9,15 @@ CLI Calculator.
 import os
 import sys
 from contextlib import redirect_stdout
-from shutil import move
+from shutil import copy, move
 from tempfile import NamedTemporaryFile
 
 from cli_calc.cli_output import Output  # pylint: disable=C0413  # noqa: E402
 from cli_calc.config import Config  # pylint: disable=C0413  # noqa: E402
 from cli_calc.memory import Memory  # pylint: disable=C0413  # noqa: E402
+
+DEBUG: bool = False
+FORCE: bool = False
 
 ROOT_DIR = sys.path[-1]
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -24,17 +27,24 @@ help_file_path: str = f"{SCRIPT_DIR}/help.txt"
 prompt_file_path: str = f"{SCRIPT_DIR}/prompt.txt"
 
 readme_file_path: str = f"{ROOT_DIR}/README.md"
+readme_file_backup_path: str = f"{SCRIPT_DIR}/README.md"
 
-temp_file_path: str = NamedTemporaryFile("w", dir=".", delete=False).name
+temp_file_path: str = NamedTemporaryFile("w", dir=SCRIPT_DIR, delete=False).name
 
 prompt_old: str = "hex, int, float,"
 
-help_old_start = ["```bash", "cli-calc", "h", "INPUT:"]
+help_old_start = ["```bash", "cli-calc", "h", "--------------------------------------------------"]
 help_old_len = len(help_old_start)
 help_old_end = "```"
 
 
-def handle_files() -> None:  # noqa: WPS210, C901, WPS231
+def debug(number: int, what: str, line: str) -> None:
+    """Debug Out."""
+    if DEBUG:
+        print(f"{number} - {what}: {line.strip()}")  # noqa: WPS421
+
+
+def handle_files() -> None:  # noqa: WPS210, C901, WPS231, WPS213
     """Handle stdout and files."""
     signature: int = 0
     signature_line: int = 0
@@ -62,6 +72,7 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
             for number, line in enumerate(lines):
                 if prompt_old in line:
                     line = last_line  # noqa: WPS440
+                    debug(number, "REP", line)
 
                 for test_line in help_old_start:
                     if test_line.lower() == line.strip("\n").lower():
@@ -70,6 +81,7 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
                             signature_line = number  # noqa: WPS220
                         else:
                             signature = 0  # noqa: WPS220
+                        debug(number, "signature", str(signature))  # noqa: WPS220
 
                 if signature >= help_old_len:
                     replace = True
@@ -78,12 +90,14 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
                         help_lines = help_file_handle.readlines()  # noqa: WPS220
                         for help_line in help_lines:  # noqa: WPS220
                             temp_file_handle.write(help_line)  # noqa: WPS220
+                            debug(number, "NEW", help_line)  # noqa: WPS220
 
                 if help_old_end == line.strip("\n"):
                     replace = False
 
                 if not replace:
                     temp_file_handle.write(line)
+                    debug(number, "old", line)
 
     # Get temp file for size
     with open(temp_file_path, "r") as temp_file_handle:  # noqa: WPS440
@@ -94,9 +108,16 @@ def handle_files() -> None:  # noqa: WPS210, C901, WPS231
     if abs(size_old - size_new) <= 2:
         move(temp_file_path, readme_file_path)
     else:
-        raise ResourceWarning(
-            f"{temp_file_path} is too differnt from {readme_file_path}. Please check.",
-        )
+        if FORCE:
+            copy(readme_file_path, readme_file_backup_path)
+            move(temp_file_path, readme_file_path)
+            raise ResourceWarning(
+                f"Please check {readme_file_path}. Back up in {readme_file_backup_path}.",
+            )
+        else:
+            raise ValueError(
+                f"{temp_file_path} is too differnt from {readme_file_path}. Please check.",
+            )
 
 
 def main() -> None:  # pragma: no cover
