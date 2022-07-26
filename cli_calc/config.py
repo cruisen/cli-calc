@@ -9,9 +9,9 @@ ToDo: add Jason or like
 from enum import Enum, auto
 from typing import Callable, Dict, List, Union
 
+from cli_calc.arg_parser import Parser
 from cli_calc.format import Format
 from cli_calc.ieee import IEEE
-from cli_calc.arg_parser import Parser
 
 
 class EnumAuto(Enum):  # noqa: WPS431  # noqa: WPS431
@@ -206,4 +206,3 @@ class Config:  # noqa: WPS214
         )
 
         Parser.init()
-

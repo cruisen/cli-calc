@@ -5,8 +5,8 @@
 from typing import Callable, Union
 
 from cli_calc.config import Config
-from cli_calc.memory import Memory
 from cli_calc.constant import Constant
+from cli_calc.memory import Memory
 
 
 class Output:
@@ -24,7 +24,9 @@ class Output:
         if not Config.option[Config.Option.print_help]:  # type: ignore  # pylint: disable=E1101
             return
 
-        out: str = f"""{Constant.SCRIPT_SUMMARY}
+        out: str = f"""
+    {Constant.SCRIPT_NAME} {Constant.SCRIPT_VERSION}: {Constant.SCRIPT_SUMMARY}
+
     INPUT:
     "q" for quit, "h" for help
 
@@ -47,7 +49,7 @@ class Output:
         https://www.w3schools.com/python/python_operators.asp
         {Constant.SCRIPT_URL}
 
-    {Constant.SCRIPT_NAME} {Constant.SCRIPT_VERSION}: (c) {Constant.SCRIPT_AUTHOR}, License: {Constant.SCRIPT_LICENSE}
+    (c) {Constant.COMMIT_FIRST}-{Constant.COMMIT_LAST} {Constant.SCRIPT_AUTHOR}, License: {Constant.SCRIPT_LICENSE}
     """
 
         print("-" * Config.DIVIDER_LINE_LENGTH)  # noqa: WPS421

@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 """Configure config argparse."""
 
-import configargparse
 import os
-import sys
 import pathlib
+import sys
+
+import configargparse
 from importlib_metadata import distribution, metadata
 
 p = configargparse.ArgParser(default_config_files=["~/.my_settings"])
 
-class Parser:
 
+class Parser:
     def init():
 
         return
         Parser.add_arguments()
         Parser.test()
-
 
     def add_arguments():
         p.add("-c", "--my-config", required=True, is_config_file=True, help="config file path")
@@ -33,5 +33,3 @@ class Parser:
         print(p.format_help())
         print("----------")
         print(p.format_values())
-
-
