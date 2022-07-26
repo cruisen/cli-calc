@@ -100,6 +100,7 @@ bump-worker:
 	git fetch --tags origin
 	poetry run git-chglog -o CHANGELOG.md
 	poetry run dev_tools/meters/make_shields.py
+	poetry run ./dev_tools/print_help/print_help.py
 
 .PHONY: bump-worker2
 bump-worker2:
