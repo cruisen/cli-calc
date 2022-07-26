@@ -2,17 +2,20 @@
 """Configure config argparse."""
 
 import configargparse
+import os
+import sys
+import pathlib
+from importlib_metadata import distribution, metadata
 
 p = configargparse.ArgParser(default_config_files=["~/.my_settings"])
 
 class Parser:
 
     def init():
-        from importlib_metadata import distribution
-        dist = distribution("cli-calc")
-        print(__name__)
-        print(dist.version)
-        print(dist.name)
+
+        return
+        Parser.add_arguments()
+        Parser.test()
 
 
     def add_arguments():
