@@ -6,6 +6,12 @@ We follow Semantic Versions as well as Semantic Commits:
 for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md#semantic-commits)
 
 
+<a name="v0.3.7"></a>
+## [v0.3.7](https://github.com/cruisen/cli-calc/compare/v0.3.6...v0.3.7)
+
+> 2022-07-26
+
+
 <a name="v0.3.6"></a>
 ## [v0.3.6](https://github.com/cruisen/cli-calc/compare/v0.3.5...v0.3.6)
 
