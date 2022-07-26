@@ -114,13 +114,13 @@ bump-worker3:
 	git pull
 	git push
 	git pull
-	@$(MAKE) publish-test
 	poetry run open "https://test.pypi.org/project/cli-calc/"
 
 .PHONY: bump-worker4
 bump-worker4:
 	@echo "Consider to link Milestone to tag."
-	@echo "Consider to make publish."
+	@echo "Consider to make publish-test"
+	@echo "Consider to make publish"
 
 .PHONY: bump
 bump: git-fail
@@ -156,7 +156,6 @@ bump_major:
 	@$(eval MAJOR_ISSUES = $(shell gh viewMilestone $(MAJOR_NUM) | jq '.data.repository.milestone.issues.nodes[]' | jq -c '[.state, .number, .title, .url]' | sort))
 	@echo $(MAJOR)
 	@echo $(MAJOR_ISSUES)
-	@$(MAKE) publish-test
 	@$(MAKE) bump-worker4
 	@# TODO add user OK
 
