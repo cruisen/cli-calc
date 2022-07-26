@@ -6,6 +6,20 @@ We follow Semantic Versions as well as Semantic Commits:
 for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md#semantic-commits)
 
 
+<a name="v0.3.6"></a>
+## [v0.3.6](https://github.com/cruisen/cli-calc/compare/v0.3.5...v0.3.6)
+
+> 2022-07-26
+
+### Docs
+
+* **help:** Update doc with module info
+
+### Refactor
+
+* **print_help:** Handle force updates
+
+
 <a name="v0.3.5"></a>
 ## [v0.3.5](https://github.com/cruisen/cli-calc/compare/v0.3.4...v0.3.5)
 
@@ -353,7 +367,7 @@ for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/
 
 
 <a name="v0.1.4"></a>
-## [v0.1.4](https://github.com/cruisen/cli-calc/compare/0.1.3...v0.1.4)
+## [v0.1.4](https://github.com/cruisen/cli-calc/compare/help...v0.1.4)
 
 > 2022-01-14
 
@@ -362,14 +376,14 @@ for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/
 * Merge pull request [#8](https://github.com/cruisen/cli-calc/issues/8) from cruisen/dependabot/pip/nitpick-0.30.0
 
 
-<a name="0.1.3"></a>
-## [0.1.3](https://github.com/cruisen/cli-calc/compare/help...0.1.3)
+<a name="help"></a>
+## [help](https://github.com/cruisen/cli-calc/compare/0.1.3...help)
 
 > 2022-01-14
 
 
-<a name="help"></a>
-## [help](https://github.com/cruisen/cli-calc/compare/v0.1.1...help)
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/cruisen/cli-calc/compare/v0.1.1...0.1.3)
 
 > 2022-01-14
 
