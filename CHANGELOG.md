@@ -6,6 +6,43 @@ We follow Semantic Versions as well as Semantic Commits:
 for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/docs/extras/develop.md#semantic-commits)
 
 
+<a name="v0.3.4"></a>
+## [v0.3.4](https://github.com/cruisen/cli-calc/compare/v0.3.3...v0.3.4)
+
+> 2022-07-26
+
+### Chore
+
+* **make:** Prepare for git commit date usage
+
+### Docs
+
+* **dev:** Add link to changelog
+
+### Feat
+
+* **argparse:** Add cli_calc/arg_parser.py
+* **argparse:** Add configargparse to project
+* **constant:** Add and use meta data from module
+* **help:** Add (c) years using python_git_wrapper
+
+### Refactor
+
+* Apply isort and black
+* **argparse:** Prepare argparser for coding
+* **main:** Use Main class method, not function
+* **main:** Move functions into Main class
+
+### Style
+
+* **pep8:** Change code to be pep8 or add noqa
+* **pep8:** Exclude check 4 line starting with dot
+
+### Test
+
+* Update to define Test Coverage
+
+
 <a name="v0.3.3"></a>
 ## [v0.3.3](https://github.com/cruisen/cli-calc/compare/v0.3.2...v0.3.3)
 
