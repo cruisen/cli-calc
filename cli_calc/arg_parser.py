@@ -10,13 +10,13 @@ argparser = configargparse.ArgParser(default_config_files=["~/.my_settings"])
 class Parser:
     """Parser for CLI."""
 
-    @staticmethod
-    def init() -> None:  # noqa: WPS602, WPS605
+    @staticmethod  # pragma: no cover
+    def init() -> None:  # noqa: WPS602, WPS605 # pragma: no cover
         """Init."""
         # Parser.add_arguments()  # noqa: E800
         # Parser.test()  # noqa: E800
 
-    @staticmethod
+    @staticmethod  # pragma: no cover
     def add_arguments() -> None:  # noqa: WPS602, WPS605  # pragma: no cover
         """Add arguments."""
         argparser.add(
