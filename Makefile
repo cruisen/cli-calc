@@ -3,7 +3,10 @@
 export SHELL:=/usr/bin/env bash
 export SHELLOPTS:=$(if $(SHELLOPTS),$(SHELLOPTS):)pipefail:errexit
 # from: https://stackoverflow.com/questions/28597794/how-can-i-clean-up-after-an-error-in-a-makefile
+
 $(eval CURRENT = $(shell poetry version --short))
+#$(eval YEARFROM = $(shell git show --no-patch --no-notes --pretty='%as' $(git rev-list HEAD -- . | tail -1)))
+#$(eval YEARTO = $(shell git show --no-patch --no-notes --pretty='%as' $(git rev-list HEAD -1 -- .)))
 
 
 ##############
