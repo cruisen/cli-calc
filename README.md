@@ -196,7 +196,7 @@ h
         https://github.com/cruisen/cli-calc
 
     (c) 2022-2022 Nikolai von Krusenstiern, License: MIT
-
+    
 --------------------------------------------------
 hex, int, float, : INPUT
 ```
