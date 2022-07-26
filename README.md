@@ -170,7 +170,10 @@ cli-calc
 cli-calc
 h
 --------------------------------------------------
-INPUT:
+
+    cli-calc 0.3.1: Powerful yet easy command line calculator.
+
+    INPUT:
     "q" for quit, "h" for help
 
     "_" for last float value
@@ -186,10 +189,14 @@ INPUT:
         (f)raction, (t)ruth, i(e)ee, ieee_bi(n), f(r)om_ieee
         "float" is always visible
 
+    Also try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
+
     See https://docs.python.org/3/library/math.html, use without "math."
         https://www.w3schools.com/python/python_operators.asp
+        https://github.com/cruisen/cli-calc
 
-    Try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
+    (c) 2022-2022 Nikolai von Krusenstiern, License: MIT
+
 --------------------------------------------------
 hex, int, float, : INPUT
 ```
