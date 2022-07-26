@@ -6,6 +6,7 @@ from typing import Callable, Union
 
 from cli_calc.config import Config
 from cli_calc.memory import Memory
+from cli_calc.constant import Constant
 
 
 class Output:
@@ -23,7 +24,8 @@ class Output:
         if not Config.option[Config.Option.print_help]:  # type: ignore  # pylint: disable=E1101
             return
 
-        out: str = """INPUT:
+        out: str = f"""{Constant.SCRIPT_SUMMARY}
+    INPUT:
     "q" for quit, "h" for help
 
     "_" for last float value
@@ -39,10 +41,14 @@ class Output:
         (f)raction, (t)ruth, i(e)ee, ieee_bi(n), f(r)om_ieee
         "float" is always visible
 
+    Also try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)"
+
     See https://docs.python.org/3/library/math.html, use without "math."
         https://www.w3schools.com/python/python_operators.asp
+        {Constant.SCRIPT_URL}
 
-    Try "cos(pi/2)", "0xFF ^ 0b10", "2**8-1", "factorial(42)", "help(math)" """
+    {Constant.SCRIPT_NAME} {Constant.SCRIPT_VERSION}: (c) {Constant.SCRIPT_AUTHOR}, License: {Constant.SCRIPT_LICENSE}
+    """
 
         print("-" * Config.DIVIDER_LINE_LENGTH)  # noqa: WPS421
         print(out)  # noqa: WPS421
