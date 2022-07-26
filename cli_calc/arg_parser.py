@@ -1,35 +1,43 @@
 # -*- coding: utf-8 -*-
 """Configure config argparse."""
 
-import os
-import pathlib
-import sys
 
 import configargparse
-from importlib_metadata import distribution, metadata
 
-p = configargparse.ArgParser(default_config_files=["~/.my_settings"])
+argparser = configargparse.ArgParser(default_config_files=["~/.my_settings"])
 
 
 class Parser:
-    def init():
+    """Parser for CLI."""
 
-        return
+    @staticmethod
+    def init() -> None:  # noqa: WPS602, WPS605
+        """Init."""
         Parser.add_arguments()
         Parser.test()
 
-    def add_arguments():
-        p.add("-c", "--my-config", required=True, is_config_file=True, help="config file path")
-        p.add("--genome", required=True, help="path to genome file")
-        p.add("-v", help="verbose", action="store_true")
-        p.add("-d", "--dbsnp", help="known variants .vcf", env_var="DBSNP_PATH")
-        p.add("vcf", nargs="+", help="variant file(s)")
+    @staticmethod
+    def add_arguments() -> None:  # noqa: WPS602, WPS605
+        """Add arguments."""
+        argparser.add(
+            "-c",
+            "--my-config",
+            required=True,
+            is_config_file=True,
+            help="config file path",
+        )
+        argparser.add("--genome", required=True, help="path to genome file")
+        argparser.add("-v", help="verbose", action="store_true")
+        argparser.add("-d", "--dbsnp", help="known variants .vcf", env_var="DBSNP_PATH")
+        argparser.add("vcf", nargs="+", help="variant file(s)")
 
-    def test():
-        options = p.parse_args()
+    @staticmethod
+    def test() -> None:  # noqa: WPS602, WPS605
+        """Test."""
+        options = argparser.parse_args()
 
-        print(options)
-        print("----------")
-        print(p.format_help())
-        print("----------")
-        print(p.format_values())
+        print(options)  # noqa: WPS421
+        print("----------")  # noqa: WPS421
+        print(argparser.format_help())  # noqa: WPS421
+        print("----------")  # noqa: WPS421
+        print(argparser.format_values())  # noqa: WPS421

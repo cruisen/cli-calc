@@ -8,33 +8,36 @@ from python_git_wrapper import Repository
 
 
 class Constant:
+    """Constants."""
 
-    _module = os.path.basename(os.getcwd())
-    _dist = distribution(_module)  # type: ignore
+    MODULE_PATH = os.path.basename(os.getcwd())  # noqa: WPS115
+    MODULE = distribution(MODULE_PATH)  # type: ignore # noqa: WPS115
 
-    SCRIPT_NAME: str = _dist.metadata["Name"]
-    SCRIPT_VERSION: str = _dist.metadata["Version"]
-    SCRIPT_AUTHOR: str = _dist.metadata["Author"]
-    SCRIPT_URL: str = _dist.metadata["Home-page"]
-    SCRIPT_LICENSE: str = _dist.metadata["License"]
-    SCRIPT_SUMMARY: str = _dist.metadata["Summary"]
+    SCRIPT_NAME: str = MODULE.metadata["Name"]  # noqa: WPS115
+    SCRIPT_VERSION: str = MODULE.metadata["Version"]  # noqa: WPS115
+    SCRIPT_AUTHOR: str = MODULE.metadata["Author"]  # noqa: WPS115
+    SCRIPT_URL: str = MODULE.metadata["Home-page"]  # noqa: WPS115
+    SCRIPT_LICENSE: str = MODULE.metadata["License"]  # noqa: WPS115
+    SCRIPT_SUMMARY: str = MODULE.metadata["Summary"]  # noqa: WPS115
 
     repository = Repository(".")
-    COMMIT_LAST_DATE = (
+    COMMIT_LAST_DATE = (  # noqa: WPS115
         repository.execute("show --no-patch --no-notes --pretty='%as'").strip().replace("'", "")
     )
-    COMMIT_FIRST_DATE = (
+    COMMIT_FIRST_DATE = (  # noqa: WPS115
         repository.execute("log --no-patch --no-notes --pretty='%as' --reverse")
         .strip()
         .replace("'", "")
         .split("\n", 1)[0]
     )
 
-    COMMIT_LAST = COMMIT_LAST_DATE.split("-", 1)[0]
-    COMMIT_FIRST = COMMIT_FIRST_DATE.split("-", 1)[0]
+    COMMIT_LAST = COMMIT_LAST_DATE.split("-", 1)[0]  # noqa: WPS115
+    COMMIT_FIRST = COMMIT_FIRST_DATE.split("-", 1)[0]  # noqa: WPS115
 
-    def show_meta_data() -> None:
-        for meta in list(metadata(Constant._module)):
+    @staticmethod
+    def show_meta_data() -> None:  # noqa: WPS602, WPS605
+        """Show META data."""
+        for meta in list(metadata(Constant.MODULE_PATH)):
             if "Description" in meta or "Classifier" in meta:
                 continue
-            print(f"{meta}: {Constant._dist.metadata[meta]}")
+            print(f"{meta}: {Constant.MODULE.metadata[meta]}")  # noqa: WPS421, WPS237

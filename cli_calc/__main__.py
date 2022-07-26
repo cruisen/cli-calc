@@ -22,7 +22,10 @@ from cli_calc.memory import Memory  # pylint: disable=C0413  # noqa: E402
 
 
 class Main:
-    def io_loop() -> None:  # pragma: no cover
+    """Main."""
+
+    @staticmethod
+    def io_loop() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """
         Main IO Loop.
 
@@ -35,7 +38,8 @@ class Main:
         except KeyboardInterrupt:
             sys.exit(0)
 
-    def main() -> None:  # pragma: no cover
+    @staticmethod
+    def main() -> None:  # pragma: no cover  # noqa: WPS602, WPS605
         """Main."""
         Config.init(Memory.value_dict)
         Input.init_output()

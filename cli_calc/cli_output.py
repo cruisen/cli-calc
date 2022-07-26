@@ -24,6 +24,8 @@ class Output:
         if not Config.option[Config.Option.print_help]:  # type: ignore  # pylint: disable=E1101
             return
 
+        copy_right: str = f"(c) {Constant.COMMIT_FIRST}-{Constant.COMMIT_LAST}"
+
         out: str = f"""
     {Constant.SCRIPT_NAME} {Constant.SCRIPT_VERSION}: {Constant.SCRIPT_SUMMARY}
 
@@ -49,8 +51,8 @@ class Output:
         https://www.w3schools.com/python/python_operators.asp
         {Constant.SCRIPT_URL}
 
-    (c) {Constant.COMMIT_FIRST}-{Constant.COMMIT_LAST} {Constant.SCRIPT_AUTHOR}, License: {Constant.SCRIPT_LICENSE}
-    """
+    {copy_right} {Constant.SCRIPT_AUTHOR}, License: {Constant.SCRIPT_LICENSE}
+    """  # noqa: WPS221
 
         print("-" * Config.DIVIDER_LINE_LENGTH)  # noqa: WPS421
         print(out)  # noqa: WPS421
