@@ -35,7 +35,7 @@ class Constant:
     COMMIT_FIRST = COMMIT_FIRST_DATE.split("-", 1)[0]  # noqa: WPS115
 
     @staticmethod
-    def show_meta_data() -> None:  # noqa: WPS602, WPS605
+    def show_meta_data() -> None:  # noqa: WPS602, WPS605  # pragma: no cover
         """Show META data."""
         for meta in list(metadata(Constant.MODULE_PATH)):
             if "Description" in meta or "Classifier" in meta:
