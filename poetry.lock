@@ -727,7 +727,7 @@ python-versions = "*"
 name = "mistune"
 version = "0.8.4"
 description = "The fastest markdown parser in pure Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -1381,7 +1381,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "virtualenv"
-version = "20.16.0"
+version = "20.16.1"
 description = "Virtual Python Environment builder"
 category = "dev"
 optional = false
@@ -1451,7 +1451,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "e876ac61f9c93c41095f83707ff9c944dcbd2eb105f880baad5f0019db903e2c"
+content-hash = "44d2ec7ab448249c6a9b6155a0ccc11d75a32813c02c8b7a44630c3084b5eb26"
 
 [metadata.files]
 alabaster = [
