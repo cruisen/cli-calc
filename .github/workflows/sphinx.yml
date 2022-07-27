@@ -1,6 +1,13 @@
-name: "Pull Request Docs Check"
-on: 
-- pull_request
+name: "Docs Check"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main ]
+  schedule:
+    - cron: '32 17 * * 6'
 
 jobs:
   docs:
