@@ -36,7 +36,12 @@ class Constant:
 
     @staticmethod
     def show_meta_data() -> None:  # noqa: WPS602, WPS605  # pragma: no cover
-        """Show META data."""
+        """
+        Show META data.
+
+        A convenience function, to list *NEW* items,
+        in case more items are added to the API.
+        """
         for meta in list(metadata(Constant.MODULE_PATH)):
             if "Description" in meta or "Classifier" in meta:
                 continue
