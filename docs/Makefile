@@ -28,4 +28,6 @@ update-readme:
 
 .PHONY: open
 open:
-	@find . -name index.html | head -1 | xargs open
+	@if [ ! $(CI)  ] ;\
+	then ( find . -name index.html | head -1 | xargs open ) ;\
+	fi
