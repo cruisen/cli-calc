@@ -108,3 +108,6 @@ we enable ourselves to write maintainable software. They build upon each other.
 
 ### Lambda Calculus
 * [Lambda Calculus from the Ground Up by David Beazley (Talk)](https://www.youtube.com/watch?v=pkCLMl0e_0k)
+
+### Meta Programmin
+* [Python 3 Metaprogramming by David Beazley (3h !!!)](https://youtu.be/sPiWg5jSoZI)
