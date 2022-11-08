@@ -58,7 +58,7 @@ importlib-metadata = "^4.12.0"
 mistune = "0.8.4"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.971"
+mypy = "^0.990"
 
 wemake-python-styleguide = "^0.16"
 flake8-pytest-style = "^1.6"
