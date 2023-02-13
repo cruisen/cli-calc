@@ -125,7 +125,7 @@ PR's are Welcome!
 ### Testing
 * [pytest](https://docs.pytest.org/) test framework
   * [The Magic Tricks of Testing by Sandi Metz (Talk)](https://www.youtube.com/watch?v=URSWYvyc42M) on what to test, and what not
-  * [How To Write Unit Tests For Existing Python Code // Part 1 of 2]((https://www.youtube.com/watch?v=ULxMQ57engo)
+  * [How To Write Unit Tests For Existing Python Code // Part 1 of 2](https://www.youtube.com/watch?v=ULxMQ57engo)
   * [How To Write Unit Tests For Existing Python Code // Part 2 of 2](https://www.youtube.com/watch?v=NI5IGAim8XU)
 
 ### Continuous Testing & Integration (CT & CI)
