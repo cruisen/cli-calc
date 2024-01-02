@@ -111,3 +111,12 @@ we enable ourselves to write maintainable software. They build upon each other.
 
 ### Meta Programmin
 * [Python 3 Metaprogramming by David Beazley (3h !!!)](https://youtu.be/sPiWg5jSoZI)
+
+### Local First App w/ Conflict Free Data Types
+* Conflict-free replicated data type (CRDT) [Wikipedia]((https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+* Local First Web Dev [Homepage](https://localfirstweb.dev)
+* Hybrid Logical Clocks (HLC) [Book](https://martinfowler.com/articles/patterns-of-distributed-systems/hybrid-clock.html)
+* [Video](https://youtu.be/DEcwa68f-jY?si=ShLO-zYzZY1e4Ve6)
+* Sample App *Actual* [GitHub](https://github.com/actualbudget)
+
+  
