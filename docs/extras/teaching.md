@@ -109,14 +109,25 @@ we enable ourselves to write maintainable software. They build upon each other.
 ### Lambda Calculus
 * [Lambda Calculus from the Ground Up by David Beazley (Talk)](https://www.youtube.com/watch?v=pkCLMl0e_0k)
 
-### Meta Programmin
+### Meta Programming
 * [Python 3 Metaprogramming by David Beazley (3h !!!)](https://youtu.be/sPiWg5jSoZI)
 
 ### Local First App w/ Conflict Free Data Types
-* Conflict-free replicated data type (CRDT) [Wikipedia]((https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+
+#### Conflict-free replicated data type (CRDT)
+* [Wikipedia](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+* [](https://medium.com/@amberovsky/crdt-conflict-free-replicated-data-types-b4bfc8459d26)
+
+#### Hybrid Logical Clocks (HLC)
+* [Book](https://martinfowler.com/articles/patterns-of-distributed-systems/hybrid-clock.html)
+* Original [Paper](https://cse.buffalo.edu/tech-reports/2014-04.pdf)
+
+#### DEV
 * Local First Web Dev [Homepage](https://localfirstweb.dev)
-* Hybrid Logical Clocks (HLC) [Book](https://martinfowler.com/articles/patterns-of-distributed-systems/hybrid-clock.html)
+
+#### APPs
 * [Video](https://youtu.be/DEcwa68f-jY?si=ShLO-zYzZY1e4Ve6)
 * Sample App *Actual* [GitHub](https://github.com/actualbudget)
-
+* [CRDT Excample App](https://github.com/jlongster/crdt-example-app)
+  * [Demo](https://crdt.jlongster.com/client/) 
   
