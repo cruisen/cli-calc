@@ -91,7 +91,7 @@ for more details see [develop.md](https://github.com/cruisen/cli-calc/blob/main/
 
 ### DOC
 
-* Add section to supress setup.py deprecated warning
+* Add section to suppress setup.py deprecated warning
 
 ### Doc
 

@@ -248,7 +248,7 @@ Integration as in: Deployment and Integration testing.
 
 ### Work-Arounds
 
-In order to supress the setup.py warning:
+In order to suppress the setup.py warning:
 
 ```bash
 vi /YOUR-PATH/virtualenvs/cli-calc-kPZNduUb-py3.9/lib/python3.9/site-packages/setuptools/command/install.py +34
