@@ -129,5 +129,4 @@ we enable ourselves to write maintainable software. They build upon each other.
 * [Video](https://youtu.be/DEcwa68f-jY?si=ShLO-zYzZY1e4Ve6)
 * Sample App *Actual* [GitHub](https://github.com/actualbudget)
 * [CRDT Excample App](https://github.com/jlongster/crdt-example-app)
-  * [Demo](https://crdt.jlongster.com/client/) 
-  
+  * [Demo](https://crdt.jlongster.com/client/)
